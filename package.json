@@ -1,0 +1,22 @@
+{
+  "name": "jamesonamadeus.github.io",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesonamadeus/jamesonamadeus.github.io.git"
+  },
+  "author": "jamesonamadeus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamesonamadeus/jamesonamadeus.github.io/issues"
+  },
+  "homepage": "https://github.com/jamesonamadeus/jamesonamadeus.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
