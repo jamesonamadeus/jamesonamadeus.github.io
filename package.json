@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/jamesonamadeus/jamesonamadeus.github.io#readme",
   "devDependencies": {
+    "browser-sync": "^2.23.6",
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0"
   }
