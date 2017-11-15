@@ -6,6 +6,8 @@ var uglify = require('gulp-uglify');
 var gulpIf = require('gulp-if');
 var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
+var del = require('del');
+var runSequence = require('run-sequence');
 
 
 //gulp sass
@@ -40,10 +42,36 @@ gulp.task('useref', function(){
 gulp.task('images', function(){
     return gulp.src('app/images/**/*.+(png|jpg|jpeg|gif|svg)')
     // Caching images that ran through imagemin
-    
+
     .pipe(cache(imagemin({
         interlaced: true
       })))
 
     .pipe(gulp.dest('dist/images'))
 });
+
+//gulp fonts
+gulp.task('fonts', function() {
+    return gulp.src('app/fonts/**/*')
+    .pipe(gulp.dest('dist/fonts'))
+})
+
+//gulp clean dist
+gulp.task('clean:dist', function() {
+    return del.sync('dist');
+})
+
+//gulp build
+gulp.task('build', function (callback) {
+    runSequence('clean:dist', 
+      ['sass', 'useref', 'images', 'fonts'],
+      callback
+    )
+})
+
+//gulp default
+gulp.task('default', function (callback) {
+    runSequence(['sass','browserSync', 'watch'],
+      callback
+    )
+})
