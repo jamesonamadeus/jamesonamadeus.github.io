@@ -9,6 +9,20 @@ var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
 
+//gulp build
+gulp.task('build', function (callback) {
+    runSequence('clean:dist', 
+      ['sass', 'useref', 'images', 'fonts'],
+      callback
+    )
+})
+
+//gulp default
+gulp.task('default', function (callback) {
+    runSequence(['sass','browserSync', 'watch'],
+      callback
+    )
+})
 
 //gulp sass
 gulp.task('sass', function() {
@@ -19,6 +33,15 @@ gulp.task('sass', function() {
         stream: true
       }))
 });
+
+//browsersync
+gulp.task('browserSync', function() {
+    browserSync.init({
+        server: {
+            baseDir: 'app'
+        },
+    })
+})
 
 //gulp watch
 gulp.task('watch', ['browserSync', 'sass'], function (){
@@ -59,19 +82,4 @@ gulp.task('fonts', function() {
 //gulp clean dist
 gulp.task('clean:dist', function() {
     return del.sync('dist');
-})
-
-//gulp build
-gulp.task('build', function (callback) {
-    runSequence('clean:dist', 
-      ['sass', 'useref', 'images', 'fonts'],
-      callback
-    )
-})
-
-//gulp default
-gulp.task('default', function (callback) {
-    runSequence(['sass','browserSync', 'watch'],
-      callback
-    )
 })
