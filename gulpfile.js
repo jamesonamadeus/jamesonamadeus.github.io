@@ -5,6 +5,7 @@ var useref = require('gulp-useref');
 var uglify = require('gulp-uglify');
 var gulpIf = require('gulp-if');
 var imagemin = require('gulp-imagemin');
+var cssnano = require('gulp-cssnano');
 var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
