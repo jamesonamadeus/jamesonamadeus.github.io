@@ -161,3 +161,15 @@ a {
     Flexbox Mixins
 
 --------------------------------------------------------------------- */
+.nav-list {
+  position: absolute;
+  z-index: 11; }
+
+.nav-item {
+  color: #4834d4;
+  list-style-type: none;
+  padding: 10px;
+  text-align: left;
+  transform: translateX(-250px); }
+  .nav-item a {
+    text-decoration: none; }

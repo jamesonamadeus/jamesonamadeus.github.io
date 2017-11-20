@@ -1,0 +1,20 @@
+.nav {
+    
+    &-list {
+        position: absolute;
+        z-index: 11;
+    }
+
+    &-item {
+        color: $primary-color;
+        list-style-type: none;
+        padding: 10px;
+        text-align: left;
+        transform: translateX(-250px);
+
+        a {
+            text-decoration: none;
+        }
+    }
+  
+}
