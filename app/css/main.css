@@ -163,13 +163,13 @@ a {
 --------------------------------------------------------------------- */
 .nav-list {
   position: absolute;
-  z-index: 11; }
+  top: 0;
+  right: 0; }
 
 .nav-item {
   color: #4834d4;
   list-style-type: none;
   padding: 10px;
-  text-align: left;
-  transform: translateX(-250px); }
+  text-align: right; }
   .nav-item a {
     text-decoration: none; }

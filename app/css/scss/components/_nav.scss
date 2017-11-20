@@ -1,20 +1,60 @@
+@keyframes slideInLeft {
+    0% {
+        transform: translate3d(-250px, 0, 0);
+        visibility: visible;
+    }
+  
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+
+
+@keyframes slideOutLeft {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+  
+    100% {
+        transform: translate3d(-250px, 0, 0);
+        visibility: hidden;
+    }
+}
+
 .nav {
     
     &-list {
         position: absolute;
-        z-index: 11;
+        top: 0;
+        left: 0;
+        // z-index: 11;
+
+        &:not(.open) {
+            visibility: hidden;
+          }
     }
 
     &-item {
         color: $primary-color;
         list-style-type: none;
         padding: 10px;
-        text-align: left;
-        transform: translateX(-250px);
+        text-align: right;
+        // transform: translateX(-250px);
 
         a {
             text-decoration: none;
         }
+
+        &:first-child {
+            padding-top: 30px;
+        }
+    }
+
+
+
+    li:first-child {
+        padding-top: 30px;
     }
   
 }
