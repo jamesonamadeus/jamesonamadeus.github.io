@@ -43,6 +43,9 @@
     Flexbox Mixins
 
 --------------------------------------------------------------------- */
+* {
+  box-sizing: border-box; }
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 100%;
@@ -161,10 +164,34 @@ a {
     Flexbox Mixins
 
 --------------------------------------------------------------------- */
+@keyframes slideInLeft {
+  0% {
+    transform: translate3d(-250px, 0, 0);
+    visibility: visible; }
+  100% {
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes slideOutLeft {
+  0% {
+    transform: translate3d(0, 0, 0); }
+  100% {
+    transform: translate3d(-250px, 0, 0);
+    visibility: hidden; } }
+
 .nav-list {
   position: absolute;
   top: 0;
-  right: 0; }
+  left: 0; }
+  .nav-list:not(.open) {
+    visibility: hidden; }
+  .nav-list:not(.open) {
+    visibility: hidden; }
+  .nav-list.open {
+    visibility: visible; }
+    .nav-list.open li {
+      animation-duration: .4s;
+      animation-fill-mode: both;
+      animation-name: slideInLeft; }
 
 .nav-item {
   color: #4834d4;
@@ -173,3 +200,22 @@ a {
   text-align: right; }
   .nav-item a {
     text-decoration: none; }
+  .nav-item:first-child {
+    padding-top: 30px; }
+  .nav-item:not(.open) {
+    animation-duration: .5s;
+    animation-fill-mode: both;
+    animation-name: slideOutLeft; }
+
+.nav-link {
+  font-size: 18px !important;
+  font-size: 1.125rem !important;
+  background: transparent;
+  border-left: #4834d4 solid 2px;
+  color: #4834d4;
+  font-weight: 500;
+  margin-left: 30px;
+  text-decoration: none;
+  transition: all .5s ease;
+  width: auto;
+  text-decoration: none; }

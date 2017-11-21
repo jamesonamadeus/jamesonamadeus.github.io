@@ -32,11 +32,25 @@
 
         &:not(.open) {
             visibility: hidden;
-          }
+        }
+
+        &:not(.open) {
+            visibility: hidden;
+        }
+
+        &.open {
+            visibility: visible;
+    
+            li {
+                animation-duration: .4s;
+                animation-fill-mode: both;
+                animation-name: slideInLeft;
+            }
+        }
     }
 
     &-item {
-        color: $primary-color;
+        color: $color-primary;
         list-style-type: none;
         padding: 10px;
         text-align: right;
@@ -49,12 +63,27 @@
         &:first-child {
             padding-top: 30px;
         }
+
+        &:not(.open) {
+            animation-duration: .5s;
+            animation-fill-mode: both;
+            animation-name: slideOutLeft;
+        }
+    }
+
+    &-link {
+        @include font-size(18);
+        background: transparent;
+        border-left: $color-primary solid 2px;
+        color: $color-primary;
+        font-weight: 500;
+        margin-left: 30px;
+        text-decoration: none;
+        transition: all .5s ease;
+        width: auto;
+        text-decoration: none;
     }
 
 
-
-    li:first-child {
-        padding-top: 30px;
-    }
   
 }
