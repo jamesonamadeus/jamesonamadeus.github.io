@@ -219,3 +219,23 @@ a {
   transition: all .5s ease;
   width: auto;
   text-decoration: none; }
+  .nav-link:hover, .nav-link-active {
+    border-left: #4834d4 solid 2px;
+    padding-left: 30px; }
+
+.nav .brgr-menu {
+  background: #4834d4;
+  border: #4834d4 solid 2px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  height: 2px;
+  padding-left: 5px;
+  padding-top: 5px;
+  position: relative;
+  transition: all .5 ease;
+  user-select: none;
+  width: 5px;
+  z-index: 12; }
+  .nav .brgr-menu:hover {
+    border: #4834d4 solid 2px; }

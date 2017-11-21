@@ -82,6 +82,32 @@
         transition: all .5s ease;
         width: auto;
         text-decoration: none;
+
+        &:hover,
+        &-active {
+          border-left: $color-primary solid 2px;
+          padding-left: 30px;
+        }
+    }
+
+    .brgr-menu {
+        background: $color-primary;
+        border: $color-primary solid 2px;
+        border-radius: 50%;
+        cursor: pointer;
+        display: inline-block;
+        height: 2px;
+        padding-left: 5px;
+        padding-top: 5px;
+        position: relative;
+        transition: all .5 ease;
+        user-select: none;
+        width: 5px;
+        z-index: 12;
+      
+        &:hover {
+            border: $color-primary  solid 2px;
+        }
     }
 
 
