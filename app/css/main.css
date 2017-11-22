@@ -244,15 +244,37 @@ a {
   background: #4834d4;
   position: relative;
   transition: all .5 ease; }
-  .nav .brgr-bun--top {
+  .nav .brgr-bun-top {
     height: 2px;
     top: 0;
     width: 25px; }
-  .nav .brgr-bun--mid {
+  .nav .brgr-bun-mid {
     height: 2px;
     top: 8px;
     width: 25px; }
-  .nav .brgr-bun--bottom {
+  .nav .brgr-bun-bot {
     height: 2px;
     top: 16px;
     width: 25px; }
+
+.nav .brgr-container {
+  height: 60px;
+  left: 30px;
+  position: absolute;
+  top: 30px; }
+  .nav .brgr-container:hover:not(.open) .brgr-bun-top,
+  .nav .brgr-container:hover:not(.open) .brgr-bun-mid,
+  .nav .brgr-container:hover:not(.open) .brgr-bun-bot {
+    background: #4834d4; }
+  .nav .brgr-container.open .brgr-main {
+    border: #4834d4 solid 25px; }
+  .nav .brgr-container.open .brgr-bun-top {
+    background: #4834d4;
+    top: 9px;
+    transform: rotate(45deg); }
+  .nav .brgr-container.open .brgr-bun-mid {
+    opacity: 0; }
+  .nav .brgr-container.open .brgr-bun-bot {
+    background: #4834d4;
+    top: 5px;
+    transform: rotate(-45deg); }

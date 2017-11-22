@@ -9,8 +9,6 @@
     }
 }
 
-
-
 @keyframes slideOutLeft {
     0% {
         transform: translate3d(0, 0, 0);
@@ -116,23 +114,62 @@
             position: relative;
             transition: all .5 ease;
         
-            &--top {
+            &-top {
                 height: 2px;
                 top: 0;
                 width: 25px;
             }
         
-            &--mid {
+            &-mid {
                 height: 2px;
                 top: 8px;
                 width: 25px;
             }
         
-            &--bottom {
+            &-bot {
                 height: 2px;
                 top: 16px;
                 width: 25px;
             }
         }
+
+        &-container {
+            height: 60px;
+            left: 30px;
+            position: absolute;
+            top: 30px;
+          
+            &:hover:not(.open) {
+                .brgr-bun-top,
+                .brgr-bun-mid,
+                .brgr-bun-bot {
+                    background: $color-primary;
+                }
+            }
+          
+            &.open {
+                .brgr-main {
+                    border: $color-primary solid 25px;
+                }
+            
+                .brgr-bun-top {
+                    background: $color-primary;
+                    top: 9px;
+                    transform: rotate(45deg);
+                }
+            
+                .brgr-bun-mid {
+                    opacity: 0;
+                }
+            
+                .brgr-bun-bot {
+                    background: $color-primary;
+                    top: 5px;
+                    transform: rotate(-45deg);
+                }
+            
+            }
+        }
     }
 }
+
