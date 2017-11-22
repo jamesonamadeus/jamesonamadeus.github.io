@@ -90,26 +90,49 @@
         }
     }
 
-    .brgr-menu {
-        background: $color-primary;
-        border: $color-primary solid 2px;
-        border-radius: 50%;
-        cursor: pointer;
-        display: inline-block;
-        height: 2px;
-        padding-left: 5px;
-        padding-top: 5px;
-        position: relative;
-        transition: all .5 ease;
-        user-select: none;
-        width: 5px;
-        z-index: 12;
-      
-        &:hover {
-            border: $color-primary  solid 2px;
+    .brgr {
+        &-menu {
+            background: $color-primary;
+            border: $color-primary solid 2px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: inline-block;
+            height: 2px;
+            padding-left: 5px;
+            padding-top: 5px;
+            position: relative;
+            transition: all .5 ease;
+            user-select: none;
+            width: 5px;
+            z-index: 12;
+        
+            &:hover {
+                border: $color-primary  solid 2px;
+            }
+        }
+
+        &-bun {
+            background: $color-primary;
+            position: relative;
+            transition: all .5 ease;
+        
+            &--top {
+                height: 2px;
+                top: 0;
+                width: 25px;
+            }
+        
+            &--mid {
+                height: 2px;
+                top: 8px;
+                width: 25px;
+            }
+        
+            &--bottom {
+                height: 2px;
+                top: 16px;
+                width: 25px;
+            }
         }
     }
-
-
-  
 }

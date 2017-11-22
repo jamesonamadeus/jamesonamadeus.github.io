@@ -239,3 +239,20 @@ a {
   z-index: 12; }
   .nav .brgr-menu:hover {
     border: #4834d4 solid 2px; }
+
+.nav .brgr-bun {
+  background: #4834d4;
+  position: relative;
+  transition: all .5 ease; }
+  .nav .brgr-bun--top {
+    height: 2px;
+    top: 0;
+    width: 25px; }
+  .nav .brgr-bun--mid {
+    height: 2px;
+    top: 8px;
+    width: 25px; }
+  .nav .brgr-bun--bottom {
+    height: 2px;
+    top: 16px;
+    width: 25px; }
