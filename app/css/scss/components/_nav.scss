@@ -25,6 +25,9 @@
 //Nav Variables
 $brgr-height: 30px;
 $brgr-border-width: 2px;
+$brgr-margin: 30px;
+$brgr-bun-width: 25px;
+$brgr-bun-height: $brgr-border-width;
 
 
 .nav {
@@ -82,7 +85,7 @@ $brgr-border-width: 2px;
         border-left: $color-primary solid $brgr-border-width;
         color: $color-primary;
         font-weight: 500;
-        margin-left: 30px;
+        margin-left: $brgr-margin;
         text-decoration: none;
         transition: all .5s ease;
         width: auto;
@@ -120,30 +123,31 @@ $brgr-border-width: 2px;
             background: $color-primary;
             position: relative;
             transition: all .5 ease;
+
+            &-top,
+            &-mid,
+            &-bot {
+                height: $brgr-bun-height;
+                width: $brgr-bun-width;
+            }
         
             &-top {
-                height: 2px;
                 top: 0;
-                width: 25px;
             }
         
             &-mid {
-                height: 2px;
                 top: 8px;
-                width: 25px;
             }
         
             &-bot {
-                height: 2px;
                 top: 16px;
-                width: 25px;
             }
         }
 
         &-brand {
             color: $color-primary;
             font-size: 18px;
-            margin-left: 30px;
+            margin-left: $brgr-margin;
             position: relative;
             text-decoration: none;
             top: -20px;
@@ -153,9 +157,9 @@ $brgr-border-width: 2px;
 
         &-container {
             height: $brgr-height;
-            left: 30px;
+            left: $brgr-margin;
             position: absolute;
-            top: 30px;
+            top: $brgr-margin;
           
             &:hover:not(.open) {
                 .brgr-bun-top,
