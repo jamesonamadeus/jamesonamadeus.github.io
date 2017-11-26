@@ -32,9 +32,11 @@ $brgr-bun-height: $brgr-border-width;
 $brgr-font-size: 20px;
 $brgr-text-pad: $brgr-margin;
 
-
 $brgr-transition-speed: .5s;
-$brgr-transition: $brgr-transition;
+$brgr-transition: all $brgr-transition-speed ease;
+
+$brgr-txt-pad-top: ($brgr-margin * 2 + $brgr-height); //Top margin for first link element
+
 
 
 .nav {
@@ -149,17 +151,6 @@ $brgr-transition: $brgr-transition;
             &-bot {
                 top: 16px;
             }
-        }
-
-        &-brand {
-            @include font-size(18);
-            color: $color-primary;
-            margin-left: $brgr-text-pad;
-            position: relative;
-            text-decoration: none;
-            top: -20px;
-            transition: all .5 ease;
-            z-index: 20;
         }
 
         &-container {

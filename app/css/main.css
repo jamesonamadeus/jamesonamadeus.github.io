@@ -189,7 +189,7 @@ a {
   .nav-list.open {
     visibility: visible; }
     .nav-list.open li {
-      animation-duration: .4s;
+      animation-duration: 0.5s;
       animation-fill-mode: both;
       animation-name: slideInLeft; }
 
@@ -203,7 +203,7 @@ a {
   .nav-item:first-child {
     padding-top: 30px; }
   .nav-item:not(.open) {
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     animation-fill-mode: both;
     animation-name: slideOutLeft; }
 
@@ -243,7 +243,7 @@ a {
 .nav .brgr-bun {
   background: #4834d4;
   position: relative;
-  transition: all .5 ease; }
+  transition: all 0.5s ease; }
   .nav .brgr-bun-top, .nav .brgr-bun-mid, .nav .brgr-bun-bot {
     height: 2px;
     width: 25px; }
@@ -253,16 +253,6 @@ a {
     top: 8px; }
   .nav .brgr-bun-bot {
     top: 16px; }
-
-.nav .brgr-brand {
-  color: #4834d4;
-  font-size: 18px;
-  margin-left: 30px;
-  position: relative;
-  text-decoration: none;
-  top: -20px;
-  transition: all .5 ease;
-  z-index: 20; }
 
 .nav .brgr-container {
   height: 30px;
