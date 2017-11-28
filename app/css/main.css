@@ -237,17 +237,17 @@ a {
     border: black solid 2px; }
 
 .nav .brgr-bun {
-  background: #4834d4;
+  background: black;
   position: relative;
   transition: all 0.5s ease; }
-  .nav .brgr-bun-top, .nav .brgr-bun-mid, .nav .brgr-bun-bot {
+  .nav .brgr-bun--top, .nav .brgr-bun--mid, .nav .brgr-bun--bot {
     height: 2px;
     width: 25px; }
-  .nav .brgr-bun-top {
+  .nav .brgr-bun--top {
     top: 0; }
-  .nav .brgr-bun-mid {
+  .nav .brgr-bun--mid {
     top: 8px; }
-  .nav .brgr-bun-bot {
+  .nav .brgr-bun--bot {
     top: 16px; }
 
 .nav .brgr-contain {
@@ -255,19 +255,19 @@ a {
   left: 30px;
   position: absolute;
   top: 30px; }
-  .nav .brgr-contain:hover:not(.open) .brgr-bun-top,
-  .nav .brgr-contain:hover:not(.open) .brgr-bun-mid,
-  .nav .brgr-contain:hover:not(.open) .brgr-bun-bot {
+  .nav .brgr-contain:hover:not(.open) .brgr-bun--top,
+  .nav .brgr-contain:hover:not(.open) .brgr-bun--mid,
+  .nav .brgr-contain:hover:not(.open) .brgr-bun--bot {
     background: #4834d4; }
   .nav .brgr-contain.open .brgr-main {
     border: #4834d4 solid 2px; }
-  .nav .brgr-contain.open .brgr-bun-top {
+  .nav .brgr-contain.open .brgr-bun--top {
     background: #4834d4;
     top: 9px;
     transform: rotate(45deg); }
-  .nav .brgr-contain.open .brgr-bun-mid {
+  .nav .brgr-contain.open .brgr-bun--mid {
     opacity: 0; }
-  .nav .brgr-contain.open .brgr-bun-bot {
+  .nav .brgr-contain.open .brgr-bun--bot {
     background: #4834d4;
     top: 5px;
     transform: rotate(-45deg); }

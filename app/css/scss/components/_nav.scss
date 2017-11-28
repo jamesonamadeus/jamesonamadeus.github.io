@@ -35,8 +35,7 @@ $brgr-text-pad: $brgr-margin;
 $brgr-transition-speed: .5s;
 $brgr-transition: all $brgr-transition-speed ease;
 
-$brgr-txt-pad-top: ($brgr-margin * 2 + $brgr-height); //Top margin for first link element
-
+$brgr-txt-pad-top: ($brgr-margin * 2 + $brgr-height);
 
 
 .nav {
@@ -119,28 +118,29 @@ $brgr-txt-pad-top: ($brgr-margin * 2 + $brgr-height); //Top margin for first lin
         }
 
         &-bun {
-            background: $color-primary;
+            background: black;
             position: relative;
             transition: $brgr-transition;
-
-            &-top,
-            &-mid,
-            &-bot {
+    
+            &--top,
+            &--mid,
+            &--bot {
                 height: $brgr-bun-height;
                 width: $brgr-bun-width;
             }
-        
-            &-top {
+          
+            &--top {
                 top: 0;
             }
-        
-            &-mid {
+          
+            &--mid {
                 top: 8px;
             }
-        
-            &-bot {
+          
+            &--bot {
                 top: 16px;
             }
+    
         }
 
         &-contain {
@@ -150,9 +150,9 @@ $brgr-txt-pad-top: ($brgr-margin * 2 + $brgr-height); //Top margin for first lin
             top: $brgr-margin;
           
             &:hover:not(.open) {
-                .brgr-bun-top,
-                .brgr-bun-mid,
-                .brgr-bun-bot {
+                .brgr-bun--top,
+                .brgr-bun--mid,
+                .brgr-bun--bot {
                     background: $color-primary;
                 }
             }
@@ -162,17 +162,17 @@ $brgr-txt-pad-top: ($brgr-margin * 2 + $brgr-height); //Top margin for first lin
                     border: $color-primary solid $brgr-border-width;
                 }
             
-                .brgr-bun-top {
+                .brgr-bun--top {
                     background: $color-primary;
                     top: 9px;
                     transform: rotate(45deg);
                 }
             
-                .brgr-bun-mid {
+                .brgr-bun--mid {
                     opacity: 0;
                 }
             
-                .brgr-bun-bot {
+                .brgr-bun--bot {
                     background: $color-primary;
                     top: 5px;
                     transform: rotate(-45deg);
