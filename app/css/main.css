@@ -204,37 +204,37 @@ a {
     animation-name: slideOutLeft; }
 
 .nav-link {
-  font-size: 18px !important;
-  font-size: 1.125rem !important;
+  font-size: 20px !important;
+  font-size: 1.25rem !important;
   background: transparent;
-  border-left: #4834d4 solid 2px;
-  color: #4834d4;
-  font-weight: 500;
+  border-left: white solid 2px;
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
   margin-left: 30px;
   text-decoration: none;
-  transition: all .5s ease;
-  width: auto;
-  text-decoration: none; }
-  .nav-link:hover, .nav-link-active {
-    border-left: #4834d4 solid 2px;
+  transition: all 0.5s ease;
+  width: auto; }
+  .nav-link:hover, .nav-link--active {
+    border-left: black solid 2px;
     padding-left: 30px; }
 
 .nav .brgr-menu {
-  background: #4834d4;
-  border: #4834d4 solid 2px;
+  background: transparent;
+  border: black solid 2px;
   border-radius: 50%;
   cursor: pointer;
   display: inline-block;
   height: 30px;
-  padding-left: 5px;
-  padding-top: 5px;
+  padding-left: 16px;
+  padding-top: 17px;
   position: relative;
-  transition: all .5 ease;
+  transition: all 0.5s ease;
   user-select: none;
   width: 30px;
   z-index: 20; }
   .nav .brgr-menu:hover {
-    border: #4834d4 solid 2px; }
+    border: black solid 2px; }
 
 .nav .brgr-bun {
   background: #4834d4;
@@ -250,24 +250,24 @@ a {
   .nav .brgr-bun-bot {
     top: 16px; }
 
-.nav .brgr-container {
+.nav .brgr-contain {
   height: 30px;
   left: 30px;
   position: absolute;
   top: 30px; }
-  .nav .brgr-container:hover:not(.open) .brgr-bun-top,
-  .nav .brgr-container:hover:not(.open) .brgr-bun-mid,
-  .nav .brgr-container:hover:not(.open) .brgr-bun-bot {
+  .nav .brgr-contain:hover:not(.open) .brgr-bun-top,
+  .nav .brgr-contain:hover:not(.open) .brgr-bun-mid,
+  .nav .brgr-contain:hover:not(.open) .brgr-bun-bot {
     background: #4834d4; }
-  .nav .brgr-container.open .brgr-main {
+  .nav .brgr-contain.open .brgr-main {
     border: #4834d4 solid 2px; }
-  .nav .brgr-container.open .brgr-bun-top {
+  .nav .brgr-contain.open .brgr-bun-top {
     background: #4834d4;
     top: 9px;
     transform: rotate(45deg); }
-  .nav .brgr-container.open .brgr-bun-mid {
+  .nav .brgr-contain.open .brgr-bun-mid {
     opacity: 0; }
-  .nav .brgr-container.open .brgr-bun-bot {
+  .nav .brgr-contain.open .brgr-bun-bot {
     background: #4834d4;
     top: 5px;
     transform: rotate(-45deg); }

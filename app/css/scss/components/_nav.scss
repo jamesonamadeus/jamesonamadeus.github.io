@@ -79,42 +79,42 @@ $brgr-txt-pad-top: ($brgr-margin * 2 + $brgr-height); //Top margin for first lin
     }
 
     &-link {
-        @include font-size(18);
+        @include font-size(20);
         background: transparent;
-        border-left: $color-primary solid $brgr-border-width;
-        color: $color-primary;
-        font-weight: 500;
+        border-left: white solid $brgr-border-width;
+        color: black;
+        font-size: $brgr-font-size;
+        font-weight: 400;
         margin-left: $brgr-margin;
         text-decoration: none;
-        transition: all .5s ease;
+        transition: $brgr-transition;
         width: auto;
-        text-decoration: none;
-
+      
         &:hover,
-        &-active {
-          border-left: $color-primary solid $brgr-border-width;
+        &--active {
+          border-left: black solid $brgr-border-width;
           padding-left: $brgr-text-pad;
         }
     }
 
     .brgr {
         &-menu {
-            background: $color-primary;
-            border: $color-primary solid $brgr-border-width;
+            background: transparent;
+            border: black solid $brgr-border-width;
             border-radius: 50%;
             cursor: pointer;
             display: inline-block;
             height: $brgr-height;
-            padding-left: 5px;
-            padding-top: 5px;
+            padding-left: 16px;
+            padding-top: 17px;
             position: relative;
-            transition: all .5 ease;
+            transition: $brgr-transition;
             user-select: none;
             width: $brgr-height;
             z-index: 20;
-        
+          
             &:hover {
-                border: $color-primary  solid $brgr-border-width;
+              border: black solid $brgr-border-width;
             }
         }
 
@@ -143,7 +143,7 @@ $brgr-txt-pad-top: ($brgr-margin * 2 + $brgr-height); //Top margin for first lin
             }
         }
 
-        &-container {
+        &-contain {
             height: $brgr-height;
             left: $brgr-margin;
             position: absolute;
