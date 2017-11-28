@@ -2,7 +2,7 @@
 
 @keyframes slideInLeft {
     0% {
-        transform: translate3d(-250px, 0, 0);
+        transform: translate3d(250px, 0, 0);
         visibility: visible;
     }
 
@@ -17,7 +17,7 @@
     }
 
     100% {
-        transform: translate3d(-250px, 0, 0);
+        transform: translate3d(250px, 0, 0);
         visibility: hidden;
     }
 }
@@ -37,6 +37,8 @@ $brgr-text-pad-top: ($brgr-margin + $brgr-height);
 .nav {
     &-list {
         position: absolute;
+        right: 0;
+        padding-right: 40px;
         z-index: 10;
 
         &:not(.open) {
@@ -58,7 +60,7 @@ $brgr-text-pad-top: ($brgr-margin + $brgr-height);
         color: lighten($black, 10%);
         list-style-type: none;
         padding: 10px;
-        text-align: left;
+        text-align: right;
         transform: translateX(-250px);
 
         &:first-child {
@@ -74,19 +76,19 @@ $brgr-text-pad-top: ($brgr-margin + $brgr-height);
 
     &-link {
         background: transparent;
-        border-left: white solid $brgr-border-width;
+        border-right: white solid $brgr-border-width;
         color: lighten($black, 10%);
         font-size: $brgr-font-size;
         font-weight: 400;
-        margin-left: $brgr-margin;
+        margin-right: $brgr-margin;
         text-decoration: none;
         transition: $brgr-transition;
         width: auto;
       
         &:hover,
         &--active {
-          border-left: lighten($black, 10%) solid $brgr-border-width;
-          padding-left: $brgr-text-pad;
+          border-right: lighten($black, 10%) solid $brgr-border-width;
+          padding-right: $brgr-text-pad;
         }
     }
 
@@ -97,8 +99,8 @@ $brgr-text-pad-top: ($brgr-margin + $brgr-height);
         cursor: pointer;
         display: inline-block;
         height: $brgr-height;
-        padding-left: 16px;
-        padding-top: 17px;
+        padding-left: 15px;
+        padding-top: 18px;
         position: relative;
         transition: $brgr-transition;
         user-select: none;
@@ -112,7 +114,7 @@ $brgr-text-pad-top: ($brgr-margin + $brgr-height);
 
     &-contain {
         height: $brgr-height;
-        left: $brgr-margin;
+        right: $brgr-margin;
         position: absolute;
         top: $brgr-margin;
       

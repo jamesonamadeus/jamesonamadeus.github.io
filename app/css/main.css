@@ -166,7 +166,7 @@ a {
 --------------------------------------------------------------------- */
 @keyframes slideInLeft {
   0% {
-    transform: translate3d(-250px, 0, 0);
+    transform: translate3d(250px, 0, 0);
     visibility: visible; }
   100% {
     transform: translate3d(0, 0, 0); } }
@@ -175,11 +175,13 @@ a {
   0% {
     transform: translate3d(0, 0, 0); }
   100% {
-    transform: translate3d(-250px, 0, 0);
+    transform: translate3d(250px, 0, 0);
     visibility: hidden; } }
 
 .nav-list {
   position: absolute;
+  right: 0;
+  padding-right: 40px;
   z-index: 10; }
   .nav-list:not(.open) {
     visibility: hidden; }
@@ -194,7 +196,7 @@ a {
   color: #2b2b2b;
   list-style-type: none;
   padding: 10px;
-  text-align: left;
+  text-align: right;
   transform: translateX(-250px); }
   .nav-item:first-child {
     padding-top: 90px; }
@@ -205,17 +207,17 @@ a {
 
 .nav-link {
   background: transparent;
-  border-left: white solid 2px;
+  border-right: white solid 2px;
   color: #2b2b2b;
   font-size: 30px;
   font-weight: 400;
-  margin-left: 30px;
+  margin-right: 30px;
   text-decoration: none;
   transition: all 0.5s ease;
   width: auto; }
   .nav-link:hover, .nav-link--active {
-    border-left: #2b2b2b solid 2px;
-    padding-left: 30px; }
+    border-right: #2b2b2b solid 2px;
+    padding-right: 30px; }
 
 .nav-menu {
   background: transparent;
@@ -224,8 +226,8 @@ a {
   cursor: pointer;
   display: inline-block;
   height: 60px;
-  padding-left: 16px;
-  padding-top: 17px;
+  padding-left: 15px;
+  padding-top: 18px;
   position: relative;
   transition: all 0.5s ease;
   user-select: none;
@@ -236,7 +238,7 @@ a {
 
 .nav-contain {
   height: 60px;
-  left: 30px;
+  right: 30px;
   position: absolute;
   top: 30px; }
   .nav-contain.open .nav-main {
