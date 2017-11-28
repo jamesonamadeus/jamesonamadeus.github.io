@@ -43,13 +43,7 @@ $brgr-txt-pad-top: ($brgr-margin * 2 + $brgr-height); //Top margin for first lin
     
     &-list {
         position: absolute;
-        top: 0;
-        left: 0;
-        // z-index: 11;
-
-        &:not(.open) {
-            visibility: hidden;
-        }
+        z-index: 10;
 
         &:not(.open) {
             visibility: hidden;
@@ -57,8 +51,8 @@ $brgr-txt-pad-top: ($brgr-margin * 2 + $brgr-height); //Top margin for first lin
 
         &.open {
             visibility: visible;
-    
-            li {
+
+            .nav-item {
                 animation-duration: $brgr-transition-speed;
                 animation-fill-mode: both;
                 animation-name: slideInLeft;
@@ -67,21 +61,17 @@ $brgr-txt-pad-top: ($brgr-margin * 2 + $brgr-height); //Top margin for first lin
     }
 
     &-item {
-        color: $color-primary;
+        color: black;
         list-style-type: none;
         padding: 10px;
-        text-align: right;
-        // transform: translateX(-250px);
-
-        a {
-            text-decoration: none;
-        }
+        text-align: left;
+        transform: translateX(-250px);
 
         &:first-child {
-            padding-top: 30px;
+            padding-top: $brgr-txt-pad-top;
         }
 
-        &:not(.open) {
+        &:not(.open){
             animation-duration: $brgr-transition-speed;
             animation-fill-mode: both;
             animation-name: slideOutLeft;
@@ -121,7 +111,7 @@ $brgr-txt-pad-top: ($brgr-margin * 2 + $brgr-height); //Top margin for first lin
             transition: all .5 ease;
             user-select: none;
             width: $brgr-height;
-            z-index: 12;
+            z-index: 20;
         
             &:hover {
                 border: $color-primary  solid $brgr-border-width;
