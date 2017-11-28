@@ -1,0 +1,22 @@
+.banner {
+    @include flexbox(flex);
+    @include justify-content(space-between);
+    @include align-items(center);
+    padding: 20px;
+
+    .logo {
+        &-heading {
+            @include font-size(28);
+            margin: 0;
+        }
+
+        &-contain {
+
+        }
+
+        &-main {
+            margin: 14px 10px 0;
+            width: 180px;
+        }
+    }
+}
