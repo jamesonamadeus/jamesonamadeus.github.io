@@ -1,5 +1,21 @@
-// font-family: 'Quicksand', sans-serif;
-// font-family: 'Asap', sans-serif;
-// font-family: 'Rajdhani', sans-serif;
-// font-family: 'Text Me One', sans-serif;
-// font-family: 'Chathura', sans-serif;
+.recent {
+    padding: 0 60px;
+
+    &-box {
+        @include transition(all 2 ease);
+        border: rgba(0, 0, 0, 0.03) solid 2px;
+        padding: 12px 20px;
+        cursor: pointer;
+
+        &-info {
+            padding: 0 40px;
+            max-width: 800px;
+        }
+
+        &:hover {
+            @include transition(all 2 ease);
+            border: rgba(0, 0, 0, 1) solid 2px;
+        }
+    }
+
+}

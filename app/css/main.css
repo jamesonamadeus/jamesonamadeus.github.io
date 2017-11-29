@@ -72,19 +72,19 @@ h5 {
   font-family: "Quicksand", sans-serif; }
 
 h1 {
-  font-size: 48px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 400;
   margin: 0 0 25px; }
 
 h2 {
-  font-size: 36px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 400;
   margin: 0 0 25px; }
 
 h3 {
-  font-size: 26px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   margin: 0 0 25px; }
@@ -290,6 +290,24 @@ a {
 .main {
   padding: 20px 30px; }
   .main h2 {
-    font-size: 24px !important;
-    font-size: 1.5rem !important;
-    font-family: 'Quicksand', sans-serif !important; }
+    margin-left: 40px; }
+
+.recent {
+  padding: 0 60px; }
+  .recent-box {
+    -webkit-transition: all 2 ease;
+    -moz-transition: all 2 ease;
+    -ms-transition: all 2 ease;
+    transition: all 2 ease;
+    border: rgba(0, 0, 0, 0.03) solid 2px;
+    padding: 12px 20px;
+    cursor: pointer; }
+    .recent-box-info {
+      padding: 0 40px;
+      max-width: 800px; }
+    .recent-box:hover {
+      -webkit-transition: all 2 ease;
+      -moz-transition: all 2 ease;
+      -ms-transition: all 2 ease;
+      transition: all 2 ease;
+      border: black solid 2px; }
