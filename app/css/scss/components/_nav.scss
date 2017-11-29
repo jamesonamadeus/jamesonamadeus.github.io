@@ -28,11 +28,11 @@ $brgr-border-width: 2px;
 $brgr-margin: 30px;
 $brgr-bun-width: 25px;
 $brgr-bun-height: $brgr-border-width;
-$brgr-font-size: 30px;
+$brgr-font-size: 22px;
 $brgr-text-pad: $brgr-margin;
 $brgr-transition-speed: .5s;
 $brgr-transition: all $brgr-transition-speed ease;
-$brgr-text-pad-top: ($brgr-margin + $brgr-height); 
+$brgr-text-pad-top: ($brgr-margin / 2 + $brgr-height); 
 
 .nav {
     &-list {
@@ -113,10 +113,6 @@ $brgr-text-pad-top: ($brgr-margin + $brgr-height);
     }
 
     &-contain {
-        // height: $brgr-height;
-        // right: $brgr-margin;
-        // position: absolute;
-        // top: $brgr-margin;
       
         &.open {
             .nav-main {
