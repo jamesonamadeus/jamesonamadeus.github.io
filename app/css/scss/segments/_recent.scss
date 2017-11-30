@@ -1,11 +1,25 @@
 .recent {
+    // @include transition(all .5 linear);
     padding: 0 60px;
 
     &-box {
-        @include transition(all 2 ease);
+        // @include transition(all .5 linear);
+        @include transition(color 800ms ease, background-color 800ms ease);
+        // -webkit-transition: color 1000ms linear, background-color 1000ms linear;
+        // -moz-transition: color 1000ms linear, background-color 1000ms linear;
+        // -o-transition: color 1000ms linear, background-color 1000ms linear;
+        // -ms-transition: color 1000ms linear, background-color 1000ms linear;
+        // transition: color background-color 1000ms linear, background-color 1000ms linear;
+        background-color: $white;
         border: rgba(0, 0, 0, 0.03) solid 2px;
         padding: 25px 20px;
         cursor: pointer;
+
+        &:hover,
+        &:focus {
+            color: white;
+            background-color: #75b2bf;
+        }
 
         &-contain {
             @include flexbox(inline-flex);
@@ -37,6 +51,7 @@
 
         &-tags {
             background: grey;
+            color: $white;
             border-radius: 15px;
             font-weight: 400;
             text-align: center;
