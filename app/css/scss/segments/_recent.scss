@@ -4,29 +4,30 @@
     &-box {
         @include transition(all 2 ease);
         border: rgba(0, 0, 0, 0.03) solid 2px;
-        padding: 20px;
+        padding: 25px 20px;
         cursor: pointer;
 
         &-contain {
             @include flexbox(inline-flex);
-            @include align-items(center);
+            @include align-items(flex-start);
         }
 
         h3 {
-            margin: 0 0 0 10px;
+            font-weight: 500;
+            margin: 0 0 15px 10px;
         }
 
         &-info {
-            padding: 0 30px 0 40px;
+            padding: 0 15px 0 10px;
             margin: 0 auto;
-            max-width: 680px;
+            width: 65%;
         }
 
         &-category {
             @include flexbox(inline-flex);
             @include flex-wrap(wrap);
             @include justify-content(flex-end);
-            max-width: 420px;
+            width: 35%;
         }
 
         &:hover {
@@ -37,6 +38,7 @@
         &-tags {
             background: grey;
             border-radius: 15px;
+            font-weight: 400;
             text-align: center;
             padding: 10px;      
             margin: 5px;
