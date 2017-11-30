@@ -1,5 +1,4 @@
 # Exclude stuff 
-dist 
 node_modules
 
 # Exclude hidden OS files
