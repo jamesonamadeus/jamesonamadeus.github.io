@@ -302,7 +302,8 @@ a {
     margin-left: 40px; }
 
 .recent {
-  padding: 0 60px; }
+  padding: 0 60px;
+  margin-bottom: 50px; }
   .recent-box {
     -webkit-transition: color 500ms ease, background-color 1200ms ease, border-color 1200ms ease;
     -moz-transition: color 500ms ease, background-color 1200ms ease, border-color 1200ms ease;
@@ -313,6 +314,8 @@ a {
     cursor: pointer; }
     .recent-box:first-child {
       border-radius: 10px 10px 0 0; }
+    .recent-box:last-child {
+      border-radius: 0 0 10px 10px; }
     .recent-box:hover, .recent-box:active {
       border: 3px solid #75b2bf;
       background: linear-gradient(330deg, #fc00ff, #00dbde);
@@ -383,3 +386,22 @@ a {
     background: linear-gradient(330deg, #fceabb, #f8b500);
     animation: animatedgradient 8s ease alternate infinite;
     background-size: 600% 600%; }
+  .recent-clients {
+    -webkit-transition: color 500ms ease, background-color 1200ms ease;
+    -moz-transition: color 500ms ease, background-color 1200ms ease;
+    -ms-transition: color 500ms ease, background-color 1200ms ease;
+    transition: color 500ms ease, background-color 1200ms ease;
+    background-color: #fff;
+    border: 3px solid #262626;
+    color: #262626;
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 40px auto;
+    max-width: 180px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none; }
+    .recent-clients:hover, .recent-clients:focus {
+      background-color: #262626;
+      color: #fff; }

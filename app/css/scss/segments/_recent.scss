@@ -1,5 +1,6 @@
 .recent {
     padding: 0 60px;
+    margin-bottom: 50px;
 
     &-box {
         @include transition(color 500ms ease, background-color 1200ms ease, border-color 1200ms ease);
@@ -9,6 +10,10 @@
 
         &:first-child {
             border-radius: 10px 10px 0 0;
+        }
+
+        &:last-child {
+            border-radius: 0 0 10px 10px;
         }
 
         &:hover,
@@ -86,6 +91,27 @@
         background: linear-gradient(330deg,#fceabb, #f8b500);
         animation: animatedgradient 8s ease alternate infinite;  
         background-size: 600% 600%;
+    }
+
+    &-clients {
+        @include transition(color 500ms ease, background-color 1200ms ease);
+        background-color: $white;
+        border: 3px solid lighten(black, 15%);
+        color: lighten(black, 15%);
+        display: block;
+        font-size: 20px;
+        font-weight: 400;
+        margin: 40px auto;
+        max-width: 180px;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            background-color: lighten(black, 15%);
+            color: $white;
+        }
     }
 
 }
