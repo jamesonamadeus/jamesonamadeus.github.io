@@ -2,7 +2,7 @@
     padding: 0 60px;
 
     &-box {
-        @include transition(color 1000ms ease, background-color 1200ms ease, border-color 1200ms ease);
+        @include transition(color 500ms ease, background-color 1200ms ease, border-color 1200ms ease);
         border: 3px solid $white;
         padding: 25px 20px;
         cursor: pointer;
@@ -55,8 +55,9 @@
         }
 
         &-tags {
-            background: grey;
-            color: $white;
+            background: white;
+            color: lighten($black, 15%);
+            border: 2px solid lighten(black, 15%);
             border-radius: 15px;
             font-weight: 400;
             text-align: center;
@@ -76,6 +77,13 @@
     &-accordance {
         background-color: lighten(#1E824C, 10%);
         background: linear-gradient(330deg,#1D976C, #93F9B9);
+        animation: animatedgradient 8s ease alternate infinite;  
+        background-size: 600% 600%;
+    }
+
+    &-bitcoin {
+        background-color: lighten(#f8b500, 10%);
+        background: linear-gradient(330deg,#fceabb, #f8b500);
         animation: animatedgradient 8s ease alternate infinite;  
         background-size: 600% 600%;
     }
