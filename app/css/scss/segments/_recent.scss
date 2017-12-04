@@ -4,7 +4,8 @@
 
     &-box {
         @include transition(color 500ms ease, background-color 1200ms ease, border-color 1200ms ease);
-        border: 3px solid $white;
+        border: 2px solid lighten($black, 15%);
+        border-bottom: 0;
         padding: 25px 20px;
         cursor: pointer;
 
@@ -18,17 +19,10 @@
 
         &:hover,
         &:active {
-            border: 3px solid #75b2bf;
-            background: linear-gradient(330deg,#fc00ff,#00dbde) !important;
-            animation: animatedgradient 10s ease alternate infinite !important;  
-            background-size: 800% 800% !important;
 
             .recent-box-tags,
             .recent-box-summary,
             .recent-box-logo {
-                background: linear-gradient(330deg,#fc00ff,#00dbde) !important;
-                animation: animatedgradient 10s ease alternate infinite !important;  
-                background-size: 800% 800% !important;
                 border: 1px solid $white;
                 color: $white;
             }
@@ -36,7 +30,7 @@
 
         &-contain {
             @include flexbox(inline-flex);
-            @include align-items(flex-start);
+            @include align-items(center);
         }
 
         h3 {
@@ -45,9 +39,8 @@
 
             img {
                 @include transition(color 500ms ease, background-color 1200ms ease, border-color 1200ms ease);
-                background: $white;
                 border-radius: 10px;
-                border: 1px solid lighten($black, 15%);
+                border: 1px solid lighten($white, 15%);
                 padding: 5px;
                 width: 180px;
             }
@@ -67,11 +60,10 @@
         &-summary {
             @include transition(color 500ms ease, background-color 1200ms ease, border-color 1200ms ease);
             text-align: left;
-            background: $white;
             padding: 15px;
             margin: 0 auto;
             border-radius: 10px;
-            border: 1px solid lighten($black, 15%);
+            border: 1px solid lighten($white, 15%);
         }
 
         &-category {
@@ -87,9 +79,8 @@
 
         &-tags {
             @include transition(color 500ms ease, background-color 1200ms ease, border-color 1200ms ease);
-            background: white;
             color: lighten($black, 15%);
-            border: 1px solid lighten(black, 15%);
+            border: 1px solid lighten($white, 15%);
             border-radius: 15px;
             font-weight: 400;
             text-align: center;
@@ -100,17 +91,24 @@
     }
 
     &-wemote {
-        background-color: lighten(#75b2bf, 10%);
-        background: linear-gradient(330deg,#B2FEFA, #0ED2F7);
-        animation: animatedgradient 8s ease alternate infinite;  
-        background-size: 600% 600%;
+        &:hover,
+        &:active {
+            border: 2px solid #75b2bf;
+            border-bottom: 0;
+            animation: animatedgradient 10s ease alternate infinite !important;  
+            background: linear-gradient(330deg,#fc00ff,#00dbde) !important;
+            background-size: 800% 800% !important;
+        }
     }
 
     &-accordance {
-        background-color: lighten(#1E824C, 10%);
-        background: linear-gradient(330deg,#1D976C, #93F9B9);
-        animation: animatedgradient 8s ease alternate infinite;  
-        background-size: 600% 600%;
+        &:hover,
+        &:active {
+            border: 2px solid #00C9FF;
+            animation: animatedgradient 10s ease alternate infinite !important;
+            background: linear-gradient(330deg,#00C9FF,#92FE9D) !important;
+            background-size: 800% 800% !important;
+        }
     }
 
     &-bitcoin {
