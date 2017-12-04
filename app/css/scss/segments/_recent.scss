@@ -19,10 +19,19 @@
         &:hover,
         &:active {
             border: 3px solid #75b2bf;
-            background: linear-gradient(330deg,#fc00ff,#00dbde);
-            animation: animatedgradient 10s ease alternate infinite;  
-            background-size: 800% 800%;
-            color: $white;
+            background: linear-gradient(330deg,#fc00ff,#00dbde) !important;
+            animation: animatedgradient 10s ease alternate infinite !important;  
+            background-size: 800% 800% !important;
+
+            .recent-box-tags,
+            .recent-box-summary,
+            .recent-box-logo {
+                background: linear-gradient(330deg,#fc00ff,#00dbde) !important;
+                animation: animatedgradient 10s ease alternate infinite !important;  
+                background-size: 800% 800% !important;
+                border: 1px solid $white;
+                color: $white;
+            }
         }
 
         &-contain {
@@ -31,8 +40,21 @@
         }
 
         h3 {
-            font-weight: 500;
-            margin: 0 0 15px 10px;
+            margin: 0 auto;
+            text-align: center;
+
+            img {
+                @include transition(color 500ms ease, background-color 1200ms ease, border-color 1200ms ease);
+                background: $white;
+                border-radius: 10px;
+                border: 1px solid lighten($black, 15%);
+                padding: 5px;
+                width: 180px;
+            }
+        }
+
+        p {
+            @include font-size(18);
             text-align: center;
         }
 
@@ -43,9 +65,13 @@
         }
 
         &-summary {
+            @include transition(color 500ms ease, background-color 1200ms ease, border-color 1200ms ease);
             text-align: left;
-            padding: 0 15px 0 10px;
+            background: $white;
+            padding: 15px;
             margin: 0 auto;
+            border-radius: 10px;
+            border: 1px solid lighten($black, 15%);
         }
 
         &-category {
@@ -60,9 +86,10 @@
         }
 
         &-tags {
+            @include transition(color 500ms ease, background-color 1200ms ease, border-color 1200ms ease);
             background: white;
             color: lighten($black, 15%);
-            border: 2px solid lighten(black, 15%);
+            border: 1px solid lighten(black, 15%);
             border-radius: 15px;
             font-weight: 400;
             text-align: center;
