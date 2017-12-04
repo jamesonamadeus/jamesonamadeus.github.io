@@ -4,8 +4,6 @@
 
     &-box {
         @include transition(color 500ms ease, background-color 1200ms ease, border-color 1200ms ease);
-        border: 2px solid lighten($black, 15%);
-        border-bottom: 0;
         padding: 25px 20px;
         cursor: pointer;
 
@@ -26,6 +24,10 @@
                 border: 1px solid $white;
                 color: $white;
             }
+
+            .recent-box-logo {
+                background: $white;
+            }
         }
 
         &-contain {
@@ -35,6 +37,7 @@
 
         h3 {
             margin: 0 auto;
+            min-height: 80px;
             text-align: center;
 
             img {
@@ -91,6 +94,9 @@
     }
 
     &-wemote {
+        border: 2px solid lighten($black, 15%);
+        border-bottom: 0;
+
         &:hover,
         &:active {
             border: 2px solid #75b2bf;
@@ -102,9 +108,12 @@
     }
 
     &-accordance {
+        border: 2px solid lighten($black, 15%);
+        border-bottom: 0;
         &:hover,
         &:active {
-            border: 2px solid #00C9FF;
+            border: 2px solid darken(#92FE9D, 20%);
+            border-bottom: 0;
             animation: animatedgradient 10s ease alternate infinite !important;
             background: linear-gradient(330deg,#00C9FF,#92FE9D) !important;
             background-size: 800% 800% !important;
@@ -112,10 +121,14 @@
     }
 
     &-bitcoin {
-        background-color: lighten(#f8b500, 10%);
-        background: linear-gradient(330deg,#fceabb, #f8b500);
-        animation: animatedgradient 8s ease alternate infinite;  
-        background-size: 600% 600%;
+        border: 2px solid lighten($black, 15%);
+        &:hover,
+        &:active {
+            border: 2px solid darken(#f8b500, 20%);
+            animation: animatedgradient 10s ease alternate infinite !important;
+            background: linear-gradient(330deg,#fceabb, #f8b500) !important;
+            background-size: 800% 800% !important;
+        }
     }
 
     &-clients {
