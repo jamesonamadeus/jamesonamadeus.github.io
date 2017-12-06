@@ -2,6 +2,18 @@
     padding: 20px 30px;
 
     h2 {
-        margin-left: 40px;
+        margin: 20px;
     }
+}
+
+@media only screen and (max-width: $break-med) {
+    .main {
+        padding: 0 30px;
+
+        h2 {
+            margin: 20px 0;
+        }
+
+    }
+
 }

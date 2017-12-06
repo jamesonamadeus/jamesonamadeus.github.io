@@ -115,7 +115,7 @@ a {
 // Responsive styles if needed
 // @include responsive($big-break) {
 // }
-@include responsive($small-break) {
+@include responsive($break-sm) {
     body {
     font-size: 14px;
     }

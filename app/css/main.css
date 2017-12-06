@@ -189,93 +189,86 @@ a {
     transform: translate3d(250px, 0, 0);
     visibility: hidden; } }
 
-.nav-list {
-  position: absolute;
-  right: 0;
-  padding-right: 40px;
-  z-index: 10; }
-  .nav-list:not(.open) {
-    visibility: hidden; }
-  .nav-list.open {
-    visibility: visible; }
-    .nav-list.open .nav-item {
+.nav {
+  background-color: #fff; }
+  .nav-list {
+    background-color: #fff;
+    border-radius: 20px;
+    position: absolute;
+    right: 0;
+    z-index: 10; }
+    .nav-list:not(.open) {
+      visibility: hidden; }
+    .nav-list.open {
+      visibility: visible; }
+      .nav-list.open .nav-item {
+        animation-duration: 0.5s;
+        animation-fill-mode: both;
+        animation-name: slideInLeft; }
+  .nav-item {
+    color: #2b2b2b;
+    list-style-type: none;
+    padding: 10px;
+    text-align: right;
+    transform: translateX(-250px); }
+    .nav-item:first-child {
+      padding-top: 75px; }
+    .nav-item:not(.open) {
       animation-duration: 0.5s;
       animation-fill-mode: both;
-      animation-name: slideInLeft; }
-
-.nav-item {
-  color: #2b2b2b;
-  list-style-type: none;
-  padding: 10px;
-  text-align: right;
-  transform: translateX(-250px); }
-  .nav-item:first-child {
-    padding-top: 75px; }
-  .nav-item:not(.open) {
-    animation-duration: 0.5s;
-    animation-fill-mode: both;
-    animation-name: slideOutLeft; }
-
-.nav-link {
-  background: transparent;
-  border-right: white solid 2px;
-  color: #2b2b2b;
-  font-size: 22px;
-  font-weight: 400;
-  margin-right: 30px;
-  text-decoration: none;
-  transition: all 0.5s ease;
-  width: auto; }
-  .nav-link:hover, .nav-link--active {
-    border-right: #2b2b2b solid 2px;
-    padding-right: 30px; }
-
-.nav-menu {
-  background: transparent;
-  border: transparent solid 2px;
-  border-radius: 50%;
-  cursor: pointer;
-  display: inline-block;
-  height: 60px;
-  padding-left: 15px;
-  padding-top: 18px;
-  position: relative;
-  transition: all 0.5s ease;
-  user-select: none;
-  width: 60px;
-  z-index: 20; }
-  .nav-menu:hover {
+      animation-name: slideOutLeft; }
+  .nav-link {
+    background: #fff;
+    border-right: white solid 2px;
+    color: #2b2b2b;
+    font-size: 22px;
+    font-weight: 400;
+    margin-right: 30px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    width: auto; }
+    .nav-link:hover, .nav-link--active {
+      border-right: #2b2b2b solid 2px;
+      padding-right: 30px; }
+  .nav-menu {
+    background: transparent;
+    border: black solid 2px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    height: 60px;
+    padding-left: 15px;
+    padding-top: 18px;
+    position: relative;
+    transition: all 0.5s ease;
+    user-select: none;
+    width: 60px;
+    z-index: 20; }
+  .nav-contain.open .nav-main {
     border: #2b2b2b solid 2px; }
-
-.nav-contain.open .nav-main {
-  border: #2b2b2b solid 2px; }
-
-.nav-contain.open .nav-bun--top {
-  background: blighten(#111, 10%) lack;
-  top: 9px;
-  transform: rotate(45deg); }
-
-.nav-contain.open .nav-bun--mid {
-  opacity: 0; }
-
-.nav-contain.open .nav-bun--bot {
-  background: #2b2b2b;
-  top: 5px;
-  transform: rotate(-45deg); }
-
-.nav-bun {
-  background: #2b2b2b;
-  position: relative;
-  transition: all 0.5s ease; }
-  .nav-bun--top, .nav-bun--mid, .nav-bun--bot {
-    height: 2px;
-    width: 25px; }
-  .nav-bun--top {
-    top: 0; }
-  .nav-bun--mid {
-    top: 8px; }
-  .nav-bun--bot {
-    top: 16px; }
+  .nav-contain.open .nav-bun--top {
+    background: blighten(#111, 10%) lack;
+    top: 9px;
+    transform: rotate(45deg); }
+  .nav-contain.open .nav-bun--mid {
+    opacity: 0; }
+  .nav-contain.open .nav-bun--bot {
+    background: #2b2b2b;
+    top: 5px;
+    transform: rotate(-45deg); }
+  .nav-bun {
+    background: #2b2b2b;
+    position: relative;
+    transition: all 0.5s ease; }
+    .nav-bun--top, .nav-bun--mid, .nav-bun--bot {
+      height: 2px;
+      width: 25px; }
+    .nav-bun--top {
+      top: 0; }
+    .nav-bun--mid {
+      top: 8px; }
+    .nav-bun--bot {
+      top: 16px; }
 
 .banner {
   display: -ms-flexbox;
@@ -299,17 +292,27 @@ a {
 .main {
   padding: 20px 30px; }
   .main h2 {
-    margin-left: 40px; }
+    margin: 20px; }
+
+@media only screen and (max-width: 600px) {
+  .main {
+    padding: 0 30px; }
+    .main h2 {
+      margin: 20px 0; } }
 
 .recent {
-  padding: 0 60px;
+  padding: 0 20px;
   margin-bottom: 50px; }
   .recent-box {
-    -webkit-transition: color 500ms ease, background-color 1200ms ease, border-color 1200ms ease;
-    -moz-transition: color 500ms ease, background-color 1200ms ease, border-color 1200ms ease;
-    -ms-transition: color 500ms ease, background-color 1200ms ease, border-color 1200ms ease;
-    transition: color 500ms ease, background-color 1200ms ease, border-color 1200ms ease;
-    padding: 25px 20px;
+    -webkit-transition: all 1200ms ease;
+    -moz-transition: all 1200ms ease;
+    -ms-transition: all 1200ms ease;
+    transition: all 1200ms ease;
+    background-color: transparent;
+    color: #373737;
+    display: block;
+    padding: 30px 25px 15px;
+    text-decoration: none;
     cursor: pointer; }
     .recent-box:first-child {
       border-radius: 10px 10px 0 0; }
@@ -325,6 +328,10 @@ a {
     .recent-box:hover .recent-box-logo, .recent-box:active .recent-box-logo {
       background: #fff; }
     .recent-box-contain {
+      -webkit-transition: all 1200ms ease;
+      -moz-transition: all 1200ms ease;
+      -ms-transition: all 1200ms ease;
+      transition: all 1200ms ease;
       display: -ms-inline-flexbox;
       display: -webkit-inline-flex;
       display: inline-flex;
@@ -361,9 +368,10 @@ a {
       -moz-transition: color 500ms ease, background-color 1200ms ease, border-color 1200ms ease;
       -ms-transition: color 500ms ease, background-color 1200ms ease, border-color 1200ms ease;
       transition: color 500ms ease, background-color 1200ms ease, border-color 1200ms ease;
+      color: #373737;
       text-align: left;
       padding: 15px;
-      margin: 0 auto;
+      margin: 5px auto 10px;
       border-radius: 10px;
       border: 1px solid white; }
     .recent-box-category {
@@ -396,18 +404,23 @@ a {
       margin: 5px;
       min-width: 110px; }
   .recent-wemote {
+    -webkit-transition: color 500ms ease, background-color 5000ms ease-in, border-color 1200ms ease;
+    -moz-transition: color 500ms ease, background-color 5000ms ease-in, border-color 1200ms ease;
+    -ms-transition: color 500ms ease, background-color 5000ms ease-in, border-color 1200ms ease;
+    transition: color 500ms ease, background-color 5000ms ease-in, border-color 1200ms ease;
+    background-color: #fff;
     border: 2px solid #373737;
     border-bottom: 0; }
     .recent-wemote:hover, .recent-wemote:active {
       border: 2px solid #75b2bf;
       border-bottom: 0;
-      animation: animatedgradient 10s ease alternate infinite !important;
+      animation: animatedgradient 10s ease-in alternate infinite !important;
       background: linear-gradient(330deg, #fc00ff, #00dbde) !important;
       background-size: 800% 800% !important; }
-  .recent-accordance {
+  .recent-titleist {
     border: 2px solid #373737;
     border-bottom: 0; }
-    .recent-accordance:hover, .recent-accordance:active {
+    .recent-titleist:hover, .recent-titleist:active {
       border: 2px solid #2dfd42;
       border-bottom: 0;
       animation: animatedgradient 10s ease alternate infinite !important;
@@ -439,3 +452,30 @@ a {
     .recent-clients:hover, .recent-clients:focus {
       background-color: #262626;
       color: #fff; }
+
+@media only screen and (max-width: 830px) {
+  .recent-box {
+    padding: 30px 15px 20px; }
+    .recent-box-contain {
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -ms-flex-direction: column;
+      -webkit-flex-direction: column;
+      flex-direction: column; }
+    .recent-box-summary {
+      margin: 5px 10px 13px; }
+    .recent-box-info, .recent-box-category {
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      width: 100%; } }
+
+@media only screen and (max-width: 600px) {
+  .recent {
+    padding: 0;
+    margin-bottom: 40px; }
+    .recent-box {
+      padding: 23px 20px 17px; }
+      .recent-box-summary {
+        margin: 10px 0; } }

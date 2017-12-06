@@ -35,10 +35,13 @@ $brgr-transition: all $brgr-transition-speed ease;
 $brgr-text-pad-top: ($brgr-margin / 2 + $brgr-height); 
 
 .nav {
+    background-color: $white;
+
     &-list {
+        background-color: $white;
+        border-radius: 20px;
         position: absolute;
         right: 0;
-        padding-right: 40px;
         z-index: 10;
 
         &:not(.open) {
@@ -75,7 +78,7 @@ $brgr-text-pad-top: ($brgr-margin / 2 + $brgr-height);
     }
 
     &-link {
-        background: transparent;
+        background: $white;
         border-right: white solid $brgr-border-width;
         color: lighten($black, 10%);
         font-size: $brgr-font-size;
@@ -94,7 +97,7 @@ $brgr-text-pad-top: ($brgr-margin / 2 + $brgr-height);
 
     &-menu {
         background: transparent;
-        border: rgba(0, 0, 0, 0) solid $brgr-border-width;
+        border: rgba(0, 0, 0, 1) solid $brgr-border-width;
         border-radius: 50%;
         cursor: pointer;
         display: inline-block;
@@ -108,7 +111,7 @@ $brgr-text-pad-top: ($brgr-margin / 2 + $brgr-height);
         z-index: 20;
     
         &:hover {
-            border: lighten($black, 10%) solid $brgr-border-width;
+            // border: rgba(0, 0, 0, .2) solid $brgr-border-width;
         }
     }
 
