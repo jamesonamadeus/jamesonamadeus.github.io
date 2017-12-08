@@ -479,3 +479,8 @@ a {
       padding: 23px 20px 17px; }
       .recent-box-summary {
         margin: 10px 0; } }
+
+.about-picture {
+  width: 300px; }
+  .about-picture img {
+    width: 300px; }
