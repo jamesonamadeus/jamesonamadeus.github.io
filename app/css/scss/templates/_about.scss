@@ -1,14 +1,46 @@
 .about {
+    @include transition(all 1200ms ease);
+    @include flexbox(inline-flex);
+    @include align-items(flex-start);
 
     &-picture {
-        width: 300px;
+        @include flexbox(flex);
+        @include align-items(flex-start);
+        width: 50%;
 
         img {
-            width: 300px;
+            margin: 0 auto;
+            width: 360px;
         }
+
     }
 
     &-blurb {
-        
+        width: 50%;
     }
+
+}
+
+@media only screen and (max-width: $break-lg) {
+    .about {
+        @include flexbox(flex);
+        @include flex-direction(column);
+
+        &-picture,
+        &-blurb {
+            width: 100%;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: $break-sm) {
+    .about {
+        &-picture img{
+            width: 300px;
+        }
+
+    }
+
 }
