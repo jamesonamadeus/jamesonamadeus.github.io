@@ -519,3 +519,13 @@ a {
 @media only screen and (max-width: 480px) {
   .about-picture img {
     width: 300px; } }
+
+.readings {
+  padding: 0 20px; }
+  .readings a {
+    color: #4834d4;
+    text-decoration: none; }
+    .readings a:hover, .readings a:focus, .readings a:active {
+      animation: animatedgradient 10s ease-in alternate infinite !important;
+      background: linear-gradient(330deg, #00C9FF, #92FE9D) !important;
+      background-size: 800% 800% !important; }
