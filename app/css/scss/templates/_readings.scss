@@ -1,6 +1,10 @@
 .readings {
     padding: 0 20px;
 
+    li {
+        margin: 10px auto;
+    }
+
     a {
         color: $bluegreen;
         text-decoration: none;
@@ -13,4 +17,11 @@
             background-size: 800% 800% !important;
         }
     }
+}
+
+@media only screen and (max-width: $break-med) {
+    .readings {
+        padding: 0;
+    }
+
 }
