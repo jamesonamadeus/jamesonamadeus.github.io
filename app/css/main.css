@@ -523,7 +523,7 @@ a {
 .readings {
   padding: 0 20px; }
   .readings a {
-    color: #4834d4;
+    color: #22a6b3;
     text-decoration: none; }
     .readings a:hover, .readings a:focus, .readings a:active {
       animation: animatedgradient 10s ease-in alternate infinite !important;
