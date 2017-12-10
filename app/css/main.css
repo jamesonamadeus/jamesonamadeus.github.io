@@ -548,3 +548,7 @@ a {
 @media only screen and (max-width: 600px) {
   .readings {
     padding: 0; } }
+
+@media only screen and (max-width: 480px) {
+  ul {
+    padding-left: 30px; } }
