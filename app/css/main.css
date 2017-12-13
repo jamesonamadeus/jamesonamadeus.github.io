@@ -203,7 +203,8 @@ a {
     visibility: hidden; } }
 
 .nav {
-  background-color: #fff; }
+  background-color: #fff;
+  height: 60px; }
   .nav-list {
     background-color: #fff;
     border-radius: 20px;
@@ -293,7 +294,11 @@ a {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  padding: 20px; }
+  background: #fff;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%; }
   .banner .logo-heading {
     font-size: 28px !important;
     font-size: 1.75rem !important;
@@ -303,15 +308,15 @@ a {
     width: 180px; }
 
 .main {
-  padding: 20px 30px; }
+  padding: 5px 30px 30px; }
   .main h2 {
-    margin: 20px; }
+    margin: 100px 20px 20px; }
 
 @media only screen and (max-width: 600px) {
   .main {
     padding: 0 30px; }
     .main h2 {
-      margin: 20px 0; } }
+      margin: 100px auto 20px; } }
 
 .recent {
   padding: 0 20px;

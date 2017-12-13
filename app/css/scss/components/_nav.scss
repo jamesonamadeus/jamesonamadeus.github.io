@@ -36,6 +36,7 @@ $brgr-text-pad-top: ($brgr-margin / 2 + $brgr-height);
 
 .nav {
     background-color: $white;
+    height: $brgr-height;
 
     &-list {
         background-color: $white;

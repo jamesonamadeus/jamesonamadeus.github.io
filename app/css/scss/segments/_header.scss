@@ -2,7 +2,12 @@
     @include flexbox(flex);
     @include justify-content(space-between);
     @include align-items(center);
+    background: $white;
     padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
 
     .logo {
         &-heading {
