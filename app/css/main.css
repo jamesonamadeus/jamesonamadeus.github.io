@@ -564,3 +564,28 @@ a {
 @media only screen and (max-width: 480px) {
   ul {
     padding-left: 30px; } }
+
+.process {
+  padding: 0 20px; }
+  .process-main-container {
+    line-height: 22px;
+    margin: 40px auto; }
+  .process-main-para {
+    font-size: 56px !important;
+    font-size: 3.5rem !important;
+    font-weight: 400;
+    vertical-align: top; }
+  .process-main-one {
+    font-size: 68px !important;
+    font-size: 4.25rem !important;
+    font-weight: 400; }
+    .process-main-one-eye {
+      padding: 0 11px; }
+  .process-main-rest {
+    font-size: 68px !important;
+    font-size: 4.25rem !important;
+    font-weight: 300; }
+  .process-main-text {
+    font-size: 20px !important;
+    font-size: 1.25rem !important;
+    font-weight: 300; }

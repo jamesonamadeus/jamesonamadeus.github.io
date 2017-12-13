@@ -1,0 +1,37 @@
+.process {
+    padding: 0 20px;
+
+    &-main {
+
+        &-container {
+            line-height: 22px;
+            margin: 40px auto;
+        }
+
+        &-para {
+            @include font-size(56);
+            font-weight: 400;
+            vertical-align: top;
+        }
+
+        &-one {
+            @include font-size(68);
+            font-weight: 400;
+
+            &-eye {
+                padding: 0 11px;
+            }
+        }
+
+        &-rest {
+            @include font-size(68);
+            font-weight: 300;
+        }
+
+        &-text {
+            @include font-size(20);
+            font-weight: 300;
+        }
+    }
+
+}
