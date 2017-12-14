@@ -51,7 +51,6 @@ body {
   font-family: "Quicksand", sans-serif;
   font-size: 100%;
   font-style: normal;
-  font-weight: 300;
   line-height: 1.6;
   margin: 0;
   overflow-x: hidden; }
@@ -601,17 +600,42 @@ a {
       align-items: center;
       font-size: 62px !important;
       font-size: 3.875rem !important;
-      color: black;
-      border: 1px solid black;
+      color: #fff;
       border-radius: 50%;
       text-align: center;
-      margin: 20px;
+      margin: 10px;
       height: 100px;
       width: 100px; }
+      .process-header-eye p, .process-header-yee p, .process-header-are p {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        font-size: 62px !important;
+        font-size: 3.875rem !important;
+        margin: 0;
+        font-weight: 500px !important; }
     .process-header-eye {
       animation: animatedgradient 8s ease-in alternate infinite !important;
       background: linear-gradient(270deg, #ffffff, #ffffff, #434343) !important;
       background-size: 220% 220% !important; }
+    .process-header-yee {
+      animation: animatedgradient 8s ease-in alternate infinite !important;
+      background: linear-gradient(330deg, #ffffff, #ffffff, #434343) !important;
+      background-size: 300% 300% !important; }
+      .process-header-yee p {
+        margin-top: -10px; }
+    .process-header-are {
+      animation: animatedgradient 8s ease-in alternate infinite !important;
+      background: linear-gradient(230deg, #ffffff, #ffffff, #434343) !important;
+      background-size: 290% 290% !important; }
+      .process-header-are p {
+        margin-top: -10px; }
   .process-main-container {
     line-height: 22px;
     margin: 40px auto 60px; }

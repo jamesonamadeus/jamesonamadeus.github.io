@@ -19,19 +19,47 @@
             @include justify-content(center);
             @include align-items(center);
             @include font-size(62);
-            color: black;
-            border: 1px solid black;
+            color: $white;
             border-radius: 50%;
             text-align: center;
-            margin: 20px;
+            margin: 10px;
             height: 100px;
             width: 100px;
+
+            p {
+                @include flexbox(flex);
+                @include justify-content(center);
+                @include align-items(center);
+                @include font-size(62);
+                margin: 0;
+                font-weight: 500px !important;
+            }
         }
 
         &-eye {         
             animation: animatedgradient 8s ease-in alternate infinite !important;  
             background: linear-gradient(270deg,#ffffff,#ffffff,#434343) !important;
             background-size: 220% 220% !important;
+        }
+
+        &-yee {
+            animation: animatedgradient 8s ease-in alternate infinite !important;  
+            background: linear-gradient(330deg,#ffffff,#ffffff,#434343) !important;
+            background-size: 300% 300% !important;
+
+            p {
+                margin-top: -10px;
+            }
+        }
+
+        &-are {
+            animation: animatedgradient 8s ease-in alternate infinite !important;  
+            background: linear-gradient(230deg,#ffffff,#ffffff,#434343) !important;
+            background-size: 290% 290% !important;
+
+            p {
+                margin-top: -10px;
+            }
         }
     }
 
