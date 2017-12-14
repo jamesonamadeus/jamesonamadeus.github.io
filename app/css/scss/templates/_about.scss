@@ -6,7 +6,7 @@
     &-picture {
         @include flexbox(flex);
         @include align-items(flex-start);
-        width: 50%;
+        width: 45%;
 
         img {
             margin: 0 auto;
@@ -16,7 +16,8 @@
     }
 
     &-blurb {
-        width: 50%;
+        padding-right: 40px;
+        width: 55%;
 
         a {
             color: $green;
@@ -29,7 +30,19 @@
                 background: linear-gradient(330deg,#00C9FF,#92FE9D) !important;
                 background-size: 800% 800% !important;
             }
+            
         }
+
+    }
+
+}
+
+@media only screen and (max-width: $break-xlg) {
+    .about {
+        &-blurb {
+            padding-right: 20px;
+        }
+
     }
 
 }
@@ -41,6 +54,7 @@
 
         &-picture,
         &-blurb {
+            padding: 0;
             width: 100%;
         }
 

@@ -516,12 +516,13 @@ a {
     -ms-flex-align: start;
     -webkit-align-items: flex-start;
     align-items: flex-start;
-    width: 50%; }
+    width: 45%; }
     .about-picture img {
       margin: 0 auto;
       width: 360px; }
   .about-blurb {
-    width: 50%; }
+    padding-right: 40px;
+    width: 55%; }
     .about-blurb a {
       color: #6ab04c;
       text-decoration: none; }
@@ -529,6 +530,10 @@ a {
         animation: animatedgradient 10s ease-in alternate infinite !important;
         background: linear-gradient(330deg, #00C9FF, #92FE9D) !important;
         background-size: 800% 800% !important; }
+
+@media only screen and (max-width: 1000px) {
+  .about-blurb {
+    padding-right: 20px; } }
 
 @media only screen and (max-width: 800px) {
   .about {
@@ -539,6 +544,7 @@ a {
     -webkit-flex-direction: column;
     flex-direction: column; }
     .about-picture, .about-blurb {
+      padding: 0;
       width: 100%; } }
 
 @media only screen and (max-width: 480px) {
