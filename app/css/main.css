@@ -567,25 +567,46 @@ a {
 
 .process {
   padding: 0 20px; }
+  .process-top {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin: 20px auto; }
+  .process-header-one {
+    font-size: 44px !important;
+    font-size: 2.75rem !important;
+    border: 1px solid #444444;
+    border: 1px solid #444444;
+    border-radius: 50%;
+    text-align: center;
+    margin: 10px;
+    height: 75px;
+    width: 75px; }
   .process-main-container {
     line-height: 22px;
-    margin: 40px auto; }
+    margin: 40px auto 60px; }
   .process-main-para {
-    font-size: 56px !important;
-    font-size: 3.5rem !important;
+    font-size: 48px !important;
+    font-size: 3rem !important;
     font-weight: 400;
     vertical-align: top; }
   .process-main-one {
-    font-size: 68px !important;
-    font-size: 4.25rem !important;
+    font-size: 52px !important;
+    font-size: 3.25rem !important;
     font-weight: 400; }
     .process-main-one-eye {
-      padding: 0 11px; }
+      padding: 0 8px; }
+    .process-main-one-are {
+      padding: 0 4px; }
   .process-main-rest {
-    font-size: 68px !important;
-    font-size: 4.25rem !important;
+    font-size: 52px !important;
+    font-size: 3.25rem !important;
     font-weight: 300; }
   .process-main-text {
-    font-size: 20px !important;
-    font-size: 1.25rem !important;
-    font-weight: 300; }
+    font-size: 18px !important;
+    font-size: 1.125rem !important;
+    font-weight: 300;
+    margin: 20px 70px; }
