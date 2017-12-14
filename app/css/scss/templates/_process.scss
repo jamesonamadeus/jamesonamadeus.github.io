@@ -4,20 +4,31 @@
     &-top {
         @include flexbox(flex);
         @include justify-content(center);
-        margin: 20px auto;  
+        height: 70vh;
     }
 
     &-header {
+        @include flexbox(flex);
+        @include justify-content(center);
+        margin: 30px auto;
 
-        &-one {
-            @include font-size(44);
-            color: $white;
+        &-eye,
+        &-yee,
+        &-are {
+            @include flexbox(flex);
+            @include justify-content(center);
+            @include align-items(center);
+            @include font-size(62);
+            color: black;
+            border: 1px solid black;
             border-radius: 50%;
             text-align: center;
-            margin: 10px;
-            height: 75px;
-            width: 75px;
-            
+            margin: 20px;
+            height: 100px;
+            width: 100px;
+        }
+
+        &-eye {         
             animation: animatedgradient 8s ease-in alternate infinite !important;  
             background: linear-gradient(270deg,#ffffff,#ffffff,#434343) !important;
             background-size: 220% 220% !important;
