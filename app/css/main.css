@@ -578,13 +578,15 @@ a {
   .process-header-one {
     font-size: 44px !important;
     font-size: 2.75rem !important;
-    border: 1px solid #444444;
-    border: 1px solid #444444;
+    color: #fff;
     border-radius: 50%;
     text-align: center;
     margin: 10px;
     height: 75px;
-    width: 75px; }
+    width: 75px;
+    animation: animatedgradient 8s ease-in alternate infinite !important;
+    background: linear-gradient(270deg, #ffffff, #ffffff, #434343) !important;
+    background-size: 220% 220% !important; }
   .process-main-container {
     line-height: 22px;
     margin: 40px auto 60px; }
