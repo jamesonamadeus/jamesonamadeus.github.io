@@ -95,6 +95,12 @@
             transform: $values;
 }
 
+@mixin animation($values...) {
+    -webkit-animation: $values;
+    -moz-animation: $values;
+        -ms-animation: $values;
+            animation: $values;
+}
 
 // transitions -- remove for autoprefixer
 @mixin transition($values...) {

@@ -67,19 +67,22 @@
     
     &-next-btn {
         @include transform(translate(-50%, 0%) rotate(45deg));
+        @include animation(fade_arw_down 4s ease-in-out infinite);
         @include font-size(52);
-        border-bottom: 5px solid lighten($black, 20%);
+        border-bottom: 5px solid lighten($black, 30%);
         border-radius: 7px;
-        border-right: 5px solid lighten($black, 20%);
-        bottom: 5px;
+        border-right: 5px solid lighten($black, 30%);
+        bottom: 0;
         display: block;
         height: 50px;
         left: 50%;
-        margin: 20px auto;
+        margin: 30px auto;
         position: absolute;
         text-align: center;
         text-decoration: none;
         width: 50px;
+
+
     }
     
 
