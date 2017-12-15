@@ -88,12 +88,13 @@
 }
 
 // transforms -- remove for autoprefixer
-@mixin transform ($values ) {
+@mixin transform($values...) {
     -webkit-transform: $values;
     -moz-transform: $values;
         -ms-transform: $values;
             transform: $values;
 }
+
 
 // transitions -- remove for autoprefixer
 @mixin transition($values...) {
