@@ -3,8 +3,10 @@
 
     &-top {
         @include flexbox(flex);
-        @include justify-content(center);
-        height: 70vh;
+        @include flex-direction(column);
+        @include align-items(center);
+        @include justify-content(space-between);
+        height: 75vh;
     }
 
     &-header {
@@ -37,23 +39,23 @@
         }
 
         &-eye {         
-            animation: animatedgradient 8s ease-in alternate infinite !important;  
+            animation: animatedgradient 6s ease-in alternate infinite !important;  
             background: linear-gradient(270deg,#ffffff,#ffffff,#434343) !important;
             background-size: 220% 220% !important;
         }
 
         &-yee {
-            animation: animatedgradient 8s ease-in alternate infinite !important;  
+            animation: animatedgradient 6s ease-in alternate infinite !important;  
             background: linear-gradient(330deg,#ffffff,#ffffff,#434343) !important;
             background-size: 300% 300% !important;
 
             p {
-                margin-top: -10px;
+                margin-top: -10px
             }
         }
 
         &-are {
-            animation: animatedgradient 8s ease-in alternate infinite !important;  
+            animation: animatedgradient 6s ease-in alternate infinite !important;  
             background: linear-gradient(230deg,#ffffff,#ffffff,#434343) !important;
             background-size: 290% 290% !important;
 
@@ -62,6 +64,20 @@
             }
         }
     }
+    
+    &-next-btn {
+        @include font-size(52);
+        border: 5px solid lighten($black, 20%);
+        bottom: 5px;
+        display: block;
+        height: 50px;
+        position: absolute;
+        text-align: center;
+        text-decoration: none;
+        width: 50px;
+    }
+    
+
 
     &-main {
 

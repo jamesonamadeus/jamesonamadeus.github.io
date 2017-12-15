@@ -576,10 +576,16 @@ a {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    height: 70vh; }
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    height: 75vh; }
   .process-header {
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -621,21 +627,32 @@ a {
         margin: 0;
         font-weight: 500px !important; }
     .process-header-eye {
-      animation: animatedgradient 8s ease-in alternate infinite !important;
+      animation: animatedgradient 6s ease-in alternate infinite !important;
       background: linear-gradient(270deg, #ffffff, #ffffff, #434343) !important;
       background-size: 220% 220% !important; }
     .process-header-yee {
-      animation: animatedgradient 8s ease-in alternate infinite !important;
+      animation: animatedgradient 6s ease-in alternate infinite !important;
       background: linear-gradient(330deg, #ffffff, #ffffff, #434343) !important;
       background-size: 300% 300% !important; }
       .process-header-yee p {
         margin-top: -10px; }
     .process-header-are {
-      animation: animatedgradient 8s ease-in alternate infinite !important;
+      animation: animatedgradient 6s ease-in alternate infinite !important;
       background: linear-gradient(230deg, #ffffff, #ffffff, #434343) !important;
       background-size: 290% 290% !important; }
       .process-header-are p {
         margin-top: -10px; }
+  .process-next-btn {
+    font-size: 52px !important;
+    font-size: 3.25rem !important;
+    border: 5px solid #444444;
+    bottom: 5px;
+    display: block;
+    height: 50px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    width: 50px; }
   .process-main-container {
     line-height: 22px;
     margin: 40px auto 60px; }
