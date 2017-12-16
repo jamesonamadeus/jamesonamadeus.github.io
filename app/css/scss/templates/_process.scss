@@ -66,32 +66,30 @@
     }
     
     &-arrow {
-        @include transition(all .5s ease-out);
+        @include transition(all .5s ease);
         @include flexbox(flex);
         @include align-items(flex-end);
         @include justify-content(center);
-        animation: animatedgradient 4s ease-in alternate infinite !important;  
-        background: linear-gradient(355deg,#ffffff,#ffffff,#434343) !important;
-        background-size: 650% 650% !important;
-        opacity: 0;
-        border-radius: 50%;
-        cursor: pointer;
-        height: 85px;
-        left: 50%;
-        margin: 30px auto;
-        width: 85px;
-        z-index: 99;
 
-        &:hover,
-        &:active,
-        &:focus {
-            opacity: 1;
+        &-circle {
+            @include transition(all .5s ease);
+            animation: animatedgradient 4s ease-in alternate infinite !important;  
+            background: linear-gradient(355deg,#ffffff,#ffffff,#434343) !important;
+            background-size: 650% 650% !important;
+            opacity: .1;
+            border-radius: 50%;
+            cursor: pointer;
+            height: 90px;
+            left: 50%;
+            margin: 30px auto;
+            width: 90px;
         }
 
         &-btn {
             @include transform(translate(-50%, 0%) rotate(45deg));
             @include animation(fade_arw_down 4s ease-in-out infinite);
             @include font-size(52);
+            background: transparent;
             border-bottom: 5px solid lighten($black, 30%);
             border-radius: 7px;
             border-right: 5px solid lighten($black, 30%);
@@ -103,6 +101,15 @@
             text-align: center;
             text-decoration: none;
             width: 50px;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {   
+
+            .process-arrow-circle {
+                opacity: 1 !important;
+            }
         }
     }
     

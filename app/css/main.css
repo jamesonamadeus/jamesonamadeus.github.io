@@ -653,10 +653,10 @@ a {
       .process-header-are p {
         margin-top: -10px; }
   .process-arrow {
-    -webkit-transition: all 0.5s ease-out;
-    -moz-transition: all 0.5s ease-out;
-    -ms-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
@@ -665,20 +665,22 @@ a {
     align-items: flex-end;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
-    justify-content: center;
-    animation: animatedgradient 4s ease-in alternate infinite !important;
-    background: linear-gradient(355deg, #ffffff, #ffffff, #434343) !important;
-    background-size: 650% 650% !important;
-    opacity: 0;
-    border-radius: 50%;
-    cursor: pointer;
-    height: 85px;
-    left: 50%;
-    margin: 30px auto;
-    width: 85px;
-    z-index: 99; }
-    .process-arrow:hover, .process-arrow:active, .process-arrow:focus {
-      opacity: 1; }
+    justify-content: center; }
+    .process-arrow-circle {
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      animation: animatedgradient 4s ease-in alternate infinite !important;
+      background: linear-gradient(355deg, #ffffff, #ffffff, #434343) !important;
+      background-size: 650% 650% !important;
+      opacity: .1;
+      border-radius: 50%;
+      cursor: pointer;
+      height: 90px;
+      left: 50%;
+      margin: 30px auto;
+      width: 90px; }
     .process-arrow-btn {
       -webkit-transform: translate(-50%, 0%) rotate(45deg);
       -moz-transform: translate(-50%, 0%) rotate(45deg);
@@ -690,6 +692,7 @@ a {
       animation: fade_arw_down 4s ease-in-out infinite;
       font-size: 52px !important;
       font-size: 3.25rem !important;
+      background: transparent;
       border-bottom: 5px solid #5e5e5e;
       border-radius: 7px;
       border-right: 5px solid #5e5e5e;
@@ -701,6 +704,8 @@ a {
       text-align: center;
       text-decoration: none;
       width: 50px; }
+    .process-arrow:hover .process-arrow-circle, .process-arrow:active .process-arrow-circle, .process-arrow:focus .process-arrow-circle {
+      opacity: 1 !important; }
   .process-main-container {
     line-height: 22px;
     margin: 40px auto 60px; }
