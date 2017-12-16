@@ -653,8 +653,24 @@ a {
       .process-header-are p {
         margin-top: -10px; }
   .process-main-container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
     line-height: 22px;
-    margin: 40px auto 60px; }
+    height: 100vh; }
+  .process-main-buffer {
+    height: 40%; }
+  .process-main-inner {
+    height: 45%; }
   .process-main-para {
     font-size: 48px !important;
     font-size: 3rem !important;

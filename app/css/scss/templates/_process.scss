@@ -72,8 +72,20 @@
     &-main {
 
         &-container {
+            @include flexbox(flex);
+            @include flex-direction(column);
+            @include align-items(center);
+            @include justify-content(space-between);
             line-height: 22px;
-            margin: 40px auto 60px;
+            height: 100vh;
+        }
+
+        &-buffer {
+            height: 40%;
+        }
+
+        &-inner {
+            height: 45%;
         }
 
         &-para {
