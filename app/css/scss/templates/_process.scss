@@ -65,24 +65,45 @@
         }
     }
     
-    &-next-btn {
-        @include transform(translate(-50%, 0%) rotate(45deg));
-        @include animation(fade_arw_down 4s ease-in-out infinite);
-        @include font-size(52);
-        border-bottom: 5px solid lighten($black, 30%);
-        border-radius: 7px;
-        border-right: 5px solid lighten($black, 30%);
-        bottom: 0;
-        display: block;
-        height: 50px;
+    &-arrow {
+        @include transition(all .5s ease-out);
+        @include flexbox(flex);
+        @include align-items(flex-end);
+        @include justify-content(center);
+        animation: animatedgradient 4s ease-in alternate infinite !important;  
+        background: linear-gradient(355deg,#ffffff,#ffffff,#434343) !important;
+        background-size: 650% 650% !important;
+        opacity: 0;
+        border-radius: 50%;
+        cursor: pointer;
+        height: 85px;
         left: 50%;
         margin: 30px auto;
-        position: absolute;
-        text-align: center;
-        text-decoration: none;
-        width: 50px;
+        width: 85px;
+        z-index: 99;
 
+        &:hover,
+        &:active,
+        &:focus {
+            opacity: 1;
+        }
 
+        &-btn {
+            @include transform(translate(-50%, 0%) rotate(45deg));
+            @include animation(fade_arw_down 4s ease-in-out infinite);
+            @include font-size(52);
+            border-bottom: 5px solid lighten($black, 30%);
+            border-radius: 7px;
+            border-right: 5px solid lighten($black, 30%);
+            bottom: 50px;
+            cursor: pointer;
+            display: block;
+            height: 50px;
+            position: absolute;
+            text-align: center;
+            text-decoration: none;
+            width: 50px;
+        }
     }
     
 
