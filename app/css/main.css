@@ -652,60 +652,6 @@ a {
       background-size: 290% 290% !important; }
       .process-header-are p {
         margin-top: -10px; }
-  .process-arrow {
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -ms-flex-align: end;
-    -webkit-align-items: flex-end;
-    align-items: flex-end;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center; }
-    .process-arrow-circle {
-      -webkit-transition: all 0.5s ease;
-      -moz-transition: all 0.5s ease;
-      -ms-transition: all 0.5s ease;
-      transition: all 0.5s ease;
-      animation: animatedgradient 4s ease-in alternate infinite !important;
-      background: linear-gradient(355deg, #ffffff, #ffffff, #434343) !important;
-      background-size: 650% 650% !important;
-      border-radius: 50%;
-      cursor: pointer;
-      height: 90px;
-      left: 50%;
-      margin: 30px auto;
-      opacity: .1;
-      width: 90px; }
-    .process-arrow-btn {
-      -webkit-transform: translate(-50%, 0%) rotate(45deg);
-      -moz-transform: translate(-50%, 0%) rotate(45deg);
-      -ms-transform: translate(-50%, 0%) rotate(45deg);
-      transform: translate(-50%, 0%) rotate(45deg);
-      -webkit-animation: fade_arw_down 4s ease-in-out infinite;
-      -moz-animation: fade_arw_down 4s ease-in-out infinite;
-      -ms-animation: fade_arw_down 4s ease-in-out infinite;
-      animation: fade_arw_down 4s ease-in-out infinite;
-      font-size: 52px !important;
-      font-size: 3.25rem !important;
-      background: transparent;
-      border-bottom: 5px solid #5e5e5e;
-      border-radius: 7px;
-      border-right: 5px solid #5e5e5e;
-      bottom: 50px;
-      cursor: pointer;
-      display: block;
-      height: 50px;
-      position: absolute;
-      text-align: center;
-      text-decoration: none;
-      width: 50px; }
-    .process-arrow:hover .process-arrow-circle, .process-arrow:active .process-arrow-circle, .process-arrow:focus .process-arrow-circle {
-      opacity: 1 !important; }
   .process-main-container {
     line-height: 22px;
     margin: 40px auto 60px; }
@@ -731,3 +677,58 @@ a {
     font-size: 1.125rem !important;
     font-weight: 300;
     margin: 20px 70px; }
+
+.arrow {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-align: end;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center; }
+  .arrow-circle {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    animation: animatedgradient 4s ease-in alternate infinite !important;
+    background: linear-gradient(355deg, #ffffff, #ffffff, #434343) !important;
+    background-size: 650% 650% !important;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 90px;
+    left: 50%;
+    margin: 30px auto;
+    opacity: .1;
+    width: 90px; }
+  .arrow-btn {
+    -webkit-transform: translate(-50%, 0%) rotate(45deg);
+    -moz-transform: translate(-50%, 0%) rotate(45deg);
+    -ms-transform: translate(-50%, 0%) rotate(45deg);
+    transform: translate(-50%, 0%) rotate(45deg);
+    -webkit-animation: fade_arw_down 4s ease-in-out infinite;
+    -moz-animation: fade_arw_down 4s ease-in-out infinite;
+    -ms-animation: fade_arw_down 4s ease-in-out infinite;
+    animation: fade_arw_down 4s ease-in-out infinite;
+    font-size: 52px !important;
+    font-size: 3.25rem !important;
+    background: transparent;
+    border-bottom: 5px solid #5e5e5e;
+    border-radius: 7px;
+    border-right: 5px solid #5e5e5e;
+    bottom: 50px;
+    cursor: pointer;
+    display: block;
+    height: 50px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    width: 50px; }
+  .arrow:hover .arrow-circle, .arrow:active .arrow-circle, .arrow:focus .arrow-circle {
+    opacity: 1 !important; }
