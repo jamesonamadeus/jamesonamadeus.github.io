@@ -112,6 +112,7 @@
 .arrow {
     @include transition(all .5s ease);
     @include flexbox(flex);
+    @include flex-direction(column);
     @include align-items(flex-end);
     @include justify-content(center);
 
@@ -137,11 +138,12 @@
         border-bottom: 5px solid lighten($black, 30%);
         border-radius: 7px;
         border-right: 5px solid lighten($black, 30%);
-        bottom: 50px;
+        bottom: 30px;
         cursor: pointer;
         display: block;
         height: 50px;
-        position: absolute;
+        margin: -60px auto 0;
+        position: relative;
         text-align: center;
         text-decoration: none;
         width: 50px;

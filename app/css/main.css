@@ -686,6 +686,9 @@ a {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
   -ms-flex-align: end;
   -webkit-align-items: flex-end;
   align-items: flex-end;
@@ -722,11 +725,12 @@ a {
     border-bottom: 5px solid #5e5e5e;
     border-radius: 7px;
     border-right: 5px solid #5e5e5e;
-    bottom: 50px;
+    bottom: 30px;
     cursor: pointer;
     display: block;
     height: 50px;
-    position: absolute;
+    margin: -60px auto 0;
+    position: relative;
     text-align: center;
     text-decoration: none;
     width: 50px; }
