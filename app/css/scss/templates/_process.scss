@@ -21,11 +21,11 @@
             @include justify-content(center);
             @include align-items(center);
             @include font-size(62);
-            color: $white;
             border-radius: 50%;
-            text-align: center;
-            margin: 10px;
+            color: $white;
             height: 100px;
+            margin: 10px;
+            text-align: center;
             width: 100px;
 
             p {
@@ -33,9 +33,10 @@
                 @include justify-content(center);
                 @include align-items(center);
                 @include font-size(62);
-                margin: 0;
                 font-weight: 500px !important;
+                margin: 0;
             }
+
         }
 
         &-eye {         
@@ -52,6 +53,7 @@
             p {
                 margin-top: -10px
             }
+
         }
 
         &-are {
@@ -62,7 +64,9 @@
             p {
                 margin-top: -10px;
             }
+
         }
+
     }
     
     &-arrow {
@@ -76,12 +80,12 @@
             animation: animatedgradient 4s ease-in alternate infinite !important;  
             background: linear-gradient(355deg,#ffffff,#ffffff,#434343) !important;
             background-size: 650% 650% !important;
-            opacity: .1;
             border-radius: 50%;
             cursor: pointer;
             height: 90px;
             left: 50%;
             margin: 30px auto;
+            opacity: .1;
             width: 90px;
         }
 
@@ -110,7 +114,9 @@
             .process-arrow-circle {
                 opacity: 1 !important;
             }
+
         }
+        
     }
     
 

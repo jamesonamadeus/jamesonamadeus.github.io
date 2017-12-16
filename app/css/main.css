@@ -616,11 +616,11 @@ a {
       align-items: center;
       font-size: 62px !important;
       font-size: 3.875rem !important;
-      color: #fff;
       border-radius: 50%;
-      text-align: center;
-      margin: 10px;
+      color: #fff;
       height: 100px;
+      margin: 10px;
+      text-align: center;
       width: 100px; }
       .process-header-eye p, .process-header-yee p, .process-header-are p {
         display: -ms-flexbox;
@@ -634,8 +634,8 @@ a {
         align-items: center;
         font-size: 62px !important;
         font-size: 3.875rem !important;
-        margin: 0;
-        font-weight: 500px !important; }
+        font-weight: 500px !important;
+        margin: 0; }
     .process-header-eye {
       animation: animatedgradient 6s ease-in alternate infinite !important;
       background: linear-gradient(270deg, #ffffff, #ffffff, #434343) !important;
@@ -674,12 +674,12 @@ a {
       animation: animatedgradient 4s ease-in alternate infinite !important;
       background: linear-gradient(355deg, #ffffff, #ffffff, #434343) !important;
       background-size: 650% 650% !important;
-      opacity: .1;
       border-radius: 50%;
       cursor: pointer;
       height: 90px;
       left: 50%;
       margin: 30px auto;
+      opacity: .1;
       width: 90px; }
     .process-arrow-btn {
       -webkit-transform: translate(-50%, 0%) rotate(45deg);
