@@ -595,7 +595,7 @@ a {
     -ms-flex-pack: justify;
     -webkit-justify-content: space-between;
     justify-content: space-between;
-    height: 75vh; }
+    height: 65vh; }
   .process-header {
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -603,7 +603,7 @@ a {
     -ms-flex-pack: center;
     -webkit-justify-content: center;
     justify-content: center;
-    margin: 30px auto; }
+    margin: 25px auto; }
     .process-header-eye, .process-header-yee, .process-header-are {
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -671,6 +671,14 @@ a {
     height: 30%; }
   .process-main-inner {
     height: 45%; }
+    .process-main-inner-explore .process-main-letter p {
+      margin-top: -7px; }
+    .process-main-inner-explore .process-main-rest {
+      margin-top: -7px; }
+    .process-main-inner-refine .process-main-letter p {
+      margin-top: -6px; }
+    .process-main-inner-refine .process-main-rest {
+      margin-top: -6px; }
   .process-main-steps {
     display: -ms-inline-flexbox;
     display: -webkit-inline-flex;
@@ -688,15 +696,29 @@ a {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-    font-size: 56px !important;
-    font-size: 3.5rem !important;
     border-radius: 50%;
-    border: 1px solid #111;
-    color: #111;
-    height: 80px;
+    height: 75px;
     margin: 0px 5px 0px 0px;
-    text-align: center;
-    width: 80px; }
+    width: 75px;
+    animation: animatedgradient 6s ease-in alternate infinite !important;
+    background: linear-gradient(320deg, #FAFAFA, #434343) !important;
+    background-size: 300% 300% !important; }
+    .process-main-letter p {
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      font-size: 52px !important;
+      font-size: 3.25rem !important;
+      color: #fff;
+      text-align: center;
+      font-weight: 500px !important;
+      margin: 0; }
   .process-main-para {
     font-size: 48px !important;
     font-size: 3rem !important;

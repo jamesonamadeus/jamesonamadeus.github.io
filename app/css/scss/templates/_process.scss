@@ -6,13 +6,13 @@
         @include flex-direction(column);
         @include align-items(center);
         @include justify-content(space-between);
-        height: 75vh;
+        height: 65vh;
     }
 
     &-header {
         @include flexbox(flex);
         @include justify-content(center);
-        margin: 30px auto;
+        margin: 25px auto;
 
         &-eye,
         &-yee,
@@ -87,6 +87,25 @@
         &-inner {
             height: 45%;
 
+            &-explore {
+                .process-main-letter p {
+                    margin-top: -7px;
+                }
+
+                .process-main-rest {
+                    margin-top: -7px;
+                }
+            }
+
+            &-refine {
+                .process-main-letter p {
+                    margin-top: -6px;
+                }
+
+                .process-main-rest {
+                    margin-top: -6px;
+                }
+            }
         }
 
         &-steps {
@@ -98,14 +117,25 @@
             @include flexbox(flex);
             @include justify-content(center);
             @include align-items(center);
-            @include font-size(56);
             border-radius: 50%;
-            border: 1px solid $black;
-            color: $black;
-            height: 80px;
+            height: 75px;
             margin: 0px 5px 0px 0px;
-            text-align: center;
-            width: 80px;
+            width: 75px;
+
+            animation: animatedgradient 6s ease-in alternate infinite !important;  
+            background: linear-gradient(320deg,#FAFAFA,#434343) !important;
+            background-size: 300% 300% !important;
+
+            p {
+                @include flexbox(flex);
+                @include justify-content(center);
+                @include align-items(center);
+                @include font-size(52);
+                color: $white;
+                text-align: center;
+                font-weight: 500px !important;
+                margin: 0;
+            }
         }
 
         &-para {
