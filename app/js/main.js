@@ -1,3 +1,4 @@
+//burger
 (function() {
     var body = document.body;
     var burgerMenu = document.getElementsByClassName('nav-menu')[0];
@@ -10,3 +11,9 @@
       });
     }, false);
 })();
+
+//smooth scrolling
+var scroll = new SmoothScroll('a[href*="#"]',{
+    speed: 1000,
+    easing: 'easeInOutQuad'
+});
