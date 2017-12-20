@@ -24,4 +24,19 @@
         transform:translate(0,10px) rotate(45deg); 
         opacity: 0; 
     }
-  }
+}
+
+@keyframes spin { 
+    0% { 
+        opacity: .4;
+    } 
+
+    50% { 
+        opacity: 1;
+    } 
+
+    100% { 
+        @include transform(rotate(360deg));
+        opacity: .4;
+    } 
+}

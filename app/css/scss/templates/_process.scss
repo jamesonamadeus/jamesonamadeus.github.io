@@ -154,8 +154,29 @@
             font-weight: 300;
             margin: 10px 70px;
         }
+
     }
 
+}
+
+.repeat {
+    @include flexbox(flex);
+    @include flex-direction(column);
+    @include align-items(flex-end);
+    @include justify-content(center);
+    margin: 0 auto;
+
+    &-icon {
+        @include animation(spin 8s linear infinite);
+        margin: 0 auto;
+        width: 70px;
+    }
+
+    p {
+        padding: 10px;
+        margin: 0 auto;
+        text-align: center;
+    }
 }
 
 .arrow {
@@ -181,7 +202,7 @@
 
     &-btn {
         @include transform(translate(-50%, 0%) rotate(45deg));
-        @include animation(fade_arw_down 4s ease-in-out infinite);
+        @include animation(fade_arw_down 3s ease-in-out infinite);
         @include font-size(52);
         background: transparent;
         border-bottom: 5px solid lighten($black, 30%);
