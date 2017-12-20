@@ -903,7 +903,7 @@ a {
 
 @media only screen and (max-width: 480px) {
   .process {
-    padding: 0 0 30px; }
+    padding: 0 0 10px; }
     .process-main-text {
       margin: 10px 0; }
     .process-main-inner-refine .process-main-letter p {
