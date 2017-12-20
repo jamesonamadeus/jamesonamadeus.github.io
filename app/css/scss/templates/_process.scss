@@ -152,7 +152,8 @@
         &-text {
             @include font-size(18);
             font-weight: 300;
-            margin: 10px 70px;
+            margin: 10px 40px 10px 84px;
+            max-width: 720px;
         }
 
     }
@@ -165,15 +166,17 @@
     @include align-items(flex-end);
     @include justify-content(center);
     margin: 0 auto;
+    text-decoration: none;
+    color: lighten($black, 10%);
 
     &-icon {
         @include animation(spin 8s linear infinite);
         margin: 0 auto;
-        width: 70px;
+        width: 60px;
     }
 
     p {
-        padding: 10px;
+        padding: 10px 0 0;
         margin: 0 auto;
         text-align: center;
     }
@@ -229,4 +232,35 @@
 
     }
     
+}
+
+@media only screen and (max-width: $break-lg) {
+    .process {
+
+        &-main {
+
+            &-text {
+                margin: 10px 1px 10px 84px;
+            }
+
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: $break-med) {
+    .process {
+        padding: 0;
+
+        &-main {
+            
+            &-text {
+                margin: 10px 1px 10px 84px;
+            }
+
+        }
+
+    }
+
 }
