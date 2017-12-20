@@ -171,12 +171,12 @@
 
     &-icon {
         @include animation(spin 8s linear infinite);
-        margin: 0 auto;
+        margin: 0 auto 10px;
         width: 60px;
     }
 
     p {
-        padding: 10px 0 0;
+        padding: 0;
         margin: 0 auto;
         text-align: center;
     }
@@ -359,6 +359,30 @@
 
                 p {
                     @include font-size(44);
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    .process {
+        
+        &-header {
+            margin: 25px auto;
+    
+            &-eye,
+            &-yee,
+            &-are {
+                height: 63px;
+                width: 63px;
+
+                p {
+                    @include font-size(38);
                 }
 
             }

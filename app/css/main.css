@@ -799,10 +799,10 @@ a {
     -moz-animation: spin 8s linear infinite;
     -ms-animation: spin 8s linear infinite;
     animation: spin 8s linear infinite;
-    margin: 0 auto;
+    margin: 0 auto 10px;
     width: 60px; }
   .repeat p {
-    padding: 10px 0 0;
+    padding: 0;
     margin: 0 auto;
     text-align: center; }
 
@@ -918,3 +918,13 @@ a {
         .process-header-eye p, .process-header-yee p, .process-header-are p {
           font-size: 44px !important;
           font-size: 2.75rem !important; } }
+
+@media only screen and (max-width: 400px) {
+  .process-header {
+    margin: 25px auto; }
+    .process-header-eye, .process-header-yee, .process-header-are {
+      height: 63px;
+      width: 63px; }
+      .process-header-eye p, .process-header-yee p, .process-header-are p {
+        font-size: 38px !important;
+        font-size: 2.375rem !important; } }
