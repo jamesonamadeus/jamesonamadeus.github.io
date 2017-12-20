@@ -254,16 +254,28 @@
         padding: 0 0 30px;
 
         &-main {
+
+            &-letter {
+                height: 65px;
+                width: 65px;
+    
+                p {
+                    @include font-size(42);
+                }
+            }
+
+            &-rest {
+                @include font-size(42);
+            }
+
             
             &-text {
-                margin: 10px 1px 10px 84px;
+                margin: 10px 1px 10px 73px;
             }
 
         }
 
         &-header {
-            @include flexbox(flex);
-            @include justify-content(center);
             margin: 25px auto;
     
             &-eye,
@@ -294,7 +306,67 @@
             height: 45px;
             width: 45px;
         }
-        
+
+    }
+
+    .repeat {
+    
+        &-icon {
+            width: 50px;
+        }
+    
     }
 
 }
+
+@media only screen and (max-width: $break-sm) {
+    .process {
+        padding: 0 0 30px;
+
+        &-main {
+ 
+            &-text {
+                margin: 10px 0;
+            }
+
+            &-inner {
+
+                &-refine {
+
+                    .process-main-letter p {
+                        margin-top: -4px;
+                    }
+    
+                    .process-main-rest {
+                        margin-top: -4px;
+                    }
+                    
+                }
+
+            }
+
+        }
+        
+
+        &-header {
+            margin: 25px auto;
+    
+            &-eye,
+            &-yee,
+            &-are {
+                height: 75px;
+                width: 75px;
+
+                p {
+                    @include font-size(44);
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+

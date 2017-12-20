@@ -15,13 +15,28 @@
             margin: 0;
         }
 
-        &-contain {
-
-        }
-
         &-main {
             margin: 14px 10px 0;
             width: 180px;
         }
+
     }
+
+}
+
+@media only screen and (max-width: 400px) {
+    .banner {
+        padding: 15px;
+
+        .logo {
+
+            &-main {
+                margin: 14px 0 0;
+                width: 160px;
+            }
+    
+        }
+
+    }
+
 }

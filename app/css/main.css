@@ -328,6 +328,13 @@ a {
     margin: 14px 10px 0;
     width: 180px; }
 
+@media only screen and (max-width: 400px) {
+  .banner {
+    padding: 15px; }
+    .banner .logo-main {
+      margin: 14px 0 0;
+      width: 160px; } }
+
 .main {
   padding: 5px 30px 30px; }
   .main h2 {
@@ -335,9 +342,13 @@ a {
 
 @media only screen and (max-width: 600px) {
   .main {
-    padding: 0 30px; }
+    padding: 0 30px 20px; }
     .main h2 {
       margin: 100px auto 20px; } }
+
+@media only screen and (max-width: 400px) {
+  .main {
+    padding: 0 15px 15px; } }
 
 .recent {
   padding: 0 20px;
@@ -841,15 +852,18 @@ a {
 @media only screen and (max-width: 600px) {
   .process {
     padding: 0 0 30px; }
+    .process-main-letter {
+      height: 65px;
+      width: 65px; }
+      .process-main-letter p {
+        font-size: 42px !important;
+        font-size: 2.625rem !important; }
+    .process-main-rest {
+      font-size: 42px !important;
+      font-size: 2.625rem !important; }
     .process-main-text {
-      margin: 10px 1px 10px 84px; }
+      margin: 10px 1px 10px 73px; }
     .process-header {
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
       margin: 25px auto; }
       .process-header-eye, .process-header-yee, .process-header-are {
         height: 85px;
@@ -863,4 +877,24 @@ a {
     width: 80px; }
   .arrow-btn {
     height: 45px;
-    width: 45px; } }
+    width: 45px; }
+  .repeat-icon {
+    width: 50px; } }
+
+@media only screen and (max-width: 480px) {
+  .process {
+    padding: 0 0 30px; }
+    .process-main-text {
+      margin: 10px 0; }
+    .process-main-inner-refine .process-main-letter p {
+      margin-top: -4px; }
+    .process-main-inner-refine .process-main-rest {
+      margin-top: -4px; }
+    .process-header {
+      margin: 25px auto; }
+      .process-header-eye, .process-header-yee, .process-header-are {
+        height: 75px;
+        width: 75px; }
+        .process-header-eye p, .process-header-yee p, .process-header-are p {
+          font-size: 44px !important;
+          font-size: 2.75rem !important; } }
