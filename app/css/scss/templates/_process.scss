@@ -60,15 +60,13 @@
 			@include flexbox(flex);
 			@include flex-direction(column);
 			@include align-items(center);
-			@include justify-content(space-between);
+			@include justify-content(flex-end);
 			line-height: 22px;
-			height: 100vh;
-		}
-		&-buffer {
-			height: 20%;
+			padding: 150px 0 300px;
 		}
 		&-inner {
-			height: 45%;
+			@include flexbox(flex);
+			@include flex-direction(column);
 			&-explore {
 				.process-main-letter p {
 					margin-top: -7px;
@@ -123,8 +121,8 @@
 		}
 		&-text {
 			@include font-size(18);
-			font-weight: 300;
-			margin: 10px 40px 10px 84px;
+			line-height: 1.6;
+			margin: 10px 40px 30px 84px;
 			max-width: 720px;
 		}
 	}
