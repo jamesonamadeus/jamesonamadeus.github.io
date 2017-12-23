@@ -747,7 +747,7 @@ a {
     margin: 0px 5px 0px 0px;
     width: 75px;
     animation: animatedgradient 6s ease-in alternate infinite !important;
-    background: linear-gradient(320deg, #FAFAFA, #434343) !important;
+    background: linear-gradient(320deg, #fafafa, #434343) !important;
     background-size: 300% 300% !important; }
     .process-main-letter p {
       display: -ms-flexbox;
@@ -794,7 +794,7 @@ a {
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  margin: 0 auto;
+  margin: 80px auto 0;
   text-decoration: none;
   color: #2b2b2b; }
   .repeat-icon {
@@ -839,7 +839,7 @@ a {
     height: 90px;
     left: 50%;
     margin: 30px auto;
-    opacity: .1;
+    opacity: 0.1;
     width: 90px; }
   .arrow-btn {
     -webkit-transform: translate(-50%, 0%) rotate(45deg);

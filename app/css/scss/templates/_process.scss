@@ -1,304 +1,304 @@
 .process {
-	padding: 0 20px;
-	&-top {
-		@include flexbox(flex);
-		@include flex-direction(column);
-		@include align-items(center);
-		@include justify-content(space-between);
-		height: 65vh;
-	}
-	&-header {
-		@include flexbox(flex);
-		@include justify-content(center);
-		margin: 25px auto;
-		&-eye,
-		&-yee,
-		&-are {
-			@include flexbox(flex);
-			@include justify-content(center);
-			@include align-items(center);
-			@include font-size(62);
-			border-radius: 50%;
-			color: $white;
-			height: 100px;
-			margin: 10px;
-			text-align: center;
-			width: 100px;
-			p {
-				@include flexbox(flex);
-				@include justify-content(center);
-				@include align-items(center);
-				@include font-size(62);
-				font-weight: 500px !important;
-				margin: 0;
-			}
-		}
-		&-eye {
-			animation: animatedgradient 6s ease-in alternate infinite !important;
-			background: linear-gradient(270deg, #ffffff, #ffffff, #434343) !important;
-			background-size: 220% 220% !important;
-		}
-		&-yee {
-			animation: animatedgradient 6s ease-in alternate infinite !important;
-			background: linear-gradient(330deg, #ffffff, #ffffff, #434343) !important;
-			background-size: 300% 300% !important;
-			p {
-				margin-top: -10px
-			}
-		}
-		&-are {
-			animation: animatedgradient 6s ease-in alternate infinite !important;
-			background: linear-gradient(230deg, #ffffff, #ffffff, #434343) !important;
-			background-size: 290% 290% !important;
-			p {
-				margin-top: -10px;
-			}
-		}
-	}
-	&-main {
-		&-container {
-			@include flexbox(flex);
-			@include flex-direction(column);
-			@include align-items(center);
-			@include justify-content(flex-end);
-			line-height: 22px;
-			padding: 150px 0 300px;
-		}
-		&-inner {
-			@include flexbox(flex);
-			@include flex-direction(column);
-			&-explore {
-				.process-main-letter p {
-					margin-top: -7px;
-				}
-				.process-main-rest {
-					margin-top: -7px;
-				}
-			}
-			&-refine {
-				.process-main-letter p {
-					margin-top: -6px;
-				}
-				.process-main-rest {
-					margin-top: -6px;
-				}
-			}
-		}
-		&-steps {
-			@include flexbox(inline-flex);
-			@include align-items(center);
-		}
-		&-letter {
-			@include flexbox(flex);
-			@include justify-content(center);
-			@include align-items(center);
-			border-radius: 50%;
-			height: 75px;
-			margin: 0px 5px 0px 0px;
-			width: 75px;
-			animation: animatedgradient 6s ease-in alternate infinite !important;
-			background: linear-gradient(320deg, #FAFAFA, #434343) !important;
-			background-size: 300% 300% !important;
-			p {
-				@include flexbox(flex);
-				@include justify-content(center);
-				@include align-items(center);
-				@include font-size(52);
-				color: $white;
-				text-align: center;
-				font-weight: 500px !important;
-				margin: 0;
-			}
-		}
-		&-para {
-			@include font-size(48);
-			font-weight: 400;
-			vertical-align: top;
-		}
-		&-rest {
-			@include font-size(52);
-			font-weight: 300;
-		}
-		&-text {
-			@include font-size(18);
-			line-height: 1.6;
-			margin: 10px 40px 30px 84px;
-			max-width: 720px;
-		}
-	}
+  padding: 0 20px;
+  &-top {
+    @include flexbox(flex);
+    @include flex-direction(column);
+    @include align-items(center);
+    @include justify-content(space-between);
+    height: 65vh;
+  }
+  &-header {
+    @include flexbox(flex);
+    @include justify-content(center);
+    margin: 25px auto;
+    &-eye,
+    &-yee,
+    &-are {
+      @include flexbox(flex);
+      @include justify-content(center);
+      @include align-items(center);
+      @include font-size(62);
+      border-radius: 50%;
+      color: $white;
+      height: 100px;
+      margin: 10px;
+      text-align: center;
+      width: 100px;
+      p {
+        @include flexbox(flex);
+        @include justify-content(center);
+        @include align-items(center);
+        @include font-size(62);
+        font-weight: 500px !important;
+        margin: 0;
+      }
+    }
+    &-eye {
+      animation: animatedgradient 6s ease-in alternate infinite !important;
+      background: linear-gradient(270deg, #ffffff, #ffffff, #434343) !important;
+      background-size: 220% 220% !important;
+    }
+    &-yee {
+      animation: animatedgradient 6s ease-in alternate infinite !important;
+      background: linear-gradient(330deg, #ffffff, #ffffff, #434343) !important;
+      background-size: 300% 300% !important;
+      p {
+        margin-top: -10px;
+      }
+    }
+    &-are {
+      animation: animatedgradient 6s ease-in alternate infinite !important;
+      background: linear-gradient(230deg, #ffffff, #ffffff, #434343) !important;
+      background-size: 290% 290% !important;
+      p {
+        margin-top: -10px;
+      }
+    }
+  }
+  &-main {
+    &-container {
+      @include flexbox(flex);
+      @include flex-direction(column);
+      @include align-items(center);
+      @include justify-content(flex-end);
+      line-height: 22px;
+      padding: 150px 0 300px;
+    }
+    &-inner {
+      @include flexbox(flex);
+      @include flex-direction(column);
+      &-explore {
+        .process-main-letter p {
+          margin-top: -7px;
+        }
+        .process-main-rest {
+          margin-top: -7px;
+        }
+      }
+      &-refine {
+        .process-main-letter p {
+          margin-top: -6px;
+        }
+        .process-main-rest {
+          margin-top: -6px;
+        }
+      }
+    }
+    &-steps {
+      @include flexbox(inline-flex);
+      @include align-items(center);
+    }
+    &-letter {
+      @include flexbox(flex);
+      @include justify-content(center);
+      @include align-items(center);
+      border-radius: 50%;
+      height: 75px;
+      margin: 0px 5px 0px 0px;
+      width: 75px;
+      animation: animatedgradient 6s ease-in alternate infinite !important;
+      background: linear-gradient(320deg, #fafafa, #434343) !important;
+      background-size: 300% 300% !important;
+      p {
+        @include flexbox(flex);
+        @include justify-content(center);
+        @include align-items(center);
+        @include font-size(52);
+        color: $white;
+        text-align: center;
+        font-weight: 500px !important;
+        margin: 0;
+      }
+    }
+    &-para {
+      @include font-size(48);
+      font-weight: 400;
+      vertical-align: top;
+    }
+    &-rest {
+      @include font-size(52);
+      font-weight: 300;
+    }
+    &-text {
+      @include font-size(18);
+      line-height: 1.6;
+      margin: 10px 40px 30px 84px;
+      max-width: 720px;
+    }
+  }
 }
 
 .repeat {
-	@include flexbox(flex);
-	@include flex-direction(column);
-	@include align-items(flex-end);
-	@include justify-content(center);
-	margin: 0 auto;
-	text-decoration: none;
-	color: lighten($black, 10%);
-	&-icon {
-		@include animation(spin 8s linear infinite);
-		margin: 0 auto 10px;
-		width: 60px;
-	}
-	p {
-		padding: 0;
-		margin: 0 auto;
-		text-align: center;
-	}
+  @include flexbox(flex);
+  @include flex-direction(column);
+  @include align-items(flex-end);
+  @include justify-content(center);
+  margin: 80px auto 0;
+  text-decoration: none;
+  color: lighten($black, 10%);
+  &-icon {
+    @include animation(spin 8s linear infinite);
+    margin: 0 auto 10px;
+    width: 60px;
+  }
+  p {
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
 .arrow {
-	@include transition(all .5s ease);
-	@include flexbox(flex);
-	@include flex-direction(column);
-	@include align-items(flex-end);
-	@include justify-content(center);
-	&-circle {
-		@include transition(all .5s ease);
-		animation: animatedgradient 4s ease-in alternate infinite !important;
-		background: linear-gradient(355deg, #ffffff, #ffffff, #434343) !important;
-		background-size: 650% 650% !important;
-		border-radius: 50%;
-		cursor: pointer;
-		height: 90px;
-		left: 50%;
-		margin: 30px auto;
-		opacity: .1;
-		width: 90px;
-	}
-	&-btn {
-		@include transform(translate(-50%, 0%) rotate(45deg));
-		@include animation(fade_arw_down 3s ease-in-out infinite);
-		@include font-size(52);
-		background: transparent;
-		border-bottom: 5px solid lighten($black, 30%);
-		border-radius: 7px;
-		border-right: 5px solid lighten($black, 30%);
-		bottom: 30px;
-		cursor: pointer;
-		display: block;
-		height: 50px;
-		margin: -60px auto 0;
-		position: relative;
-		text-align: center;
-		text-decoration: none;
-		width: 50px;
-	}
-	&:hover,
-	&:active,
-	&:focus {
-		.arrow-circle {
-			opacity: 1 !important;
-		}
-	}
+  @include transition(all 0.5s ease);
+  @include flexbox(flex);
+  @include flex-direction(column);
+  @include align-items(flex-end);
+  @include justify-content(center);
+  &-circle {
+    @include transition(all 0.5s ease);
+    animation: animatedgradient 4s ease-in alternate infinite !important;
+    background: linear-gradient(355deg, #ffffff, #ffffff, #434343) !important;
+    background-size: 650% 650% !important;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 90px;
+    left: 50%;
+    margin: 30px auto;
+    opacity: 0.1;
+    width: 90px;
+  }
+  &-btn {
+    @include transform(translate(-50%, 0%) rotate(45deg));
+    @include animation(fade_arw_down 3s ease-in-out infinite);
+    @include font-size(52);
+    background: transparent;
+    border-bottom: 5px solid lighten($black, 30%);
+    border-radius: 7px;
+    border-right: 5px solid lighten($black, 30%);
+    bottom: 30px;
+    cursor: pointer;
+    display: block;
+    height: 50px;
+    margin: -60px auto 0;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    width: 50px;
+  }
+  &:hover,
+  &:active,
+  &:focus {
+    .arrow-circle {
+      opacity: 1 !important;
+    }
+  }
 }
 
 @media only screen and (max-width: $break-lg) {
-	.process {
-		&-main {
-			&-text {
-				margin: 10px 1px 10px 84px;
-			}
-		}
-	}
+  .process {
+    &-main {
+      &-text {
+        margin: 10px 1px 10px 84px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: $break-med) {
-	.process {
-		padding: 0 0 30px;
-		&-main {
-			&-letter {
-				height: 65px;
-				width: 65px;
-				p {
-					@include font-size(42);
-				}
-			}
-			&-rest {
-				@include font-size(42);
-			}
-			&-text {
-				margin: 10px 1px 10px 73px;
-			}
-		}
-		&-header {
-			margin: 25px auto;
-			&-eye,
-			&-yee,
-			&-are {
-				height: 85px;
-				margin: 5px;
-				width: 85px;
-				p {
-					@include font-size(48);
-				}
-			}
-		}
-	}
-	.arrow {
-		&-circle {
-			height: 80px;
-			width: 80px;
-		}
-		&-btn {
-			height: 45px;
-			width: 45px;
-		}
-	}
-	.repeat {
-		&-icon {
-			width: 50px;
-		}
-	}
+  .process {
+    padding: 0 0 30px;
+    &-main {
+      &-letter {
+        height: 65px;
+        width: 65px;
+        p {
+          @include font-size(42);
+        }
+      }
+      &-rest {
+        @include font-size(42);
+      }
+      &-text {
+        margin: 10px 1px 10px 73px;
+      }
+    }
+    &-header {
+      margin: 25px auto;
+      &-eye,
+      &-yee,
+      &-are {
+        height: 85px;
+        margin: 5px;
+        width: 85px;
+        p {
+          @include font-size(48);
+        }
+      }
+    }
+  }
+  .arrow {
+    &-circle {
+      height: 80px;
+      width: 80px;
+    }
+    &-btn {
+      height: 45px;
+      width: 45px;
+    }
+  }
+  .repeat {
+    &-icon {
+      width: 50px;
+    }
+  }
 }
 
 @media only screen and (max-width: $break-sm) {
-	.process {
-		padding: 0 0 10px;
-		&-main {
-			&-text {
-				margin: 10px 0;
-			}
-			&-inner {
-				&-refine {
-					.process-main-letter p {
-						margin-top: -4px;
-					}
-					.process-main-rest {
-						margin-top: -4px;
-					}
-				}
-			}
-		}
-		&-header {
-			margin: 25px auto;
-			&-eye,
-			&-yee,
-			&-are {
-				height: 75px;
-				width: 75px;
-				p {
-					@include font-size(44);
-				}
-			}
-		}
-	}
+  .process {
+    padding: 0 0 10px;
+    &-main {
+      &-text {
+        margin: 10px 0;
+      }
+      &-inner {
+        &-refine {
+          .process-main-letter p {
+            margin-top: -4px;
+          }
+          .process-main-rest {
+            margin-top: -4px;
+          }
+        }
+      }
+    }
+    &-header {
+      margin: 25px auto;
+      &-eye,
+      &-yee,
+      &-are {
+        height: 75px;
+        width: 75px;
+        p {
+          @include font-size(44);
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 400px) {
-	.process {
-		&-header {
-			margin: 25px auto;
-			&-eye,
-			&-yee,
-			&-are {
-				height: 63px;
-				width: 63px;
-				p {
-					@include font-size(38);
-				}
-			}
-		}
-	}
+  .process {
+    &-header {
+      margin: 25px auto;
+      &-eye,
+      &-yee,
+      &-are {
+        height: 63px;
+        width: 63px;
+        p {
+          @include font-size(38);
+        }
+      }
+    }
+  }
 }
