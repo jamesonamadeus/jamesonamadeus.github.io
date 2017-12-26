@@ -1,28 +1,28 @@
-@import "_config.scss";
-@import "_mixins.scss";
+@import '_config.scss';
+@import '_mixins.scss';
 
 * {
-    box-sizing: border-box;
-    -webkit-backface-visibility: hidden;
+	box-sizing: border-box;
+	-webkit-backface-visibility: hidden;
 }
 
 body {
-    font-family: $system-font-stack;
-    font-size: $font-size;
-    font-style: normal;
-    line-height: 1.6;
-    margin: 0;
-    overflow-x: hidden;
+	font-family: $system-font-stack;
+	font-size: $font-size;
+	font-style: normal;
+	line-height: 1.6;
+	margin: 0;
+	overflow-x: hidden;
 }
 
 blockquote {
-    border-left: 2px solid $color-primary;
-    font-family: Georgia, Times, "Times New Roman", serif;
-    font-size: 1.4em;
-    font-style: italic;
-    font-weight: 400;
-    margin: 0 0 $padding/2;
-    padding-left: 25px;
+	border-left: 2px solid $color-primary;
+	font-family: Georgia, Times, 'Times New Roman', serif;
+	font-size: 1.4em;
+	font-style: italic;
+	font-weight: 400;
+	margin: 0 0 $padding/2;
+	padding-left: 25px;
 }
 
 h1,
@@ -30,120 +30,116 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: $system-font-stack;
+	font-family: $system-font-stack;
 }
 
 h1 {
-    @include font-size(32);
-    font-style: normal;
-    font-weight: 400;
-    margin: 0 0 25px;
+	@include font-size(32);
+	font-style: normal;
+	font-weight: 400;
+	margin: 0 0 25px;
 }
 
 h2 {
-    @include font-size(24);
-    font-style: normal;
-    font-weight: 400;
-    margin: 0 0 25px;
+	@include font-size(24);
+	font-style: normal;
+	font-weight: 400;
+	margin: 0 0 25px;
 }
 
 h3 {
-    @include font-size(20);
-    font-style: normal;
-    font-weight: 400;
-    margin: 0 0 25px;
+	@include font-size(20);
+	font-style: normal;
+	font-weight: 400;
+	margin: 0 0 25px;
 }
 
 h4 {
-    @include font-size(18);
-    font-style: normal;
-    font-weight: 700;
-    margin: 0 0 25px;
+	@include font-size(18);
+	font-style: normal;
+	font-weight: 700;
+	margin: 0 0 25px;
 }
 
 h5 {
-    @include font-size(16);
-    font-style: normal;
-    font-weight: normal;
-    margin: 0 0 25px;
+	@include font-size(16);
+	font-style: normal;
+	font-weight: normal;
+	margin: 0 0 25px;
 }
 
 p {
-    @include font-size(18);
-    margin: 0 0 $padding/2;
+	@include font-size(18);
+	margin: 0 0 $padding/2;
 }
 
 pre {
-    background: #222;
-    color: #fff;
-    display: block;
-    font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
-    @include font-size(13);
-    line-height: 20px;
-    margin: 0 0 $padding/2;
-    padding: 10px;
-    word-break: break-all;
-    word-wrap: break-word;
+	background: #222;
+	color: #fff;
+	display: block;
+	font-family: Monaco, Menlo, Consolas, 'Courier New', monospace;
+	@include font-size(13);
+	line-height: 20px;
+	margin: 0 0 $padding/2;
+	padding: 10px;
+	word-break: break-all;
+	word-wrap: break-word;
 }
 
 code {
-    border-radius: 5px;
-    background: #f5f5f5;
-    border: 1px solid rgba(0, 0, 0, .1);
-    font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
-    @include font-size(13);
-    line-height: 20px;
-    padding: 2px 10px;
-    word-break: break-all;
-    word-wrap: break-word;
+	border-radius: 5px;
+	background: #f5f5f5;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	font-family: Monaco, Menlo, Consolas, 'Courier New', monospace;
+	@include font-size(13);
+	line-height: 20px;
+	padding: 2px 10px;
+	word-break: break-all;
+	word-wrap: break-word;
 }
 
 a {
-    color: $color-primary;
+	color: $color-primary;
 
-    &:hover,
-    &:focus {
-    text-decoration: none;
-    }
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
 }
-
-
-
-
 
 // Responsive styles if needed
 // @include responsive($big-break) {
 // }
 @include responsive($break-sm) {
-    body {
-        @include font-size(16);
-    }
+	body {
+		@include font-size(16);
+	}
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5 {
-    margin-bottom: 10px;
-    }
+	h1,
+	h2,
+	h3,
+	h4,
+	h5 {
+		margin-bottom: 10px;
+	}
 
-    h1 {
-        @include font-size(26);
-    }
+	h1 {
+		@include font-size(26);
+	}
 
-    h2 {
-        @include font-size(20);
-    }
+	h2 {
+		@include font-size(20);
+	}
 
-    h3 {
-        @include font-size(16);
-    }
+	h3 {
+		@include font-size(16);
+	}
 
-    h4,
-    h5,
-    p,
-    ul,
-    ol {
-        @include font-size(16);
-    }
+	h4,
+	h5,
+	p,
+	ul,
+	ol {
+		@include font-size(16);
+	}
 }
