@@ -1,73 +1,63 @@
 .about {
-    @include transition(all 1200ms ease);
-    @include flexbox(inline-flex);
-    @include align-items(flex-start);
+	@include transition(all 1200ms ease);
+	@include flexbox(inline-flex);
+	@include align-items(flex-start);
 
-    &-picture {
-        @include flexbox(flex);
-        @include align-items(flex-start);
-        width: 45%;
+	&-picture {
+		@include flexbox(flex);
+		@include align-items(flex-start);
+		width: 45%;
 
-        img {
-            margin: 0 auto;
-            width: 360px;
-        }
+		img {
+			margin: 0 auto;
+			width: 360px;
+		}
+	}
 
-    }
+	&-blurb {
+		padding-right: 40px;
+		width: 55%;
 
-    &-blurb {
-        padding-right: 40px;
-        width: 55%;
+		a {
+			color: $green;
+			text-decoration: none;
 
-        a {
-            color: $green;
-            text-decoration: none;
-
-            &:hover,
-            &:focus, 
-            &:active {
-                animation: animatedgradient 10s ease-in alternate infinite !important;  
-                background: linear-gradient(330deg,#00C9FF,#92FE9D) !important;
-                background-size: 800% 800% !important;
-            }
-            
-        }
-
-    }
-
+			&:hover,
+			&:focus,
+			&:active {
+				animation: animatedgradient 10s ease-in alternate infinite !important;
+				background: linear-gradient(330deg, #00c9ff, #92fe9d) !important;
+				background-size: 800% 800% !important;
+			}
+		}
+	}
 }
 
 @media only screen and (max-width: $break-xlg) {
-    .about {
-        &-blurb {
-            padding-right: 20px;
-        }
-
-    }
-
+	.about {
+		&-blurb {
+			padding-right: 20px;
+		}
+	}
 }
 
 @media only screen and (max-width: $break-lg) {
-    .about {
-        @include flexbox(flex);
-        @include flex-direction(column);
+	.about {
+		@include flexbox(flex);
+		@include flex-direction(column);
 
-        &-picture,
-        &-blurb {
-            padding: 0;
-            width: 100%;
-        }
-
-    }
-
+		&-picture,
+		&-blurb {
+			padding: 0;
+			width: 100%;
+		}
+	}
 }
 
 @media only screen and (max-width: $break-sm) {
-    .about {
-        &-picture img{
-            width: 300px;
-        }
-
-    }
-
+	.about {
+		&-picture img {
+			width: 300px;
+		}
+	}
 }

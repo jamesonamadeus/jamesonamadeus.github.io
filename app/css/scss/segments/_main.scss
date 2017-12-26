@@ -1,26 +1,23 @@
 .main {
-    padding: 5px 30px 30px;
+	padding: 5px 30px 30px;
 
-    h2 {
-        margin: 100px 20px 20px;
-    }
+	h2 {
+		margin: 100px 20px 20px;
+	}
 }
 
 @media only screen and (max-width: $break-med) {
-    .main {
-        padding: 0 30px 20px;
+	.main {
+		padding: 0 30px 20px;
 
-        h2 {
-            margin: 100px auto 20px;
-        }
-
-    }
-
+		h2 {
+			margin: 100px auto 20px;
+		}
+	}
 }
 
 @media only screen and (max-width: 400px) {
-    .main {
-        padding: 0 15px 15px;
-    }
-
+	.main {
+		padding: 0 15px 15px;
+	}
 }

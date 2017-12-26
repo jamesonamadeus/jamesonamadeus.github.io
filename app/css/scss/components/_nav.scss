@@ -1,28 +1,24 @@
 //Nav Keyframes
 @keyframes slideInLeft {
+	0% {
+		transform: translate3d(250px, 0, 0);
+		visibility: visible;
+	}
 
-    0% {
-        transform: translate3d(250px, 0, 0);
-        visibility: visible;
-    }
-
-    100% {
-        transform: translate3d(0, 0, 0);
-    }
-
+	100% {
+		transform: translate3d(0, 0, 0);
+	}
 }
 
 @keyframes slideOutLeft {
+	0% {
+		transform: translate3d(0, 0, 0);
+	}
 
-    0% {
-        transform: translate3d(0, 0, 0);
-    }
-
-    100% {
-        transform: translate3d(250px, 0, 0);
-        visibility: hidden;
-    }
-
+	100% {
+		transform: translate3d(250px, 0, 0);
+		visibility: hidden;
+	}
 }
 
 //Nav Variables
@@ -33,163 +29,147 @@ $brgr-bun-width: 25px;
 $brgr-bun-height: $brgr-border-width;
 $brgr-font-size: 22px;
 $brgr-text-pad: $brgr-margin;
-$brgr-transition-speed: .5s;
+$brgr-transition-speed: 0.5s;
 $brgr-transition: all $brgr-transition-speed ease;
-$brgr-text-pad-top: ($brgr-margin / 2 + $brgr-height); 
+$brgr-text-pad-top: ($brgr-margin / 2 + $brgr-height);
 
 .nav {
-    background-color: $white;
-    height: $brgr-height;
+	background-color: $white;
+	height: $brgr-height;
 
-    &-list {
-        background-color: $white;
-        border-radius: 20px;
-        position: absolute;
-        right: 0;
-        z-index: 10;
+	&-list {
+		background-color: $white;
+		border-radius: 20px;
+		position: absolute;
+		right: 0;
+		z-index: 10;
 
-        &:not(.open) {
-            visibility: hidden;
-        }
+		&:not(.open) {
+			visibility: hidden;
+		}
 
-        &.open {
-            visibility: visible;
+		&.open {
+			visibility: visible;
 
-            .nav-item {
-                animation-duration: $brgr-transition-speed;
-                animation-fill-mode: both;
-                animation-name: slideInLeft;
-            }
+			.nav-item {
+				animation-duration: $brgr-transition-speed;
+				animation-fill-mode: both;
+				animation-name: slideInLeft;
+			}
+		}
+	}
 
-        }
+	&-item {
+		color: lighten($black, 10%);
+		list-style-type: none;
+		padding: 10px;
+		text-align: right;
+		transform: translateX(-250px);
 
-    }
+		&:first-child {
+			padding-top: $brgr-text-pad-top;
+		}
 
-    &-item {
-        color: lighten($black, 10%);
-        list-style-type: none;
-        padding: 10px;
-        text-align: right;
-        transform: translateX(-250px);
+		&:not(.open) {
+			animation-duration: $brgr-transition-speed;
+			animation-fill-mode: both;
+			animation-name: slideOutLeft;
+		}
+	}
 
-        &:first-child {
-            padding-top: $brgr-text-pad-top;
-        }
+	&-link {
+		background: $white;
+		border-right: white solid $brgr-border-width;
+		color: lighten($black, 10%);
+		font-size: $brgr-font-size;
+		font-weight: 400;
+		margin-right: $brgr-margin;
+		text-decoration: none;
+		transition: $brgr-transition;
+		width: auto;
 
-        &:not(.open){
-            animation-duration: $brgr-transition-speed;
-            animation-fill-mode: both;
-            animation-name: slideOutLeft;
-        }
-        
-    }
+		&:hover,
+		&--active {
+			border-right: lighten($black, 10%) solid $brgr-border-width;
+			padding-right: $brgr-text-pad;
+		}
+	}
 
-    &-link {
-        background: $white;
-        border-right: white solid $brgr-border-width;
-        color: lighten($black, 10%);
-        font-size: $brgr-font-size;
-        font-weight: 400;
-        margin-right: $brgr-margin;
-        text-decoration: none;
-        transition: $brgr-transition;
-        width: auto;
-      
-        &:hover,
-        &--active {
-            border-right: lighten($black, 10%) solid $brgr-border-width;
-            padding-right: $brgr-text-pad;
-        }
+	&-menu {
+		background: transparent;
+		border: rgba(0, 0, 0, 1) solid $brgr-border-width;
+		border-radius: 50%;
+		cursor: pointer;
+		display: inline-block;
+		height: $brgr-height;
+		padding-left: 15px;
+		padding-top: 18px;
+		position: relative;
+		transition: $brgr-transition;
+		user-select: none;
+		width: $brgr-height;
+		z-index: 20;
 
-    }
+		&:hover {
+			// border: rgba(0, 0, 0, .2) solid $brgr-border-width;
+		}
+	}
 
-    &-menu {
-        background: transparent;
-        border: rgba(0, 0, 0, 1) solid $brgr-border-width;
-        border-radius: 50%;
-        cursor: pointer;
-        display: inline-block;
-        height: $brgr-height;
-        padding-left: 15px;
-        padding-top: 18px;
-        position: relative;
-        transition: $brgr-transition;
-        user-select: none;
-        width: $brgr-height;
-        z-index: 20;
-    
-        &:hover {
-            // border: rgba(0, 0, 0, .2) solid $brgr-border-width;
-        }
+	&-contain {
+		&.open {
+			.nav-main {
+				border: lighten($black, 10%) solid $brgr-border-width;
+			}
 
-    }
+			.nav-bun--top {
+				background: blighten($black, 10%) lack;
+				top: 9px;
+				transform: rotate(45deg);
+			}
 
-    &-contain {
-      
-        &.open {
+			.nav-bun--mid {
+				opacity: 0;
+			}
 
-            .nav-main {
-                border: lighten($black, 10%) solid $brgr-border-width;
-            }
-        
-            .nav-bun--top {
-                background: blighten($black, 10%)lack;
-                top: 9px;
-                transform: rotate(45deg);
-            }
-        
-            .nav-bun--mid {
-                opacity: 0;
-            }
-        
-            .nav-bun--bot {
-                background: lighten($black, 10%);
-                top: 5px;
-                transform: rotate(-45deg);
-            }
+			.nav-bun--bot {
+				background: lighten($black, 10%);
+				top: 5px;
+				transform: rotate(-45deg);
+			}
+		}
+	}
 
-        }
+	&-bun {
+		background: lighten($black, 10%);
+		position: relative;
+		transition: $brgr-transition;
 
-    }
+		&--top,
+		&--mid,
+		&--bot {
+			height: $brgr-bun-height;
+			width: $brgr-bun-width;
+		}
 
-    &-bun {
-        background: lighten($black, 10%);
-        position: relative;
-        transition: $brgr-transition;
+		&--top {
+			top: 0;
+		}
 
-        &--top,
-        &--mid,
-        &--bot {
-            height: $brgr-bun-height;
-            width: $brgr-bun-width;
-        }
-      
-        &--top {
-            top: 0;
-        }
-      
-        &--mid {
-            top: 8px;
-        }
-      
-        &--bot {
-            top: 16px;
-        }
+		&--mid {
+			top: 8px;
+		}
 
-    }
-
+		&--bot {
+			top: 16px;
+		}
+	}
 }
 
 @media only screen and (max-width: $break-sm) {
-    .nav {
-
-        &-link {
-            @include font-size(20);
-            margin-right: 20px;
-        }
-
-    }
-
+	.nav {
+		&-link {
+			@include font-size(20);
+			margin-right: 20px;
+		}
+	}
 }
-
-

@@ -1,34 +1,32 @@
 .readings {
-    padding: 0 20px;
+	padding: 0 20px;
 
-    li {
-        margin: 10px auto;
-    }
+	li {
+		margin: 10px auto;
+	}
 
-    a {
-        color: $bluegreen;
-        text-decoration: none;
+	a {
+		color: $bluegreen;
+		text-decoration: none;
 
-        &:hover,
-        &:focus, 
-        &:active {
-            animation: animatedgradient 10s ease-in alternate infinite !important;  
-            background: linear-gradient(330deg,#00C9FF,#92FE9D) !important;
-            background-size: 800% 800% !important;
-        }
-    }
+		&:hover,
+		&:focus,
+		&:active {
+			animation: animatedgradient 10s ease-in alternate infinite !important;
+			background: linear-gradient(330deg, #00c9ff, #92fe9d) !important;
+			background-size: 800% 800% !important;
+		}
+	}
 }
 
 @media only screen and (max-width: $break-med) {
-    .readings {
-        padding: 0;
-    }
-
+	.readings {
+		padding: 0;
+	}
 }
 
 @media only screen and (max-width: $break-sm) {
-    ul {
-        padding-left: 30px;
-    }
-
+	ul {
+		padding-left: 30px;
+	}
 }
