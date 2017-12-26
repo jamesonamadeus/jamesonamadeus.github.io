@@ -1,33 +1,35 @@
 {
-  "name": "jamesonamadeus.github.io",
-  "version": "1.0.0",
-  "description": "portfolio",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jamesonamadeus/jamesonamadeus.github.io.git"
-  },
-  "author": "jamesonamadeus",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jamesonamadeus/jamesonamadeus.github.io/issues"
-  },
-  "homepage": "https://github.com/jamesonamadeus/jamesonamadeus.github.io#readme",
-  "devDependencies": {
-    "browser-sync": "^2.23.6",
-    "del": "^3.0.0",
-    "gulp": "^3.9.1",
-    "gulp-cache": "^1.0.2",
-    "gulp-imagemin": "^4.1.0",
-    "gulp-sass": "^3.1.0",
-    "gulp-uglify": "^3.0.0",
-    "gulp-useref": "^3.1.4",
-    "run-sequence": "^2.2.1"
-  },
-  "dependencies": {
-    "gulp-cssnano": "^2.1.2"
-  }
+	"name": "jamesonamadeus.github.io",
+	"version": "1.0.0",
+	"description": "portfolio",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"format": "prettier --write '**/*.{js,jsx,html,scss}'"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/jamesonamadeus/jamesonamadeus.github.io.git"
+	},
+	"author": "jamesonamadeus",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/jamesonamadeus/jamesonamadeus.github.io/issues"
+	},
+	"homepage": "https://github.com/jamesonamadeus/jamesonamadeus.github.io#readme",
+	"devDependencies": {
+		"browser-sync": "^2.23.6",
+		"del": "^3.0.0",
+		"gulp": "^3.9.1",
+		"gulp-cache": "^1.0.2",
+		"gulp-imagemin": "^4.1.0",
+		"gulp-sass": "^3.1.0",
+		"gulp-uglify": "^3.0.0",
+		"gulp-useref": "^3.1.4",
+		"prettier": "^1.11.1",
+		"run-sequence": "^2.2.1"
+	},
+	"dependencies": {
+		"gulp-cssnano": "^2.1.2"
+	}
 }
