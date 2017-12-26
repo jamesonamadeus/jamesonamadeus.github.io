@@ -1,3 +1,5 @@
+.gitignore
+
 # Exclude stuff 
 node_modules
 
