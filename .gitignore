@@ -2,6 +2,7 @@
 
 # Exclude stuff 
 node_modules
+dist
 
 # Exclude hidden OS files
 .DS_Store
