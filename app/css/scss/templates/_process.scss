@@ -63,6 +63,18 @@
 			@include justify-content(flex-end);
 			line-height: 22px;
 			padding: 150px 0 300px;
+
+			&-iterate {
+				padding: 130px 0 300px;
+
+				.process-main-text {
+					margin: 10px 40px 5px 84px;
+				}
+			}
+
+			&:last-of-type {
+				padding: 150px 0 20px;
+			}
 		}
 		&-inner {
 			@include flexbox(flex);

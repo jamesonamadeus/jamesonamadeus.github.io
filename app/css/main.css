@@ -1,6 +1,6 @@
 .clearfix:after,
 .group:after {
-  content: " ";
+  content: ' ';
   display: block;
   clear: both; }
 
@@ -34,7 +34,7 @@
 
 .clearfix:after,
 .group:after {
-  content: " ";
+  content: ' ';
   display: block;
   clear: both; }
 
@@ -214,7 +214,7 @@ a {
 
 .clearfix:after,
 .group:after {
-  content: " ";
+  content: ' ';
   display: block;
   clear: both; }
 
@@ -336,7 +336,7 @@ a {
   -webkit-align-items: center;
   align-items: center;
   background: #fff;
-  padding: 20px;
+  padding: 20px 20px 0;
   position: fixed;
   top: 0;
   width: 100%; }
@@ -494,7 +494,7 @@ a {
       border: 2px solid #2dfd42;
       border-bottom: 0;
       animation: animatedgradient 10s ease alternate infinite !important;
-      background: linear-gradient(330deg, #00C9FF, #92FE9D) !important;
+      background: linear-gradient(330deg, #00c9ff, #92fe9d) !important;
       background-size: 800% 800% !important; }
   .recent-bitcoin {
     border: 2px solid #373737; }
@@ -580,7 +580,7 @@ a {
       text-decoration: none; }
       .about-blurb a:hover, .about-blurb a:focus, .about-blurb a:active {
         animation: animatedgradient 10s ease-in alternate infinite !important;
-        background: linear-gradient(330deg, #00C9FF, #92FE9D) !important;
+        background: linear-gradient(330deg, #00c9ff, #92fe9d) !important;
         background-size: 800% 800% !important; }
 
 @media only screen and (max-width: 1000px) {
@@ -612,7 +612,7 @@ a {
     text-decoration: none; }
     .readings a:hover, .readings a:focus, .readings a:active {
       animation: animatedgradient 10s ease-in alternate infinite !important;
-      background: linear-gradient(330deg, #00C9FF, #92FE9D) !important;
+      background: linear-gradient(330deg, #00c9ff, #92fe9d) !important;
       background-size: 800% 800% !important; }
 
 @media only screen and (max-width: 600px) {
@@ -710,6 +710,12 @@ a {
     justify-content: flex-end;
     line-height: 22px;
     padding: 150px 0 300px; }
+    .process-main-container-iterate {
+      padding: 130px 0 300px; }
+      .process-main-container-iterate .process-main-text {
+        margin: 10px 40px 5px 84px; }
+    .process-main-container:last-of-type {
+      padding: 150px 0 20px; }
   .process-main-inner {
     display: -ms-flexbox;
     display: -webkit-flex;
