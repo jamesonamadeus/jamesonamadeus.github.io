@@ -145,7 +145,7 @@
 	@include flex-direction(column);
 	@include align-items(flex-end);
 	@include justify-content(center);
-	margin: 80px auto 0;
+	margin: 60px auto 0;
 	text-decoration: none;
 	color: lighten($black, 10%);
 	&-icon {
@@ -220,6 +220,14 @@
 	.process {
 		padding: 0 0 30px;
 		&-main {
+			&-container {
+				padding: 130px 0 200px;
+
+				&:last-of-type {
+					padding: 130px 0 20px;
+				}
+			}
+
 			&-letter {
 				height: 65px;
 				width: 65px;
@@ -270,7 +278,7 @@
 		padding: 0 0 10px;
 		&-main {
 			&-text {
-				margin: 10px 0;
+				margin: 10px 0 !important;
 			}
 			&-inner {
 				&-refine {

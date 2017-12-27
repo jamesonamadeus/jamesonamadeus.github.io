@@ -800,7 +800,7 @@ a {
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  margin: 80px auto 0;
+  margin: 60px auto 0;
   text-decoration: none;
   color: #2b2b2b; }
   .repeat-icon {
@@ -881,6 +881,10 @@ a {
 @media only screen and (max-width: 600px) {
   .process {
     padding: 0 0 30px; }
+    .process-main-container {
+      padding: 130px 0 200px; }
+      .process-main-container:last-of-type {
+        padding: 130px 0 20px; }
     .process-main-letter {
       height: 65px;
       width: 65px; }
@@ -914,7 +918,7 @@ a {
   .process {
     padding: 0 0 10px; }
     .process-main-text {
-      margin: 10px 0; }
+      margin: 10px 0 !important; }
     .process-main-inner-refine .process-main-letter p {
       margin-top: -4px; }
     .process-main-inner-refine .process-main-rest {
