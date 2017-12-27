@@ -357,6 +357,10 @@ a {
 
 .main {
   padding: 5px 30px 30px; }
+  .main-home {
+    padding: 0; }
+    .main-home h2 {
+      margin: 80px 0 0; }
   .main h2 {
     margin: 100px 20px 20px; }
 
@@ -603,25 +607,12 @@ a {
   .about-picture img {
     width: 300px; } }
 
-.readings {
-  padding: 0 20px; }
-  .readings li {
-    margin: 10px auto; }
-  .readings a {
-    color: #22a6b3;
-    text-decoration: none; }
-    .readings a:hover, .readings a:focus, .readings a:active {
-      animation: animatedgradient 10s ease-in alternate infinite !important;
-      background: linear-gradient(330deg, #00c9ff, #92fe9d) !important;
-      background-size: 800% 800% !important; }
-
-@media only screen and (max-width: 600px) {
-  .readings {
-    padding: 0; } }
-
-@media only screen and (max-width: 480px) {
-  ul {
-    padding-left: 30px; } }
+.home h2 {
+  font-size: 78px !important;
+  font-size: 4.875rem !important;
+  margin: 80px 0 0;
+  line-height: 62px;
+  text-align: justify; }
 
 .process {
   padding: 0 20px; }
@@ -941,3 +932,23 @@ a {
       .process-header-eye p, .process-header-yee p, .process-header-are p {
         font-size: 38px !important;
         font-size: 2.375rem !important; } }
+
+.readings {
+  padding: 0 20px; }
+  .readings li {
+    margin: 10px auto; }
+  .readings a {
+    color: #22a6b3;
+    text-decoration: none; }
+    .readings a:hover, .readings a:focus, .readings a:active {
+      animation: animatedgradient 10s ease-in alternate infinite !important;
+      background: linear-gradient(330deg, #00c9ff, #92fe9d) !important;
+      background-size: 800% 800% !important; }
+
+@media only screen and (max-width: 600px) {
+  .readings {
+    padding: 0; } }
+
+@media only screen and (max-width: 480px) {
+  ul {
+    padding-left: 30px; } }

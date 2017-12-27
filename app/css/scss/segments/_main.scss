@@ -1,6 +1,14 @@
 .main {
 	padding: 5px 30px 30px;
 
+	&-home {
+		padding: 0;
+
+		h2 {
+			margin: 80px 0 0;
+		}
+	}
+
 	h2 {
 		margin: 100px 20px 20px;
 	}

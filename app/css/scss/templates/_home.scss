@@ -1,0 +1,8 @@
+.home {
+	h2 {
+		@include font-size(78);
+		margin: 80px 0 0;
+		line-height: 62px;
+		text-align: justify;
+	}
+}
