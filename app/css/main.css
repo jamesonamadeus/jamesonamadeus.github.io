@@ -212,6 +212,9 @@ a {
     transform: translate3d(250px, 0, 0);
     visibility: hidden; } }
 
+.bold {
+  font-weight: 500; }
+
 .clearfix:after,
 .group:after {
   content: ' ';
@@ -621,8 +624,9 @@ a {
     font-size: 78px !important;
     font-size: 4.875rem !important;
     margin: 80px 0 0;
-    line-height: 62px;
-    text-align: justify; }
+    width: 400px;
+    line-height: 66px;
+    text-align: left; }
 
 svg {
   padding: 5vw;
