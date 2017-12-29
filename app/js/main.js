@@ -32,7 +32,8 @@ el.addEventListener(
 	'click',
 	function() {
 		mockup.style.display = 'block';
-		code.style.display = 'none';
+		code.classList.toggle('fade');
+		// code.style.display = 'none';
 
 		var tmax_optionsGlobal = {
 			repeat: -1,

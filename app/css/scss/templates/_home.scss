@@ -1,89 +1,122 @@
 .home {
-    @include flexbox(flex);
-    @include align-items(center);
-    @include justify-content(center);
-    .header-container,
-    .codesign {
-        @include flexbox(flex);
-        @include align-items(center);
-        height: 100vh;
-    }
-    .header-container {
-        margin: 0 26px;
-        width: 40%;
-    }
-    .codesign {
-        width: 60%;
-    }
-    h2 {
-        @include font-size(78);
-        line-height: 66px;
-        margin: 0;
-        text-align: left;
-    }
-    #mockup {
-        display: none;
-        padding: 5vw;
-        height: 90vh;
-        .st0 {
-            fill: #E6E6E6;
-        }
-        .st1 {
-            fill: #FFFFFF;
-        }
-        .st2 {
-            fill: #3A3A3A;
-        }
-        .st3 {
-            fill: #F7F7F7;
-        }
-        .st4 {
-            fill: none;
-        }
-        .st5 {
-            fill: #FCFCFC;
-        }
-        .st6 {
-            clip-path: url(#SVGID_2_);
-        }
-        .st7 {
-            fill: #FFFFFF;
-            stroke: #3A3A3A;
-            stroke-width: 2;
-            stroke-miterlimit: 10;
-        }
-        .st8 {
-            fill: #FCFCFC;
-            stroke: #E6E6E6;
-            stroke-width: 2;
-            stroke-miterlimit: 10;
-        }
-        .st9 {
-            fill: none;
-            stroke: #E6E6E6;
-            stroke-width: 2;
-            stroke-miterlimit: 10;
-        }
-        .st10 {
-            fill: #F1F1F2;
-        }
-        .st11 {
-            fill: #E6E7E8;
-        }
-        .st12 {
-            fill: #70B34A;
-        }
-        .st13 {
-            fill: #DDAA54;
-        }
-        .st14 {
-            fill: #D5655D;
-        }
-        .st15 {
-            fill: #D9D9D8;
-        }
-        .st16 {
-            fill: #A0A09F;
-        }
-    }
+	@include flexbox(flex);
+	@include align-items(center);
+	@include justify-content(center);
+	margin-top: 80px;
+
+	.header-container,
+	.codesign {
+		@include flexbox(flex);
+		@include align-items(center);
+		height: 80vh;
+	}
+
+	.header-container {
+		margin: 0 26px;
+		width: 40%;
+	}
+
+	.codesign {
+		width: 60%;
+	}
+
+	#code {
+		opacity: 1;
+		transition: opacity 0.5s;
+	}
+
+	#code.fade {
+		opacity: 0;
+	}
+
+	h2 {
+		@include font-size(78);
+		line-height: 66px;
+		margin: 0;
+		text-align: left;
+	}
+
+	#mockup {
+		display: none;
+		position: absolute;
+		padding: 5vw;
+		height: 90vh;
+
+		.st0 {
+			fill: #e6e6e6;
+		}
+
+		.st1 {
+			fill: #ffffff;
+		}
+
+		.st2 {
+			fill: #3a3a3a;
+		}
+
+		.st3 {
+			fill: #f7f7f7;
+		}
+
+		.st4 {
+			fill: none;
+		}
+
+		.st5 {
+			fill: #fcfcfc;
+		}
+
+		.st6 {
+			clip-path: url(#SVGID_2_);
+		}
+
+		.st7 {
+			fill: #ffffff;
+			stroke: #3a3a3a;
+			stroke-width: 2;
+			stroke-miterlimit: 10;
+		}
+
+		.st8 {
+			fill: #fcfcfc;
+			stroke: #e6e6e6;
+			stroke-width: 2;
+			stroke-miterlimit: 10;
+		}
+
+		.st9 {
+			fill: none;
+			stroke: #e6e6e6;
+			stroke-width: 2;
+			stroke-miterlimit: 10;
+		}
+
+		.st10 {
+			fill: #f1f1f2;
+		}
+
+		.st11 {
+			fill: #e6e7e8;
+		}
+
+		.st12 {
+			fill: #70b34a;
+		}
+
+		.st13 {
+			fill: #ddaa54;
+		}
+
+		.st14 {
+			fill: #d5655d;
+		}
+
+		.st15 {
+			fill: #d9d9d8;
+		}
+
+		.st16 {
+			fill: #a0a09f;
+		}
+	}
 }
