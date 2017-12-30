@@ -23,7 +23,7 @@ var scroll = new SmoothScroll('a[href*="#"]', {
 	easing: 'easeInOutQuad'
 });
 
-//
+//fade intro
 el = document.getElementById('hereNow');
 face = document.getElementById('face');
 el.addEventListener(
