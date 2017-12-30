@@ -628,6 +628,9 @@ a {
     line-height: 66px;
     text-align: left; }
 
+#face {
+  display: none; }
+
 svg {
   padding: 5vw;
   height: 90vh; }
