@@ -621,91 +621,72 @@ a {
   -webkit-justify-content: center;
   justify-content: center; }
   .home .header-container,
-  .home .codedesign {
+  .home .codesign {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    height: 100vh;
-    width: 50%; }
+    height: 100vh; }
+  .home .header-container {
+    margin: 0 26px;
+    width: 40%; }
+  .home .codesign {
+    width: 60%; }
   .home h2 {
     font-size: 78px !important;
     font-size: 4.875rem !important;
     line-height: 66px;
-    margin: 0 auto;
+    margin: 0;
     text-align: left; }
-
-#mockup {
-  display: none; }
-
-svg {
-  padding: 5vw;
-  height: 90vh; }
-
-.st0 {
-  fill: #E6E6E6; }
-
-.st1 {
-  fill: #FFFFFF; }
-
-.st2 {
-  fill: #3A3A3A; }
-
-.st3 {
-  fill: #F7F7F7; }
-
-.st4 {
-  fill: none; }
-
-.st5 {
-  fill: #FCFCFC; }
-
-.st6 {
-  clip-path: url(#SVGID_2_); }
-
-.st7 {
-  fill: #FFFFFF;
-  stroke: #3A3A3A;
-  stroke-width: 2;
-  stroke-miterlimit: 10; }
-
-.st8 {
-  fill: #FCFCFC;
-  stroke: #E6E6E6;
-  stroke-width: 2;
-  stroke-miterlimit: 10; }
-
-.st9 {
-  fill: none;
-  stroke: #E6E6E6;
-  stroke-width: 2;
-  stroke-miterlimit: 10; }
-
-.st10 {
-  fill: #F1F1F2; }
-
-.st11 {
-  fill: #E6E7E8; }
-
-.st12 {
-  fill: #70B34A; }
-
-.st13 {
-  fill: #DDAA54; }
-
-.st14 {
-  fill: #D5655D; }
-
-.st15 {
-  fill: #D9D9D8; }
-
-.st16 {
-  fill: #A0A09F; }
+  .home #mockup {
+    display: none;
+    padding: 5vw;
+    height: 90vh; }
+    .home #mockup .st0 {
+      fill: #E6E6E6; }
+    .home #mockup .st1 {
+      fill: #FFFFFF; }
+    .home #mockup .st2 {
+      fill: #3A3A3A; }
+    .home #mockup .st3 {
+      fill: #F7F7F7; }
+    .home #mockup .st4 {
+      fill: none; }
+    .home #mockup .st5 {
+      fill: #FCFCFC; }
+    .home #mockup .st6 {
+      clip-path: url(#SVGID_2_); }
+    .home #mockup .st7 {
+      fill: #FFFFFF;
+      stroke: #3A3A3A;
+      stroke-width: 2;
+      stroke-miterlimit: 10; }
+    .home #mockup .st8 {
+      fill: #FCFCFC;
+      stroke: #E6E6E6;
+      stroke-width: 2;
+      stroke-miterlimit: 10; }
+    .home #mockup .st9 {
+      fill: none;
+      stroke: #E6E6E6;
+      stroke-width: 2;
+      stroke-miterlimit: 10; }
+    .home #mockup .st10 {
+      fill: #F1F1F2; }
+    .home #mockup .st11 {
+      fill: #E6E7E8; }
+    .home #mockup .st12 {
+      fill: #70B34A; }
+    .home #mockup .st13 {
+      fill: #DDAA54; }
+    .home #mockup .st14 {
+      fill: #D5655D; }
+    .home #mockup .st15 {
+      fill: #D9D9D8; }
+    .home #mockup .st16 {
+      fill: #A0A09F; }
 
 .process {
   padding: 0 20px; }

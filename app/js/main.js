@@ -26,10 +26,13 @@ var scroll = new SmoothScroll('a[href*="#"]', {
 //fade intro
 el = document.getElementById('hereNow');
 mockup = document.getElementById('mockup');
+code = document.getElementById('code');
+
 el.addEventListener(
 	'click',
 	function() {
 		mockup.style.display = 'block';
+		code.style.display = 'none';
 
 		var tmax_optionsGlobal = {
 			repeat: -1,
