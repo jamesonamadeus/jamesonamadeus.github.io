@@ -74,28 +74,19 @@ p {
 }
 
 pre {
-	background: #222;
-	color: #fff;
-	display: block;
-	font-family: Monaco, Menlo, Consolas, 'Courier New', monospace;
-	@include font-size(13);
-	line-height: 20px;
-	margin: 0 0 $padding/2;
-	padding: 10px;
-	word-break: break-all;
-	word-wrap: break-word;
+	border-left: 0.5rem solid rgba(0, 0, 0, 0.5);
+	color: $white;
+	margin: 0;
+	padding: 0;
 }
 
 code {
-	border-radius: 5px;
-	background: #f5f5f5;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	font-family: Monaco, Menlo, Consolas, 'Courier New', monospace;
-	@include font-size(13);
-	line-height: 20px;
-	padding: 2px 10px;
-	word-break: break-all;
-	word-wrap: break-word;
+	background-color: $black;
+	border: 1px solid rgba(0, 0, 0, 0.25);
+	border-radius: 4px;
+	display: inline-block;
+	margin: 0 0.25rem;
+	padding: 15px;
 }
 
 a {

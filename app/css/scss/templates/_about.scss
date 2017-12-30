@@ -6,7 +6,7 @@
 	&-picture {
 		@include flexbox(flex);
 		@include align-items(flex-start);
-		width: 45%;
+		width: 40%;
 
 		img {
 			margin: 0 auto;
@@ -16,7 +16,7 @@
 
 	&-blurb {
 		padding-right: 40px;
-		width: 55%;
+		width: 60%;
 
 		a {
 			color: $green;
