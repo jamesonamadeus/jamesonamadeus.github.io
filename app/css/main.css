@@ -640,7 +640,7 @@ a {
     margin: 0 auto;
     text-align: left; }
 
-#face {
+#mockup {
   display: none; }
 
 svg {
@@ -648,52 +648,64 @@ svg {
   height: 90vh; }
 
 .st0 {
-  fill: #fefefe; }
+  fill: #E6E6E6; }
 
 .st1 {
-  fill: #f3f3f3; }
+  fill: #FFFFFF; }
 
 .st2 {
-  fill: #f8f8f8; }
+  fill: #3A3A3A; }
 
 .st3 {
-  fill: #2f2f2f; }
+  fill: #F7F7F7; }
 
 .st4 {
-  fill: #f6f6f6; }
+  fill: none; }
 
 .st5 {
-  fill: #dedede; }
+  fill: #FCFCFC; }
 
 .st6 {
-  fill: #909090; }
+  clip-path: url(#SVGID_2_); }
 
 .st7 {
-  fill: #bcbcbc; }
+  fill: #FFFFFF;
+  stroke: #3A3A3A;
+  stroke-width: 2;
+  stroke-miterlimit: 10; }
 
 .st8 {
-  fill: #cecece; }
+  fill: #FCFCFC;
+  stroke: #E6E6E6;
+  stroke-width: 2;
+  stroke-miterlimit: 10; }
 
 .st9 {
-  fill: #e8e8e8; }
+  fill: none;
+  stroke: #E6E6E6;
+  stroke-width: 2;
+  stroke-miterlimit: 10; }
 
 .st10 {
-  fill: #797979; }
+  fill: #F1F1F2; }
 
 .st11 {
-  fill: #4e4e4e; }
+  fill: #E6E7E8; }
 
 .st12 {
-  fill: #efefef; }
+  fill: #70B34A; }
 
 .st13 {
-  fill: #676767; }
+  fill: #DDAA54; }
 
 .st14 {
-  fill: #fafafa; }
+  fill: #D5655D; }
 
 .st15 {
-  fill: #aaaaaa; }
+  fill: #D9D9D8; }
+
+.st16 {
+  fill: #A0A09F; }
 
 .process {
   padding: 0 20px; }

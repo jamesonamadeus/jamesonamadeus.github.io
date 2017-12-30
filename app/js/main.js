@@ -25,11 +25,11 @@ var scroll = new SmoothScroll('a[href*="#"]', {
 
 //fade intro
 el = document.getElementById('hereNow');
-face = document.getElementById('face');
+mockup = document.getElementById('mockup');
 el.addEventListener(
 	'click',
 	function() {
-		face.style.display = 'block';
+		mockup.style.display = 'block';
 
 		var tmax_optionsGlobal = {
 			repeat: -1,
@@ -40,7 +40,7 @@ el.addEventListener(
 		CSSPlugin.useSVGTransformAttr = true;
 
 		var tl = new TimelineMax(tmax_optionsGlobal),
-			path = '#face *',
+			path = '#mockup *',
 			stagger_val = 0.009,
 			duration = 5;
 
