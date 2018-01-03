@@ -86,22 +86,25 @@
             </div>
             <div class="codesign">
                 <div class="code" id="code">
-                    <pre><code>&lt;nav&gt;
-        &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#&quot; title=&quot;Home&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#&quot; title=&quot;Blog&quot;&gt;Blog&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#&quot; title=&quot;Work&quot;&gt;Work&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#&quot; title=&quot;Resources&quot;&gt;Resources&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#&quot; title=&quot;Meta&quot;&gt;Meta&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/nav&gt;
-&lt;nav&gt;
-        &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#&quot; title=&quot;Home&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#&quot; title=&quot;Blog&quot;&gt;Blog&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#&quot; title=&quot;Work&quot;&gt;Work&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#&quot; title=&quot;Resources&quot;&gt;Resources&lt;/a&gt;&lt;/li&gt;
-&lt;/nav&gt;
+                    <pre><code>var tl = new TimelineMax(tmax_optionsGlobal),
+    path = '#mockup *',
+    stagger_val = 0.009,
+    duration = 5;
+
+var stagger_opts_to = {
+    x: 0,
+    y: 0,
+    opacity: 1,
+    scale: 1,
+    rotation: 0,
+    ease: Power4.easeOut
+};
+
+tl.staggerTo(path, duration, stagger_opts_to, stagger_val);
+
+function getRandom(min, max) {
+    return Math.random() * (max - min) + min;
+}
 </code></pre>
                     <button id="hereNow">Deploy Code</button>
                 </div>

@@ -81,6 +81,7 @@ pre {
 }
 
 code {
+	@include font-size(12);
 	background-color: $black;
 	border: 1px solid rgba(0, 0, 0, 0.25);
 	border-radius: 4px;
