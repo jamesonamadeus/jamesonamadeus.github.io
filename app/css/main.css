@@ -120,7 +120,8 @@ pre {
   border-left: 0.5rem solid rgba(0, 0, 0, 0.5);
   color: #fff;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  width: 100%; }
 
 code {
   font-size: 12px !important;
@@ -130,7 +131,8 @@ code {
   border-radius: 4px;
   display: inline-block;
   margin: 0 0.25rem;
-  padding: 15px; }
+  padding: 15px;
+  width: 100%; }
 
 a {
   color: #4834d4; }
@@ -616,7 +618,7 @@ a {
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  margin: 80px 30px 0; }
+  margin: 80px 0 0; }
   .home .header-container,
   .home .codesign {
     display: -ms-flexbox;
@@ -632,10 +634,15 @@ a {
       display: block !important;
       width: 100% !important; }
   .home .codesign {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
     width: 55%; }
   .home #code {
     opacity: 1;
-    transition: opacity 5s ease; }
+    transition: opacity 5s ease;
+    width: 98%; }
   .home #code.fade {
     opacity: 0; }
   .home h2 {
@@ -707,23 +714,14 @@ a {
     font-size: 4.625rem !important;
     line-height: 74px; }
   .home .header-container {
-    width: 42%; }
+    width: 45%; }
   .home .codesign {
-    width: 58%; }
+    width: 55%; }
   .home #mockup {
     padding: 5vw;
     height: 80vh; } }
 
 @media only screen and (max-width: 800px) {
-  .home h2 {
-    font-size: 54px !important;
-    font-size: 3.375rem !important;
-    line-height: 54px; }
-  .home #mockup {
-    padding: 4vw;
-    height: 70vh; } }
-
-@media only screen and (max-width: 600px) {
   .home {
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -742,19 +740,39 @@ a {
     .home .codesign {
       height: 80vh; }
     .home .header-container {
+      background: rgba(255, 255, 255, 0.4);
+      padding: 0;
+      z-index: 50;
       width: 100%; }
       .home .header-container-block {
         display: inline-block !important;
         width: 100% !important; }
     .home .codesign {
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      position: absolute;
+      z-index: 10;
       width: 100%; }
-    .home h2 {
-      font-size: 50px !important;
-      font-size: 3.125rem !important;
-      line-height: 50px; }
+    .home .code {
+      padding: 30px; }
     .home #mockup {
       padding: 4vw;
       height: 70vh; } }
+
+@media only screen and (max-width: 480px) {
+  .home .header-container,
+  .home .codesign {
+    height: 80vh; }
+  .home .codesign {
+    width: 100%; }
+  .home h2 {
+    font-size: 54px !important;
+    font-size: 3.375rem !important;
+    line-height: 54px; }
+  .home #mockup {
+    padding: 4vw;
+    height: 60vh; } }
 
 .process {
   padding: 0 20px; }

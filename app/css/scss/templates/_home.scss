@@ -2,7 +2,7 @@
 	@include flexbox(flex);
 	@include align-items(center);
 	@include justify-content(center);
-	margin: 80px 30px 0;
+	margin: 80px 0 0;
 
 	.header-container,
 	.codesign {
@@ -21,12 +21,14 @@
 	}
 
 	.codesign {
+		@include transition(all 0.5s ease);
 		width: 55%;
 	}
 
 	#code {
 		opacity: 1;
 		transition: opacity 5s ease;
+		width: 98%;
 	}
 
 	#code.fade {
@@ -135,11 +137,11 @@
 		}
 
 		.header-container {
-			width: 42%;
+			width: 45%;
 		}
 
 		.codesign {
-			width: 58%;
+			width: 55%;
 		}
 
 		#mockup {
@@ -150,20 +152,6 @@
 }
 
 @media only screen and (max-width: $break-lg) {
-	.home {
-		h2 {
-			@include font-size(54);
-			line-height: 54px;
-		}
-
-		#mockup {
-			padding: 4vw;
-			height: 70vh;
-		}
-	}
-}
-
-@media only screen and (max-width: $break-med) {
 	.home {
 		@include flexbox(flex);
 		@include flex-direction(column);
@@ -177,6 +165,9 @@
 		}
 
 		.header-container {
+			background: rgba(255, 255, 255, 0.4);
+			padding: 0;
+			z-index: 50;
 			width: 100%;
 
 			&-block {
@@ -186,17 +177,42 @@
 		}
 
 		.codesign {
+			@include justify-content(center);
+			position: absolute;
+			z-index: 10;
 			width: 100%;
 		}
 
-		h2 {
-			@include font-size(50);
-			line-height: 50px;
+		.code {
+			padding: 30px;
 		}
 
 		#mockup {
 			padding: 4vw;
 			height: 70vh;
+		}
+	}
+}
+
+@media only screen and (max-width: $break-sm) {
+	.home {
+		.header-container,
+		.codesign {
+			height: 80vh;
+		}
+
+		.codesign {
+			width: 100%;
+		}
+
+		h2 {
+			@include font-size(54);
+			line-height: 54px;
+		}
+
+		#mockup {
+			padding: 4vw;
+			height: 60vh;
 		}
 	}
 }
