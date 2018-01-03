@@ -2,7 +2,7 @@
 	@include flexbox(flex);
 	@include align-items(center);
 	@include justify-content(center);
-	margin-top: 80px;
+	margin: 80px 30px 0;
 
 	.header-container,
 	.codesign {
@@ -12,8 +12,12 @@
 	}
 
 	.header-container {
-		margin: 0 26px;
 		width: 45%;
+
+		&-block {
+			display: block !important;
+			width: 100% !important;
+		}
 	}
 
 	.codesign {
@@ -30,16 +34,18 @@
 	}
 
 	h2 {
-		@include font-size(94);
-		line-height: 78px;
+		@include transition(all 0.5s ease);
+		@include font-size(86);
+		line-height: 84px;
 		margin: 0;
 		text-align: left;
 	}
 
 	#mockup {
+		@include transition(all 0.5s ease);
 		display: none;
 		position: absolute;
-		padding: 3vw;
+		padding: 3.5vw;
 		height: 90vh;
 
 		.st0 {
@@ -117,6 +123,80 @@
 
 		.st16 {
 			fill: #a0a09f;
+		}
+	}
+}
+
+@media only screen and (max-width: $break-xlg) {
+	.home {
+		h2 {
+			@include font-size(74);
+			line-height: 74px;
+		}
+
+		.header-container {
+			width: 42%;
+		}
+
+		.codesign {
+			width: 58%;
+		}
+
+		#mockup {
+			padding: 5vw;
+			height: 80vh;
+		}
+	}
+}
+
+@media only screen and (max-width: $break-lg) {
+	.home {
+		h2 {
+			@include font-size(54);
+			line-height: 54px;
+		}
+
+		#mockup {
+			padding: 4vw;
+			height: 70vh;
+		}
+	}
+}
+
+@media only screen and (max-width: $break-med) {
+	.home {
+		@include flexbox(flex);
+		@include flex-direction(column);
+		@include align-items(center);
+		@include justify-content(center);
+		margin: 80px 0 0;
+
+		.header-container,
+		.codesign {
+			height: 80vh;
+		}
+
+		.header-container {
+			width: 100%;
+
+			&-block {
+				display: inline-block !important;
+				width: 100% !important;
+			}
+		}
+
+		.codesign {
+			width: 100%;
+		}
+
+		h2 {
+			@include font-size(50);
+			line-height: 50px;
+		}
+
+		#mockup {
+			padding: 4vw;
+			height: 70vh;
 		}
 	}
 }
