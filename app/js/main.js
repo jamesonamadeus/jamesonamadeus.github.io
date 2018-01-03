@@ -24,53 +24,49 @@ var scroll = new SmoothScroll('a[href*="#"]', {
 });
 
 //fade intro
-el = document.getElementById('hereNow');
-mockup = document.getElementById('mockup');
 code = document.getElementById('code');
+code.classList.toggle('fade');
 
-el.addEventListener(
-	'click',
-	function() {
-		mockup.style.display = 'block';
-		code.classList.toggle('fade');
+setTimeout(function() {
+	el = document.getElementById('hereNow');
+	mockup = document.getElementById('mockup');
+	mockup.style.display = 'block';
 
-		var tmax_optionsGlobal = {
-			repeat: -1,
-			repeatDelay: 0.65,
-			yoyo: true
-		};
+	var tmax_optionsGlobal = {
+		repeat: -1,
+		repeatDelay: 0.65,
+		yoyo: true
+	};
 
-		CSSPlugin.useSVGTransformAttr = true;
+	CSSPlugin.useSVGTransformAttr = true;
 
-		var tl = new TimelineMax(tmax_optionsGlobal),
-			path = '#mockup *',
-			stagger_val = 0.009,
-			duration = 5;
+	var tl = new TimelineMax(tmax_optionsGlobal),
+		path = '#mockup *',
+		stagger_val = 0.009,
+		duration = 5;
 
-		$.each($(path), function(i, el) {
-			tl.set($(this), {
-				x: '+=' + getRandom(-1000, 1000),
-				y: '+=' + getRandom(-1000, 1000),
-				rotation: '+=' + getRandom(-720, 720),
-				scale: 0,
-				opacity: 0
-			});
+	$.each($(path), function(i, el) {
+		tl.set($(this), {
+			x: '+=' + getRandom(-1000, 1000),
+			y: '+=' + getRandom(-1000, 1000),
+			rotation: '+=' + getRandom(-720, 720),
+			scale: 0,
+			opacity: 0
 		});
+	});
 
-		var stagger_opts_to = {
-			x: 0,
-			y: 0,
-			opacity: 1,
-			scale: 1,
-			rotation: 0,
-			ease: Power4.easeOut
-		};
+	var stagger_opts_to = {
+		x: 0,
+		y: 0,
+		opacity: 1,
+		scale: 1,
+		rotation: 0,
+		ease: Power4.easeOut
+	};
 
-		tl.staggerTo(path, duration, stagger_opts_to, stagger_val);
+	tl.staggerTo(path, duration, stagger_opts_to, stagger_val);
 
-		function getRandom(min, max) {
-			return Math.random() * (max - min) + min;
-		}
-	},
-	false
-);
+	function getRandom(min, max) {
+		return Math.random() * (max - min) + min;
+	}
+}, 3000);

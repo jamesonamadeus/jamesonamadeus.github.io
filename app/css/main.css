@@ -628,24 +628,24 @@ a {
     height: 80vh; }
   .home .header-container {
     margin: 0 26px;
-    width: 40%; }
+    width: 45%; }
   .home .codesign {
-    width: 60%; }
+    width: 55%; }
   .home #code {
     opacity: 1;
-    transition: opacity 0.5s; }
+    transition: opacity 5s ease; }
   .home #code.fade {
     opacity: 0; }
   .home h2 {
-    font-size: 78px !important;
-    font-size: 4.875rem !important;
-    line-height: 66px;
+    font-size: 94px !important;
+    font-size: 5.875rem !important;
+    line-height: 78px;
     margin: 0;
     text-align: left; }
   .home #mockup {
     display: none;
     position: absolute;
-    padding: 5vw;
+    padding: 3vw;
     height: 90vh; }
     .home #mockup .st0 {
       fill: #e6e6e6; }

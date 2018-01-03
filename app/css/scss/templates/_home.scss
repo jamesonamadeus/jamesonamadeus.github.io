@@ -13,16 +13,16 @@
 
 	.header-container {
 		margin: 0 26px;
-		width: 40%;
+		width: 45%;
 	}
 
 	.codesign {
-		width: 60%;
+		width: 55%;
 	}
 
 	#code {
 		opacity: 1;
-		transition: opacity 0.5s;
+		transition: opacity 5s ease;
 	}
 
 	#code.fade {
@@ -30,8 +30,8 @@
 	}
 
 	h2 {
-		@include font-size(78);
-		line-height: 66px;
+		@include font-size(94);
+		line-height: 78px;
 		margin: 0;
 		text-align: left;
 	}
@@ -39,7 +39,7 @@
 	#mockup {
 		display: none;
 		position: absolute;
-		padding: 5vw;
+		padding: 3vw;
 		height: 90vh;
 
 		.st0 {
