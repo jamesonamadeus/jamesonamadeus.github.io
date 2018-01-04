@@ -344,7 +344,8 @@ a {
   padding: 20px 20px 0;
   position: fixed;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 75; }
   .banner .logo-heading {
     font-size: 28px !important;
     font-size: 1.75rem !important;
