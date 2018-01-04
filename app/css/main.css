@@ -564,6 +564,9 @@ a {
       .recent-box-summary {
         margin: 10px 0; } }
 
+.heart {
+  color: red; }
+
 .about {
   -webkit-transition: all 1200ms ease;
   -moz-transition: all 1200ms ease;
