@@ -13,7 +13,7 @@
 	}
 
 	.heart {
-		color: $redpink;
+		color: lighten($redpink, 10%);
 	}
 }
 
