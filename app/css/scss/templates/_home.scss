@@ -159,7 +159,7 @@
 		@include align-items(center);
 		@include justify-content(center);
 		margin: 80px 0 0;
-		padding: 0;
+		padding: 0 0 50px;
 
 		.header-container,
 		.codesign {
@@ -228,6 +228,7 @@
 		.header-container {
 			padding: 0 15px;
 		}
+
 		.header-container,
 		.codesign {
 			height: 80vh;

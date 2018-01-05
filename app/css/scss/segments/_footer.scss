@@ -1,10 +1,25 @@
 .footer {
+	@include flexbox(flex);
+	@include flex-direction(row);
+	@include justify-content(space-between);
+	background: lighten($grey, 25%);
+	padding: 5px;
+
 	p {
-		@include font-size(12);
-		margin: 0 auto;
+		@include font-size(14);
+		color: $white;
+		margin: 0;
+		padding: 5px 10px;
 	}
 
 	.heart {
-		color: red;
+		color: $redpink;
+	}
+}
+
+@media only screen and (max-width: $break-med) {
+	.footer {
+		@include flex-direction(column);
+		@include align-items(center);
 	}
 }
