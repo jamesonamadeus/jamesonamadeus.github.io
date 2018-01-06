@@ -595,10 +595,10 @@ a {
     align-items: center; } }
 
 .about {
-  -webkit-transition: all 1200ms ease;
-  -moz-transition: all 1200ms ease;
-  -ms-transition: all 1200ms ease;
-  transition: all 1200ms ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
   display: inline-flex;
@@ -606,6 +606,10 @@ a {
   -webkit-align-items: flex-start;
   align-items: flex-start; }
   .about-picture {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
@@ -617,6 +621,10 @@ a {
       margin: 0 auto;
       width: 360px; }
   .about-blurb {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
     padding-right: 40px;
     width: 60%; }
     .about-blurb a {
