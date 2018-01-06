@@ -1,0 +1,15 @@
+.contact {
+	margin: 20px;
+	height: 80vh;
+
+	a {
+		color: $bluegreen;
+		text-decoration: none;
+	}
+}
+
+@media only screen and (max-width: $break-med) {
+	.contact {
+		margin: 20px 0;
+	}
+}

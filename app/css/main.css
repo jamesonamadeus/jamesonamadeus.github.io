@@ -1182,3 +1182,14 @@ a {
 @media only screen and (max-width: 480px) {
   ul {
     padding-left: 30px; } }
+
+.contact {
+  margin: 20px;
+  height: 80vh; }
+  .contact a {
+    color: #22a6b3;
+    text-decoration: none; }
+
+@media only screen and (max-width: 600px) {
+  .contact {
+    margin: 20px 0; } }
