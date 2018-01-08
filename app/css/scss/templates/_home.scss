@@ -181,8 +181,8 @@
 		.codesign {
 			@include justify-content(center);
 			position: absolute;
-			z-index: 10;
 			width: 100%;
+			z-index: 10;
 		}
 
 		.code {

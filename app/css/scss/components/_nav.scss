@@ -109,10 +109,6 @@ $brgr-text-pad-top: ($brgr-margin / 2 + $brgr-height);
 		user-select: none;
 		width: $brgr-height;
 		z-index: 20;
-
-		&:hover {
-			// border: rgba(0, 0, 0, .2) solid $brgr-border-width;
-		}
 	}
 
 	&-contain {

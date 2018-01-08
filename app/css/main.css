@@ -804,8 +804,8 @@ a {
       -webkit-justify-content: center;
       justify-content: center;
       position: absolute;
-      z-index: 10;
-      width: 100%; }
+      width: 100%;
+      z-index: 10; }
     .home .code {
       padding: 30px; }
     .home #mockup {

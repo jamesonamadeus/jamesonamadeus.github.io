@@ -3,9 +3,11 @@
 	0% {
 		background-position: 0% 50%;
 	}
+
 	50% {
 		background-position: 100% 50%;
 	}
+
 	100% {
 		background-position: 0% 50%;
 	}
@@ -17,9 +19,11 @@
 		transform: translate(0, -10px) rotate(45deg);
 		opacity: 0;
 	}
+
 	50% {
 		opacity: 1;
 	}
+
 	100% {
 		transform: translate(0, 10px) rotate(45deg);
 		opacity: 0;
