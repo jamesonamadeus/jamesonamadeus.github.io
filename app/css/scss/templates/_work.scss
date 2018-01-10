@@ -1,0 +1,49 @@
+.work {
+	&-container {
+		@include transition(all 0.5s ease);
+		@include flexbox(inline-flex);
+		@include flex-wrap(wrap);
+		@include align-items(flex-start);
+		width: 100%;
+	}
+
+	&-item {
+		@include transition(all 0.5s ease);
+		@include flexbox(flex);
+		@include align-items(center);
+		@include justify-content(center);
+		cursor: pointer;
+		height: 15vw;
+		width: 50%;
+		background: transparent;
+		z-index: 99;
+
+		&-logo {
+			width: 50%;
+			z-index: 60;
+		}
+
+		&-bg {
+			@include transition(all 0.5s ease);
+			opacity: 0;
+			height: 15vw;
+			position: absolute;
+			width: 47%;
+			animation: animatedgradient 4s ease-in alternate infinite !important;
+			background: linear-gradient(320deg, #3494e6, #ec6ead) !important;
+			background-size: 650% 650% !important;
+			z-index: 50;
+		}
+
+		&:hover,
+		&:active,
+		&:focus {
+			.work-item-bg {
+				opacity: 1;
+			}
+		}
+	}
+
+	.recent {
+	}
+}

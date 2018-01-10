@@ -655,6 +655,17 @@ a {
   .about-picture img {
     width: 300px; } }
 
+.contact {
+  margin: 20px;
+  height: 80vh; }
+  .contact a {
+    color: #22a6b3;
+    text-decoration: none; }
+
+@media only screen and (max-width: 600px) {
+  .contact {
+    margin: 20px 0; } }
+
 .home {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -1183,13 +1194,56 @@ a {
   ul {
     padding-left: 30px; } }
 
-.contact {
-  margin: 20px;
-  height: 80vh; }
-  .contact a {
-    color: #22a6b3;
-    text-decoration: none; }
+.work-container {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  width: 100%; }
 
-@media only screen and (max-width: 600px) {
-  .contact {
-    margin: 20px 0; } }
+.work-item {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 15vw;
+  width: 50%;
+  background: transparent;
+  z-index: 99; }
+  .work-item-logo {
+    width: 50%;
+    z-index: 60; }
+  .work-item-bg {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    opacity: 0;
+    height: 15vw;
+    position: absolute;
+    width: 47%;
+    animation: animatedgradient 4s ease-in alternate infinite !important;
+    background: linear-gradient(320deg, #3494e6, #ec6ead) !important;
+    background-size: 650% 650% !important;
+    z-index: 50; }
+  .work-item:hover .work-item-bg, .work-item:active .work-item-bg, .work-item:focus .work-item-bg {
+    opacity: 1; }
