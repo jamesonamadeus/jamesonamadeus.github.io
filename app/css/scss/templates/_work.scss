@@ -15,11 +15,10 @@
 		@include flexbox(flex);
 		@include align-items(center);
 		@include justify-content(center);
+		background: transparent;
 		cursor: pointer;
 		height: 12vw;
 		width: 33.33%;
-		background: transparent;
-		z-index: 99;
 
 		&-logo {
 			width: 50%;
@@ -28,8 +27,8 @@
 
 		&-bg {
 			@include transition(all 0.5s ease);
-			opacity: 0;
 			height: 12vw;
+			opacity: 0;
 			position: absolute;
 			width: 39%;
 			animation: animatedgradient 4s ease-in alternate infinite !important;

@@ -366,203 +366,25 @@ a {
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  padding: 5px 30px 45px; }
+  padding: 5px 30px 45px;
+  margin: 80px 0 0; }
   .main-home {
-    padding: 0; }
+    padding: 0;
+    margin: 0 auto; }
     .main-home h2 {
       margin: 80px 0 0; }
   .main h2 {
-    margin: 100px 20px 20px; }
+    margin: 20px; }
 
 @media only screen and (max-width: 600px) {
   .main {
     padding: 0 30px 20px; }
     .main h2 {
-      margin: 100px auto 20px; } }
+      margin: 20px auto 20px; } }
 
 @media only screen and (max-width: 400px) {
   .main {
     padding: 0 15px 15px; } }
-
-.recent {
-  padding: 0 20px;
-  margin-bottom: 50px; }
-  .recent-box {
-    -webkit-transition: all 1200ms ease;
-    -moz-transition: all 1200ms ease;
-    -ms-transition: all 1200ms ease;
-    transition: all 1200ms ease;
-    background-color: transparent;
-    color: #373737;
-    display: block;
-    padding: 30px 25px 15px;
-    text-decoration: none;
-    cursor: pointer; }
-    .recent-box:first-child {
-      border-radius: 10px 10px 0 0; }
-    .recent-box:last-child {
-      border-radius: 0 0 10px 10px; }
-    .recent-box:hover .recent-box-tags,
-    .recent-box:hover .recent-box-summary,
-    .recent-box:hover .recent-box-logo, .recent-box:active .recent-box-tags,
-    .recent-box:active .recent-box-summary,
-    .recent-box:active .recent-box-logo {
-      border: 1px solid #fff;
-      color: #fff; }
-    .recent-box:hover .recent-box-logo, .recent-box:active .recent-box-logo {
-      background: #fff; }
-    .recent-box-contain {
-      -webkit-transition: all 1200ms ease;
-      -moz-transition: all 1200ms ease;
-      -ms-transition: all 1200ms ease;
-      transition: all 1200ms ease;
-      display: -ms-inline-flexbox;
-      display: -webkit-inline-flex;
-      display: inline-flex;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center; }
-    .recent-box h3 {
-      margin: 0 auto;
-      min-height: 80px;
-      text-align: center; }
-      .recent-box h3 img {
-        -webkit-transition: color 500ms ease, background-color 1200ms ease, border-color 1200ms ease;
-        -moz-transition: color 500ms ease, background-color 1200ms ease, border-color 1200ms ease;
-        -ms-transition: color 500ms ease, background-color 1200ms ease, border-color 1200ms ease;
-        transition: color 500ms ease, background-color 1200ms ease, border-color 1200ms ease;
-        border-radius: 10px;
-        border: 1px solid white;
-        padding: 5px;
-        width: 180px; }
-    .recent-box p {
-      font-size: 18px !important;
-      font-size: 1.125rem !important;
-      text-align: center; }
-    .recent-box-info {
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -ms-flex-direction: column;
-      -webkit-flex-direction: column;
-      flex-direction: column;
-      width: 65%; }
-    .recent-box-summary {
-      -webkit-transition: color 500ms ease, background-color 1200ms ease, border-color 1200ms ease;
-      -moz-transition: color 500ms ease, background-color 1200ms ease, border-color 1200ms ease;
-      -ms-transition: color 500ms ease, background-color 1200ms ease, border-color 1200ms ease;
-      transition: color 500ms ease, background-color 1200ms ease, border-color 1200ms ease;
-      color: #373737;
-      text-align: left;
-      padding: 15px;
-      margin: 5px auto 10px;
-      border-radius: 10px;
-      border: 1px solid white; }
-    .recent-box-category {
-      display: -ms-inline-flexbox;
-      display: -webkit-inline-flex;
-      display: inline-flex;
-      -ms-flex-wrap: wrap;
-      -webkit-flex-wrap: wrap;
-      flex-wrap: wrap;
-      -ms-flex-pack: end;
-      -webkit-justify-content: flex-end;
-      justify-content: flex-end;
-      width: 35%; }
-    .recent-box:hover {
-      -webkit-transition: all 2 ease;
-      -moz-transition: all 2 ease;
-      -ms-transition: all 2 ease;
-      transition: all 2 ease; }
-    .recent-box-tags {
-      -webkit-transition: color 500ms ease, background-color 1200ms ease, border-color 1200ms ease;
-      -moz-transition: color 500ms ease, background-color 1200ms ease, border-color 1200ms ease;
-      -ms-transition: color 500ms ease, background-color 1200ms ease, border-color 1200ms ease;
-      transition: color 500ms ease, background-color 1200ms ease, border-color 1200ms ease;
-      color: #373737;
-      border: 1px solid white;
-      border-radius: 15px;
-      font-weight: 400;
-      text-align: center;
-      padding: 10px;
-      margin: 5px;
-      min-width: 110px; }
-  .recent-wemote {
-    -webkit-transition: color 500ms ease, background-color 5000ms ease-in, border-color 1200ms ease;
-    -moz-transition: color 500ms ease, background-color 5000ms ease-in, border-color 1200ms ease;
-    -ms-transition: color 500ms ease, background-color 5000ms ease-in, border-color 1200ms ease;
-    transition: color 500ms ease, background-color 5000ms ease-in, border-color 1200ms ease;
-    background-color: #fff;
-    border: 2px solid #373737;
-    border-bottom: 0; }
-    .recent-wemote:hover, .recent-wemote:active {
-      border: 2px solid #75b2bf;
-      border-bottom: 0;
-      animation: animatedgradient 10s ease-in alternate infinite !important;
-      background: linear-gradient(330deg, #fc00ff, #00dbde) !important;
-      background-size: 800% 800% !important; }
-  .recent-titleist {
-    border: 2px solid #373737;
-    border-bottom: 0; }
-    .recent-titleist:hover, .recent-titleist:active {
-      border: 2px solid #2dfd42;
-      border-bottom: 0;
-      animation: animatedgradient 10s ease alternate infinite !important;
-      background: linear-gradient(330deg, #00c9ff, #92fe9d) !important;
-      background-size: 800% 800% !important; }
-  .recent-bitcoin {
-    border: 2px solid #373737; }
-    .recent-bitcoin:hover, .recent-bitcoin:active {
-      border: 2px solid #926b00;
-      animation: animatedgradient 10s ease alternate infinite !important;
-      background: linear-gradient(330deg, #fceabb, #f8b500) !important;
-      background-size: 800% 800% !important; }
-  .recent-clients {
-    -webkit-transition: color 500ms ease, background-color 1200ms ease;
-    -moz-transition: color 500ms ease, background-color 1200ms ease;
-    -ms-transition: color 500ms ease, background-color 1200ms ease;
-    transition: color 500ms ease, background-color 1200ms ease;
-    background-color: #fff;
-    border: 3px solid #262626;
-    color: #262626;
-    display: block;
-    font-size: 20px;
-    font-weight: 400;
-    margin: 40px auto;
-    max-width: 180px;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none; }
-    .recent-clients:hover, .recent-clients:focus {
-      background-color: #262626;
-      color: #fff; }
-
-@media only screen and (max-width: 830px) {
-  .recent-box {
-    padding: 30px 15px 20px; }
-    .recent-box-contain {
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -ms-flex-direction: column;
-      -webkit-flex-direction: column;
-      flex-direction: column; }
-    .recent-box-summary {
-      margin: 5px 10px 13px; }
-    .recent-box-info, .recent-box-category {
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      width: 100%; } }
-
-@media only screen and (max-width: 600px) {
-  .recent {
-    padding: 0;
-    margin-bottom: 40px; }
-    .recent-box {
-      padding: 23px 20px 17px; }
-      .recent-box-summary {
-        margin: 10px 0; } }
 
 .footer {
   display: -ms-flexbox;
@@ -1224,11 +1046,10 @@ a {
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  background: transparent;
   cursor: pointer;
   height: 12vw;
-  width: 33.33%;
-  background: transparent;
-  z-index: 99; }
+  width: 33.33%; }
   .work-item-logo {
     width: 50%;
     z-index: 60; }
@@ -1237,8 +1058,8 @@ a {
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    opacity: 0;
     height: 12vw;
+    opacity: 0;
     position: absolute;
     width: 39%;
     animation: animatedgradient 4s ease-in alternate infinite !important;
