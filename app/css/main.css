@@ -1032,6 +1032,9 @@ a {
   align-items: flex-start;
   width: 100%; }
 
+.work h2 {
+  margin: 20px 20px 5px; }
+
 .work-item {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
