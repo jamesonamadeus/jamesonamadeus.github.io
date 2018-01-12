@@ -1051,17 +1051,17 @@ a {
     justify-content: center;
     background: transparent;
     cursor: pointer;
-    height: 12vw;
+    height: 14vw;
     width: 33.33%; }
     .work-item-logo {
-      width: 50%;
+      width: 60%;
       z-index: 60; }
     .work-item-bg {
       -webkit-transition: all 0.5s ease;
       -moz-transition: all 0.5s ease;
       -ms-transition: all 0.5s ease;
       transition: all 0.5s ease;
-      height: 12vw;
+      height: 14vw;
       opacity: 0;
       position: absolute;
       width: 39%;
@@ -1074,22 +1074,24 @@ a {
 
 @media only screen and (max-width: 1000px) {
   .work-item {
-    height: 15vw;
+    height: 18vw;
     width: 50%; }
     .work-item-bg {
-      height: 15vw;
-      width: 50%; } }
+      height: 18vw;
+      width: 54%; } }
 
 @media only screen and (max-width: 800px) {
   .work-item {
-    height: 20vw; }
+    height: 22vw; }
     .work-item-bg {
-      height: 20vw; } }
+      height: 22vw; } }
 
 @media only screen and (max-width: 600px) {
   .work-item {
-    height: 30vw;
+    height: 28vw;
     width: 100%; }
+    .work-item-logo {
+      width: 50%; }
     .work-item-bg {
-      height: 30vw;
+      height: 28vw;
       width: 100%; } }
