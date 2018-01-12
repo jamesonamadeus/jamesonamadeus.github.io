@@ -1,4 +1,6 @@
 .work {
+	min-height: 100vh;
+
 	&-container {
 		@include transition(all 0.5s ease);
 		@include flexbox(inline-flex);
@@ -43,6 +45,46 @@
 		&:focus {
 			.work-item-bg {
 				opacity: 1;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $break-xlg) {
+	.work {
+		&-item {
+			height: 15vw;
+			width: 50%;
+
+			&-bg {
+				height: 15vw;
+				width: 50%;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $break-lg) {
+	.work {
+		&-item {
+			height: 20vw;
+
+			&-bg {
+				height: 20vw;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $break-med) {
+	.work {
+		&-item {
+			height: 30vw;
+			width: 100%;
+
+			&-bg {
+				height: 30vw;
+				width: 100%;
 			}
 		}
 	}
