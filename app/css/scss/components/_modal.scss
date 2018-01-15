@@ -46,6 +46,21 @@
 		background: $white;
 		text-align: center;
 	}
+
+	&-close {
+		@include font-size(44);
+		cursor: pointer;
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 10px 15px 20px 20px;
+
+		&:hover,
+		&:active,
+		&:focus {
+			color: $color-primary;
+		}
+	}
 }
 
 .toggle-link {
