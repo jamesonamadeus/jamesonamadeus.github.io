@@ -1,0 +1,90 @@
+.modal-container {
+	background: rgba(black, 0.75);
+	opacity: 0;
+	color: $black;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	visibility: hidden;
+	transition: opacity 0.5s, visibility 0s linear 0.5s;
+	z-index: 99;
+
+	.modal-toggler:checked + & {
+		opacity: 1;
+		visibility: visible;
+		transition: opacity 0.5s;
+	}
+
+	.block-btn {
+		display: block;
+		min-width: 280px;
+		margin: 25px auto 10px;
+	}
+}
+
+.modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	padding: 2em;
+	border-radius: 0.5em;
+	transform: translateX(-50%) translateY(-50%);
+
+	&-title {
+		@include font-size(20);
+		margin: 15px auto 40px;
+	}
+
+	&.close-modal-area {
+		width: 100%;
+		height: 100%;
+	}
+
+	&.modal-box {
+		background: $white;
+		text-align: center;
+	}
+}
+
+.toggle-link {
+	color: darken($color-primary, 15%);
+	display: inline-block;
+	cursor: pointer;
+	text-decoration: underline;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color-primary;
+	}
+}
+
+[aria-hidden='true'] {
+	width: 1px !important;
+	height: 1px !important;
+	padding: 0 !important;
+	border: 0 !important;
+	position: absolute !important;
+	overflow: hidden !important;
+	clip: rect(1px, 1px, 1px, 1px) !important;
+}
+
+// Media Screen <= 600
+@media only screen and (max-width: $break-sm) {
+	.modal-container {
+		.block-btn {
+			@include font-size(20);
+			min-width: 240px;
+			margin: 20px auto 0px;
+		}
+
+		.modal {
+			&-title {
+				@include font-size(18);
+				margin: 5px auto 25px;
+			}
+		}
+	}
+}
