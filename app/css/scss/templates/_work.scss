@@ -43,6 +43,60 @@
 			}
 		}
 	}
+
+	&-modal {
+		&-heading {
+			@include font-size(26);
+			font-weight: 600;
+		}
+
+		&-bio {
+			@include font-size(20);
+		}
+
+		&-cta {
+			margin: 40px auto 20px;
+			padding: 20px;
+			text-align: center;
+			width: 100%;
+		}
+
+		&-link,
+		&-subheading {
+			@include font-size(22);
+			margin: 30px auto 10px;
+			font-weight: 600;
+		}
+
+		&-link {
+			border: 2px solid $color-secondary;
+			border-radius: 5px;
+			color: $color-secondary;
+			display: block;
+			padding: 20px 40px;
+			width: 50%;
+		}
+
+		&-info {
+			@include font-size(20);
+		}
+
+		&-list {
+			padding: 0;
+			margin: 0;
+			@include flexbox(inline-flex);
+			@include flex-wrap(wrap);
+			@include align-items(flex-start);
+
+			li {
+				padding: 6px 10px 4px;
+				background: lighten($grey, 20%);
+				border-radius: 4px;
+				list-style: none;
+				margin: 3px;
+			}
+		}
+	}
 }
 
 @media only screen and (max-width: $break-xlg) {

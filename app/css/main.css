@@ -353,7 +353,10 @@ a {
   left: 50%;
   padding: 2em;
   border-radius: 0.5em;
-  transform: translateX(-50%) translateY(-50%); }
+  transform: translateX(-50%) translateY(-50%);
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  min-width: 60%; }
   .modal-title {
     font-size: 20px !important;
     font-size: 1.25rem !important;
@@ -363,7 +366,7 @@ a {
     height: 100%; }
   .modal.modal-box {
     background: #fff;
-    text-align: center; }
+    text-align: left; }
   .modal-close {
     font-size: 44px !important;
     font-size: 2.75rem !important;
@@ -371,7 +374,7 @@ a {
     position: absolute;
     top: 0;
     right: 0;
-    padding: 10px 15px 20px 20px; }
+    padding: 0 15px 0 0; }
     .modal-close:hover, .modal-close:active, .modal-close:focus {
       color: #4834d4; }
 
@@ -391,6 +394,10 @@ a {
   position: absolute !important;
   overflow: hidden !important;
   clip: rect(1px, 1px, 1px, 1px) !important; }
+
+@media only screen and (max-width: 800px) {
+  .modal {
+    min-width: 90%; } }
 
 @media only screen and (max-width: 480px) {
   .modal-container .block-btn {
@@ -1146,6 +1153,51 @@ a {
       z-index: 50; }
     .work-item:hover .work-item-bg, .work-item:active .work-item-bg {
       opacity: 1; }
+  .work-modal-heading {
+    font-size: 26px !important;
+    font-size: 1.625rem !important;
+    font-weight: 600; }
+  .work-modal-bio {
+    font-size: 20px !important;
+    font-size: 1.25rem !important; }
+  .work-modal-cta {
+    margin: 40px auto 20px;
+    padding: 20px;
+    text-align: center;
+    width: 100%; }
+  .work-modal-link, .work-modal-subheading {
+    font-size: 22px !important;
+    font-size: 1.375rem !important;
+    margin: 30px auto 10px;
+    font-weight: 600; }
+  .work-modal-link {
+    border: 2px solid #7ed6df;
+    border-radius: 5px;
+    color: #7ed6df;
+    display: block;
+    padding: 20px 40px;
+    width: 50%; }
+  .work-modal-info {
+    font-size: 20px !important;
+    font-size: 1.25rem !important; }
+  .work-modal-list {
+    padding: 0;
+    margin: 0;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start; }
+    .work-modal-list li {
+      padding: 6px 10px 4px;
+      background: #dddddd;
+      border-radius: 4px;
+      list-style: none;
+      margin: 3px; }
 
 @media only screen and (max-width: 1000px) {
   .work-item {

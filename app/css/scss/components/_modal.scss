@@ -31,6 +31,9 @@
 	padding: 2em;
 	border-radius: 0.5em;
 	transform: translateX(-50%) translateY(-50%);
+	max-height: calc(100vh - 100px);
+	overflow-y: auto;
+	min-width: 60%;
 
 	&-title {
 		@include font-size(20);
@@ -44,7 +47,7 @@
 
 	&.modal-box {
 		background: $white;
-		text-align: center;
+		text-align: left;
 	}
 
 	&-close {
@@ -53,7 +56,7 @@
 		position: absolute;
 		top: 0;
 		right: 0;
-		padding: 10px 15px 20px 20px;
+		padding: 0 15px 0 0;
 
 		&:hover,
 		&:active,
@@ -86,7 +89,14 @@
 	clip: rect(1px, 1px, 1px, 1px) !important;
 }
 
-// Media Screen <= 600
+// Media Screen <= 800
+@media only screen and (max-width: $break-lg) {
+	.modal {
+		min-width: 90%;
+	}
+}
+
+// Media Screen <= 480
 @media only screen and (max-width: $break-sm) {
 	.modal-container {
 		.block-btn {
