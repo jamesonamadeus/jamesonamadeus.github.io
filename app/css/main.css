@@ -1171,12 +1171,21 @@ a {
     margin: 30px auto 10px;
     font-weight: 600; }
   .work-modal-link {
-    border: 2px solid #7ed6df;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    border: 2px solid #111;
     border-radius: 5px;
-    color: #7ed6df;
+    color: #111;
     display: block;
+    font-weight: 400;
     padding: 20px 40px;
+    text-decoration: none;
     width: 50%; }
+    .work-modal-link:hover, .work-modal-link:active {
+      background: #777777;
+      color: #fff; }
   .work-modal-info {
     font-size: 20px !important;
     font-size: 1.25rem !important; }
