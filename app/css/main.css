@@ -405,10 +405,12 @@ a {
     font-size: 1.25rem !important;
     min-width: 240px;
     margin: 20px auto 0px; }
-  .modal-container .modal-title {
-    font-size: 18px !important;
-    font-size: 1.125rem !important;
-    margin: 5px auto 25px; } }
+  .modal-container .modal {
+    padding: 20px; }
+    .modal-container .modal-title {
+      font-size: 18px !important;
+      font-size: 1.125rem !important;
+      margin: 5px auto 25px; } }
 
 .banner {
   -webkit-transition: all 0.5s ease;
@@ -1230,4 +1232,8 @@ a {
       width: 50%; }
     .work-item-bg {
       height: 28vw;
-      width: 100%; } }
+      width: 100%; }
+  .work-modal-cta {
+    padding: 0; }
+  .work-modal-link {
+    width: 100%; } }
