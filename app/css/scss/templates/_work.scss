@@ -1,6 +1,10 @@
 .work {
 	min-height: 100vh;
 
+	h2 {
+		margin: 20px 20px 5px;
+	}
+
 	&-container {
 		@include transition(all 0.5s ease);
 		@include flexbox(inline-flex);
@@ -111,6 +115,23 @@
 				@include font-size(18);
 				margin-bottom: 10px;
 			}
+		}
+	}
+}
+
+.recent,
+.open-source,
+.how-help {
+	margin-bottom: 40px;
+}
+
+.how-help {
+	.work-container {
+		max-width: 1000px;
+
+		ul > li {
+			@include font-size(18);
+			margin-bottom: 15px;
 		}
 	}
 }
