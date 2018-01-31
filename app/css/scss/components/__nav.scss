@@ -1,37 +1,14 @@
-//Nav Keyframes
-@keyframes slideInLeft {
-	0% {
-		transform: translate3d(250px, 0, 0);
-		visibility: visible;
-	}
-
-	100% {
-		transform: translate3d(0, 0, 0);
-	}
-}
-
-@keyframes slideOutLeft {
-	0% {
-		transform: translate3d(0, 0, 0);
-	}
-
-	100% {
-		transform: translate3d(250px, 0, 0);
-		visibility: hidden;
-	}
-}
-
 //Nav Variables
-$brgr-height: 60px;
 $brgr-border-width: 2px;
-$brgr-margin: 30px;
-$brgr-bun-width: 25px;
 $brgr-bun-height: $brgr-border-width;
+$brgr-bun-width: 25px;
 $brgr-font-size: 22px;
+$brgr-height: 60px;
+$brgr-margin: 30px;
+$brgr-text-pad-top: ($brgr-margin / 2 + $brgr-height);
 $brgr-text-pad: $brgr-margin;
 $brgr-transition-speed: 0.5s;
 $brgr-transition: all $brgr-transition-speed ease;
-$brgr-text-pad-top: ($brgr-margin / 2 + $brgr-height);
 
 .nav {
 	background-color: $white;
@@ -97,8 +74,8 @@ $brgr-text-pad-top: ($brgr-margin / 2 + $brgr-height);
 
 	&-menu {
 		background: transparent;
-		border: rgba(0, 0, 0, 1) solid $brgr-border-width;
 		border-radius: 50%;
+		border: rgba(0, 0, 0, 1) solid $brgr-border-width;
 		cursor: pointer;
 		display: inline-block;
 		height: $brgr-height;
