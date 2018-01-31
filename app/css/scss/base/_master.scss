@@ -1,7 +1,7 @@
-@import '_config.scss';
-@import '_helpers.scss';
-@import '_html.scss';
-@import '_keyframes.scss';
-@import '_later.scss';
-@import '_mixins.scss';
-@import '_normalize.scss';
+@import "__config";
+@import "__helpers";
+@import '__html';
+@import '__keyframes';
+@import '__later';
+@import '__mixins';
+@import 'normalize/_normalize';

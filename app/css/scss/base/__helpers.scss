@@ -1,4 +1,4 @@
-@import '_mixins.scss';
+@import "__mixins";
 
 .hide {
 	@include visually-hidden();
@@ -9,16 +9,16 @@
 }
 
 .is-hidden {
-	position: absolute;
-	top: -9999px;
+	@include transition(opacity ease-in-out 0.2s);
 	left: -9999px;
 	opacity: 0;
-	@include transition(opacity ease-in-out 0.2s);
+	position: absolute;
+	top: -9999px;
 	visibility: hidden;
 }
 
 .outline {
-	color: $white;
 	-webkit-text-stroke: 2px black;
+	color: $white;
 	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }

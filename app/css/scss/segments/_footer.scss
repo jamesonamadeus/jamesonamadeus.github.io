@@ -1,8 +1,8 @@
 .footer {
-	@include flexbox(flex);
 	@include flex-direction(row);
+	@include flexbox(flex);
 	@include justify-content(space-between);
-	background: lighten($grey, 25%);
+	background: lighten($grey, 20%);
 	padding: 5px;
 
 	p {
@@ -17,9 +17,9 @@
 	}
 }
 
-@media only screen and (max-width: $break-med) {
+@media only screen and (max-width: $break-md) {
 	.footer {
-		@include flex-direction(column);
 		@include align-items(center);
+		@include flex-direction(column);
 	}
 }
