@@ -2,9 +2,9 @@
 	padding: 0 20px;
 
 	&-top {
-		@include flexbox(flex);
-		@include flex-direction(column);
 		@include align-items(center);
+		@include flex-direction(column);
+		@include flexbox(flex);
 		@include justify-content(space-between);
 		height: 65vh;
 	}
@@ -17,10 +17,10 @@
 		&-eye,
 		&-yee,
 		&-are {
-			@include flexbox(flex);
-			@include justify-content(center);
 			@include align-items(center);
+			@include flexbox(flex);
 			@include font-size(62);
+			@include justify-content(center);
 			border-radius: 50%;
 			color: $white;
 			height: 100px;
@@ -29,10 +29,10 @@
 			width: 100px;
 
 			p {
-				@include flexbox(flex);
-				@include justify-content(center);
 				@include align-items(center);
+				@include flexbox(flex);
 				@include font-size(62);
+				@include justify-content(center);
 				font-weight: 500px !important;
 				margin: 0;
 			}
@@ -47,7 +47,8 @@
 		&-yee {
 			animation: animatedgradient 6s ease-in alternate infinite !important;
 			background: linear-gradient(330deg, #ffffff, #ffffff, #434343) !important;
-			background-size: 300% 300% !important;
+      background-size: 300% 300% !important;
+      
 			p {
 				margin-top: -10px;
 			}
@@ -65,9 +66,9 @@
 	}
 	&-main {
 		&-container {
-			@include flexbox(flex);
-			@include flex-direction(column);
 			@include align-items(center);
+			@include flex-direction(column);
+			@include flexbox(flex);
 			@include justify-content(flex-end);
 			line-height: 22px;
 			padding: 150px 0 300px;
@@ -85,8 +86,8 @@
 			}
 		}
 		&-inner {
-			@include flexbox(flex);
 			@include flex-direction(column);
+			@include flexbox(flex);
 
 			&-explore {
 				.process-main-letter p {
@@ -110,31 +111,31 @@
 		}
 
 		&-steps {
-			@include flexbox(inline-flex);
 			@include align-items(center);
+			@include flexbox(inline-flex);
 		}
 
 		&-letter {
+			@include align-items(center);
 			@include flexbox(flex);
 			@include justify-content(center);
-			@include align-items(center);
+			animation: animatedgradient 6s ease-in alternate infinite !important;
+			background-size: 300% 300% !important;
+			background: linear-gradient(320deg, #fafafa, #434343) !important;
 			border-radius: 50%;
 			height: 75px;
 			margin: 0px 5px 0px 0px;
 			width: 75px;
-			animation: animatedgradient 6s ease-in alternate infinite !important;
-			background: linear-gradient(320deg, #fafafa, #434343) !important;
-			background-size: 300% 300% !important;
 
 			p {
-				@include flexbox(flex);
-				@include justify-content(center);
 				@include align-items(center);
+				@include flexbox(flex);
 				@include font-size(52);
+				@include justify-content(center);
 				color: $white;
-				text-align: center;
 				font-weight: 500px !important;
 				margin: 0;
+				text-align: center;
 			}
 		}
 
@@ -159,13 +160,13 @@
 }
 
 .repeat {
-	@include flexbox(flex);
-	@include flex-direction(column);
 	@include align-items(flex-end);
+	@include flex-direction(column);
+	@include flexbox(flex);
 	@include justify-content(center);
+	color: lighten($black, 10%);
 	margin: 60px auto 0;
 	text-decoration: none;
-	color: lighten($black, 10%);
 
 	&-icon {
 		@include animation(spin 8s linear infinite);
@@ -181,17 +182,15 @@
 }
 
 .arrow {
-	@include transition(all 0.5s ease);
-	@include flexbox(flex);
-	@include flex-direction(column);
 	@include align-items(flex-end);
+	@include flex-direction(column);
+	@include flexbox(flex);
 	@include justify-content(center);
 
 	&-circle {
-		@include transition(all 0.5s ease);
 		animation: animatedgradient 4s ease-in alternate infinite !important;
-		background: linear-gradient(355deg, #ffffff, #ffffff, #434343) !important;
 		background-size: 650% 650% !important;
+		background: linear-gradient(355deg, #ffffff, #ffffff, #434343) !important;
 		border-radius: 50%;
 		cursor: pointer;
 		height: 90px;
@@ -202,9 +201,9 @@
 	}
 
 	&-btn {
-		@include transform(translate(-50%, 0%) rotate(45deg));
 		@include animation(fade_arw_down 3s ease-in-out infinite);
 		@include font-size(52);
+		@include transform(translate(-50%, 0%) rotate(45deg));
 		background: transparent;
 		border-bottom: 5px solid lighten($black, 30%);
 		border-radius: 7px;

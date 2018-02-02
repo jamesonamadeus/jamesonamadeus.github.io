@@ -12,7 +12,6 @@
 	}
 
 	.header-container {
-		@include transition(all 0.5s ease);
 		width: 45%;
 
 		&-block {
@@ -22,7 +21,6 @@
 	}
 
 	.codesign {
-		@include transition(all 0.5s ease);
 		width: 55%;
 	}
 
@@ -37,7 +35,6 @@
 	}
 
 	h2 {
-		@include transition(all 0.5s ease);
 		@include font-size(86);
 		line-height: 84px;
 		margin: 0;
@@ -45,12 +42,11 @@
 	}
 
 	#mockup {
-		@include transition(all 0.5s ease);
 		display: none;
-		position: absolute;
-		padding: 3.5vw;
 		height: 90vh;
-
+		padding: 3.5vw;
+    position: absolute;
+    
 		.st0 {
 			fill: #e6e6e6;
 		}
@@ -154,9 +150,9 @@
 
 @media only screen and (max-width: $break-lg) {
 	.home {
-		@include flexbox(flex);
-		@include flex-direction(column);
 		@include align-items(center);
+		@include flex-direction(column);
+		@include flexbox(flex);
 		@include justify-content(center);
 		margin: 80px 0 0;
 		padding: 0 0 50px;
@@ -169,8 +165,8 @@
 		.header-container {
 			background: rgba(255, 255, 255, 0.4);
 			padding: 0 30px;
-			z-index: 50;
 			width: 100%;
+			z-index: 50;
 
 			&-block {
 				display: inline-block !important;
@@ -217,8 +213,8 @@
 		}
 
 		#mockup {
-			padding: 4vw;
 			height: 70vh;
+			padding: 4vw;
 		}
 	}
 }
@@ -244,8 +240,8 @@
 		}
 
 		#mockup {
-			padding: 4vw;
 			height: 70vh;
+			padding: 4vw;
 		}
 	}
 }

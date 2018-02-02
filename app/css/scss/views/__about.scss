@@ -1,10 +1,8 @@
 .about {
-	@include transition(all 0.5s ease);
 	@include flexbox(inline-flex);
 	@include align-items(flex-start);
 
 	&-picture {
-		@include transition(all 0.5s ease);
 		@include flexbox(flex);
 		@include align-items(flex-start);
 		width: 40%;
@@ -16,7 +14,6 @@
 	}
 
 	&-blurb {
-		@include transition(all 0.5s ease);
 		padding-right: 40px;
 		width: 60%;
 
