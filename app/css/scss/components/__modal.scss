@@ -63,7 +63,11 @@
 		&:focus {
 			color: $color-primary;
 		}
-	}
+  }
+  
+  &-toggler {
+    display: none;
+  }
 }
 
 .toggle-link {

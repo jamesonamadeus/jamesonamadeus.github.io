@@ -279,6 +279,8 @@ a {
     top: 0; }
     .modal-close:hover, .modal-close:active, .modal-close:focus {
       color: #4834d4; }
+  .modal-toggler {
+    display: none; }
 
 .toggle-link {
   color: #30219b;
