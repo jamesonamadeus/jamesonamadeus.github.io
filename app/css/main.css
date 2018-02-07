@@ -49,10 +49,6 @@
 
 --------------------------------------------------------------------- */
 * {
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  transition: all 0.5s ease;
   box-sizing: border-box;
   -webkit-backface-visibility: hidden; }
 
@@ -571,6 +567,10 @@ a {
   .home #code.fade {
     opacity: 0; }
   .home h2 {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
     font-size: 86px !important;
     font-size: 5.375rem !important;
     line-height: 84px;
