@@ -42,7 +42,7 @@ setTimeout(function () {
   var tl = new TimelineMax(tmax_optionsGlobal),
     path = '#mockup *',
     stagger_val = 0.009,
-    duration = 5;
+    duration = 4;
 
   $.each($(path), function (i, el) {
     tl.set($(this), {
@@ -64,6 +64,15 @@ setTimeout(function () {
   };
 
   tl.staggerTo(path, duration, stagger_opts_to, stagger_val);
+
+  var $svg = $('svg');
+  $svg.hover(
+    function () {
+      tl.timeScale(0.15);
+    },
+    function () {
+      tl.timeScale(1);
+    });
 
   function getRandom(min, max) {
     return Math.random() * (max - min) + min;
