@@ -7,7 +7,8 @@ $line-height: 44px; // Consistent height for buttons, inputs etc.
 $system-font-stack: 'Quicksand', sans-serif;
 
 .custom {
-  cursor: url(../../images/love-time.png), auto;
+    cursor: url(../../images/love-time.cur);
+    cursor: url(../../images/love-time.png), auto;
 }
 
 // Responsive breakpoints
