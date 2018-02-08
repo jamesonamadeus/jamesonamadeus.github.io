@@ -6,6 +6,10 @@ $padding: 40px; // Padding and margins
 $line-height: 44px; // Consistent height for buttons, inputs etc.
 $system-font-stack: 'Quicksand', sans-serif;
 
+.custom {
+  cursor: url(../../images/love-time.png), auto;
+}
+
 // Responsive breakpoints
 $break-sm: 480px;
 $break-md: 600px;

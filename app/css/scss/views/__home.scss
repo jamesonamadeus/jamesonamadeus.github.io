@@ -21,7 +21,16 @@
 	}
 
 	.codesign {
-		width: 55%;
+    @include transition(all 2s ease-in-out);
+    width: 55%;
+    
+    &:hover:after {
+      @include transition(all 2s ease-in-out);
+      content: "take more time to love your design";
+      position: relative;
+      left: 0; right: 0; bottom: 1vh;
+      text-align: center;
+    }
 	}
 
 	#code {
@@ -40,14 +49,15 @@
 		line-height: 84px;
 		margin: 0;
 		text-align: left;
-	}
+  }
+
 
 	#mockup {
 		display: none;
 		height: 90vh;
 		padding: 3.5vw;
     position: absolute;
-    
+
 		.st0 {
 			fill: #e6e6e6;
 		}

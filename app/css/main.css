@@ -1,3 +1,6 @@
+.custom {
+  cursor: url(../../images/love-time.png), auto; }
+
 .clearfix:after,
 .group:after {
   content: ' ';
@@ -36,6 +39,9 @@
   -webkit-text-stroke: 2px black;
   color: #fff;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+
+.custom {
+  cursor: url(../../images/love-time.png), auto; }
 
 .clearfix:after,
 .group:after {
@@ -559,7 +565,22 @@ a {
       display: block !important;
       width: 100% !important; }
   .home .codesign {
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -ms-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
     width: 55%; }
+    .home .codesign:hover:after {
+      -webkit-transition: all 2s ease-in-out;
+      -moz-transition: all 2s ease-in-out;
+      -ms-transition: all 2s ease-in-out;
+      transition: all 2s ease-in-out;
+      content: "take more time to love your design";
+      position: relative;
+      left: 0;
+      right: 0;
+      bottom: 1vh;
+      text-align: center; }
   .home #code {
     opacity: 1;
     transition: opacity 5s ease;

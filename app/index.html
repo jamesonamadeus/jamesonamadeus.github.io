@@ -86,25 +86,25 @@
     <div class="codesign">
       <div class="code" id="code">
         <pre><code>var tl = new TimelineMax(tmax_optionsGlobal),
-    path = '#mockup *',
-    stagger_val = 0.009,
-    duration = 5;
+              path = '#mockup *',
+              stagger_val = 0.009,
+              duration = 4;
 
-var stagger_opts_to = {
-    x: 0,
-    y: 0,
-    opacity: 1,
-    scale: 1,
-    rotation: 0,
-    ease: Power4.easeOut
-};
+          var stagger_opts_to = {
+              x: 0,
+              y: 0,
+              opacity: 1,
+              scale: 1,
+              rotation: 0,
+              ease: Power4.easeOut
+          };
 
-tl.staggerTo(path, duration, stagger_opts_to, stagger_val);
+          tl.staggerTo(path, duration, stagger_opts_to, stagger_val);
 
-function getRandom(min, max) {
-    return Math.random() * (max - min) + min;
-}
-</code></pre>
+          function getRandom(min, max) {
+              return Math.random() * (max - min) + min;
+          }
+          </code></pre>
       </div>
       <svg version="1.1" id="mockup" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
         y="0px" viewBox="0 0 844.7 936.5" style="enable-background:new 0 0 844.7 936.5;" xml:space="preserve">
@@ -434,6 +434,7 @@ function getRandom(min, max) {
           </g>
         </g>
       </svg>
+      <!-- <span class="tooltip">Slow Motion on Hover</span> -->
     </div>
   </main>
 
