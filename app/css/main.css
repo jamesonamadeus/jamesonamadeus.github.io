@@ -741,18 +741,15 @@ a {
 .process {
   padding: 0 20px; }
   .process-top {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
     -ms-flex-direction: column;
     -webkit-flex-direction: column;
     flex-direction: column;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -ms-flex-pack: justify;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
     height: 65vh; }
   .process-header {
     display: -ms-flexbox;
@@ -931,6 +928,10 @@ a {
     text-align: center; }
 
 .arrow {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   -ms-flex-align: end;
   -webkit-align-items: flex-end;
   align-items: flex-end;
@@ -944,9 +945,11 @@ a {
   -webkit-justify-content: center;
   justify-content: center; }
   .arrow-circle {
-    animation: animatedgradient 4s ease-in alternate infinite !important;
-    background-size: 650% 650% !important;
-    background: linear-gradient(355deg, #ffffff, #ffffff, #434343) !important;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    border: 3px solid #333333;
     border-radius: 50%;
     cursor: pointer;
     height: 90px;
@@ -973,7 +976,7 @@ a {
     cursor: pointer;
     display: block;
     height: 50px;
-    margin: -60px auto 0;
+    margin: -70px auto 0;
     position: relative;
     text-align: center;
     text-decoration: none;

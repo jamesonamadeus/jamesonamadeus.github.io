@@ -1,11 +1,10 @@
 .process {
-	padding: 0 20px;
+  padding: 0 20px;
 
 	&-top {
+    @include flexbox(flex);
 		@include align-items(center);
 		@include flex-direction(column);
-		@include flexbox(flex);
-		@include justify-content(space-between);
 		height: 65vh;
 	}
 
@@ -182,15 +181,15 @@
 }
 
 .arrow {
+  @include transition(all .5s ease);
 	@include align-items(flex-end);
 	@include flex-direction(column);
 	@include flexbox(flex);
 	@include justify-content(center);
 
 	&-circle {
-		animation: animatedgradient 4s ease-in alternate infinite !important;
-		background-size: 650% 650% !important;
-		background: linear-gradient(355deg, #ffffff, #ffffff, #434343) !important;
+    @include transition(all .5s ease);
+    border: 3px solid $color-text;
 		border-radius: 50%;
 		cursor: pointer;
 		height: 90px;
@@ -212,7 +211,7 @@
 		cursor: pointer;
 		display: block;
 		height: 50px;
-		margin: -60px auto 0;
+		margin: -70px auto 0;
 		position: relative;
 		text-align: center;
 		text-decoration: none;
