@@ -68,7 +68,7 @@ setTimeout(function () {
   var $svg = $('svg');
   $svg.hover(
     function () {
-      tl.timeScale(0.15);
+      tl.timeScale(0.20);
     },
     function () {
       tl.timeScale(1);
