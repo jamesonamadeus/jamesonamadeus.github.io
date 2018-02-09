@@ -2,14 +2,14 @@
 	@include flexbox(flex);
 	@include align-items(center);
 	@include justify-content(center);
-  margin: 80px 0 0;
+  margin: 40px 0 0;
   height: 100vh;
 
 	.header-container,
 	.codesign {
 		@include flexbox(flex);
 		@include align-items(center);
-		height: 80vh;
+		// height: 80vh;
 	}
 
 	.header-container {
@@ -69,7 +69,7 @@
 
 	#mockup {
 		display: none;
-		height: 90vh;
+		height: 93vh;
 		padding: 3.5vw;
     position: absolute;
 
