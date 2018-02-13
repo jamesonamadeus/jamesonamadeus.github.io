@@ -750,7 +750,10 @@ a {
     -ms-flex-direction: column;
     -webkit-flex-direction: column;
     flex-direction: column;
-    height: 65vh; }
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    height: 60vh; }
   .process-header {
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -817,17 +820,16 @@ a {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    -ms-flex-pack: end;
-    -webkit-justify-content: flex-end;
-    justify-content: flex-end;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
     line-height: 22px;
-    padding: 150px 0 300px; }
-    .process-main-container-iterate {
-      padding: 130px 0 300px; }
-      .process-main-container-iterate .process-main-text {
-        margin: 10px 40px 5px 84px; }
+    height: 100vh;
+    margin: 100px auto; }
+    .process-main-container-iterate .process-main-text {
+      margin: 10px 40px 5px 84px; }
     .process-main-container:last-of-type {
-      padding: 150px 0 20px; }
+      margin: 100px auto 0; }
   .process-main-inner {
     -ms-flex-direction: column;
     -webkit-flex-direction: column;
@@ -945,11 +947,11 @@ a {
   -webkit-justify-content: center;
   justify-content: center; }
   .arrow-circle {
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    border: 3px solid #333333;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    border: 3px solid #737373;
     border-radius: 50%;
     cursor: pointer;
     height: 90px;
