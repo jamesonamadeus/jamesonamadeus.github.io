@@ -73,13 +73,6 @@
 			line-height: 22px;
 			height: 100vh;
       margin: 100px auto;
-
-			&-iterate {
-
-				.process-main-text {
-					margin: 10px 40px 5px 84px;
-				}
-      }
       
       &:last-of-type {
         margin: 100px auto 0;
@@ -153,7 +146,7 @@
 		&-text {
 			@include font-size(18);
 			line-height: 1.6;
-			margin: 10px 40px 30px 84px;
+			margin: 10px 20px 30px 84px;
 			max-width: 720px;
 		}
 	}
