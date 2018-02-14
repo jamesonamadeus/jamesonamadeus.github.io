@@ -225,7 +225,7 @@
 	.process {
 		&-main {
 			&-text {
-				margin: 10px 1px 10px 84px;
+				margin: 10px 0 10px 84px;
 			}
 		}
 	}
@@ -236,13 +236,6 @@
 		padding: 0 0 30px;
 
 		&-main {
-			&-container {
-				padding: 130px 0 200px;
-
-				&:last-of-type {
-					padding: 130px 0 20px;
-				}
-			}
 
 			&-letter {
 				height: 65px;
@@ -256,7 +249,7 @@
 				@include font-size(42);
 			}
 			&-text {
-				margin: 10px 1px 10px 73px;
+				margin: 10px 0 10px 73px;
 			}
 		}
 		&-header {

@@ -986,15 +986,11 @@ a {
 
 @media only screen and (max-width: 800px) {
   .process-main-text {
-    margin: 10px 1px 10px 84px; } }
+    margin: 10px 0 10px 84px; } }
 
 @media only screen and (max-width: 600px) {
   .process {
     padding: 0 0 30px; }
-    .process-main-container {
-      padding: 130px 0 200px; }
-      .process-main-container:last-of-type {
-        padding: 130px 0 20px; }
     .process-main-letter {
       height: 65px;
       width: 65px; }
@@ -1005,7 +1001,7 @@ a {
       font-size: 42px !important;
       font-size: 2.625rem !important; }
     .process-main-text {
-      margin: 10px 1px 10px 73px; }
+      margin: 10px 0 10px 73px; }
     .process-header {
       margin: 25px auto; }
       .process-header-eye, .process-header-yee, .process-header-are {
