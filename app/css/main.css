@@ -1008,14 +1008,15 @@ a {
       -ms-flex-wrap: wrap;
       -webkit-flex-wrap: wrap;
       flex-wrap: wrap;
-      margin: 0 auto; }
+      margin: 0 auto;
+      max-width: 420px; }
       .process-header-eye, .process-header-yee, .process-header-are {
         height: 150px;
         margin: 10px;
         width: 150px; }
         .process-header-eye p, .process-header-yee p, .process-header-are p {
-          font-size: 48px !important;
-          font-size: 3rem !important; }
+          font-size: 76px !important;
+          font-size: 4.75rem !important; }
   .arrow-circle {
     height: 80px;
     width: 80px; }
@@ -1034,24 +1035,13 @@ a {
       margin-top: -4px; }
     .process-main-inner-refine .process-main-rest {
       margin-top: -4px; }
-    .process-header {
-      margin: 25px auto; }
-      .process-header-eye, .process-header-yee, .process-header-are {
-        height: 75px;
-        width: 75px; }
-        .process-header-eye p, .process-header-yee p, .process-header-are p {
-          font-size: 44px !important;
-          font-size: 2.75rem !important; } }
-
-@media only screen and (max-width: 400px) {
-  .process-header {
-    margin: 25px auto; }
     .process-header-eye, .process-header-yee, .process-header-are {
-      height: 63px;
-      width: 63px; }
+      height: 120px;
+      margin: 10px;
+      width: 120px; }
       .process-header-eye p, .process-header-yee p, .process-header-are p {
-        font-size: 38px !important;
-        font-size: 2.375rem !important; } }
+        font-size: 64px !important;
+        font-size: 4rem !important; } }
 
 .readings {
   padding: 0 20px; }
