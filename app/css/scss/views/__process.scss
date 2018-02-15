@@ -244,6 +244,10 @@
 
 		&-main {
 
+      &-container {
+        height: 100%;
+      }
+
 			&-letter {
 				height: 65px;
 				width: 65px;
@@ -299,10 +303,8 @@
 
 @media only screen and (max-width: $break-sm) {
 	.process {
-    padding: 0 0 10px;
+    padding: 0 0 60px;
     
-
-
 		&-main {
 			&-text {
 				margin: 10px 0 !important;
@@ -313,13 +315,6 @@
       }
 
 			&-inner {
-
-        &-iterate {
-
-          .process-main-steps {
-            margin-bottom: 30px;
-          }
-        }
 
 				&-refine {
 					.process-main-letter p {
@@ -332,7 +327,8 @@
 				}
       }
       
-		}
+    }
+    
 		&-header {
 
 			&-eye,
@@ -347,24 +343,9 @@
 				}
 			}
     }
+
+    .repeat {
+      margin: 40px auto 0;
+    }
 	}
 }
-
-// @media only screen and (max-width: 400px) {
-// 	.process {
-// 		&-header {
-// 			margin: 25px auto;
-
-// 			&-eye,
-// 			&-yee,
-// 			&-are {
-// 				height: 63px;
-// 				width: 63px;
-
-// 				p {
-// 					@include font-size(38);
-// 				}
-// 			}
-// 		}
-// 	}
-// }

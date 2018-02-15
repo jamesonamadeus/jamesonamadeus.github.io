@@ -999,6 +999,8 @@ a {
     padding: 0 0 30px; }
     .process-top {
       height: 65vh; }
+    .process-main-container {
+      height: 100%; }
     .process-main-letter {
       height: 65px;
       width: 65px; }
@@ -1034,13 +1036,11 @@ a {
 
 @media only screen and (max-width: 480px) {
   .process {
-    padding: 0 0 10px; }
+    padding: 0 0 60px; }
     .process-main-text {
       margin: 10px 0 !important; }
     .process-main-steps {
       margin-bottom: 10px; }
-    .process-main-inner-iterate .process-main-steps {
-      margin-bottom: 30px; }
     .process-main-inner-refine .process-main-letter p {
       margin-top: -4px; }
     .process-main-inner-refine .process-main-rest {
@@ -1051,7 +1051,9 @@ a {
       width: 120px; }
       .process-header-eye p, .process-header-yee p, .process-header-are p {
         font-size: 64px !important;
-        font-size: 4rem !important; } }
+        font-size: 4rem !important; }
+    .process .repeat {
+      margin: 40px auto 0; } }
 
 .readings {
   padding: 0 20px; }
