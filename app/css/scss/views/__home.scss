@@ -51,12 +51,16 @@
 	#code {
 		opacity: 1;
 		transition: opacity 5s ease;
-		width: 98%;
+		width: 100%;
 	}
 
 	#code.fade {
 		opacity: 0;
-	}
+  }
+  
+  code {
+    padding: 0;
+  }
 
 	h2 {
     @include transition(all 0.5s ease);
@@ -220,27 +224,33 @@
 
 @media only screen and (max-width: $break-sm) {
 	.home {
+    padding: 0;
+    margin: 110px 0 0;
+    height: 85vh;
+
 		.header-container,
 		.codesign {
+      @include align-items(flex-start);
 			height: 80vh;
-		}
+    }
+    
+    code {
+      display: none;
+    }
 
 		.codesign {
 			width: 100%;
 		}
 
 		h2 {
-			@include font-size(66);
+      @include font-size(66);
+      margin: 50px auto;
 			line-height: 66px;
 		}
 
-		.code {
-			padding: 15px;
-		}
-
 		#mockup {
-			height: 70vh;
-			padding: 4vw;
+			height: 58vh;
+			padding: 1vw;
 		}
 	}
 }
@@ -263,11 +273,6 @@
 		h2 {
 			@include font-size(62);
 			line-height: 62px;
-		}
-
-		#mockup {
-			height: 70vh;
-			padding: 4vw;
 		}
 	}
 }

@@ -42,7 +42,7 @@ setTimeout(function () {
   var tl = new TimelineMax(tmax_optionsGlobal),
     path = '#mockup *',
     stagger_val = 0.009,
-    duration = 4;
+    duration = 3;
 
   $.each($(path), function (i, el) {
     tl.set($(this), {

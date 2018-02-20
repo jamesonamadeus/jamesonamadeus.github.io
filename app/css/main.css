@@ -591,9 +591,11 @@ a {
   .home #code {
     opacity: 1;
     transition: opacity 5s ease;
-    width: 98%; }
+    width: 100%; }
   .home #code.fade {
     opacity: 0; }
+  .home code {
+    padding: 0; }
   .home h2 {
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -707,20 +709,28 @@ a {
       height: 80vh; } }
 
 @media only screen and (max-width: 480px) {
-  .home .header-container,
-  .home .codesign {
-    height: 80vh; }
-  .home .codesign {
-    width: 100%; }
-  .home h2 {
-    font-size: 66px !important;
-    font-size: 4.125rem !important;
-    line-height: 66px; }
-  .home .code {
-    padding: 15px; }
-  .home #mockup {
-    height: 70vh;
-    padding: 4vw; } }
+  .home {
+    padding: 0;
+    margin: 110px 0 0;
+    height: 85vh; }
+    .home .header-container,
+    .home .codesign {
+      -ms-flex-align: start;
+      -webkit-align-items: flex-start;
+      align-items: flex-start;
+      height: 80vh; }
+    .home code {
+      display: none; }
+    .home .codesign {
+      width: 100%; }
+    .home h2 {
+      font-size: 66px !important;
+      font-size: 4.125rem !important;
+      margin: 50px auto;
+      line-height: 66px; }
+    .home #mockup {
+      height: 58vh;
+      padding: 1vw; } }
 
 @media only screen and (max-width: 400px) {
   .home .header-container {
@@ -733,10 +743,7 @@ a {
   .home h2 {
     font-size: 62px !important;
     font-size: 3.875rem !important;
-    line-height: 62px; }
-  .home #mockup {
-    height: 70vh;
-    padding: 4vw; } }
+    line-height: 62px; } }
 
 .process {
   padding: 0 20px; }
