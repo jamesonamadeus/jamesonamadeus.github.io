@@ -87,23 +87,23 @@
       <div class="code" id="code">
         <pre><code>
 var tl = new TimelineMax(tmax_optionsGlobal),
-    path = '#mockup *',
-    stagger_val = 0.009,
-    duration = 4;
+  path = '#mockup *',
+  stagger_val = 0.009,
+  duration = 4;
 
 var stagger_opts_to = {
-    x: 0,
-    y: 0,
-    opacity: 1,
-    scale: 1,
-    rotation: 0,
-    ease: Power4.easeOut
+  x: 0,
+  y: 0,
+  opacity: 1,
+  scale: 1,
+  rotation: 0,
+  ease: Power4.easeOut
 };
 
 tl.staggerTo(path, duration, stagger_opts_to, stagger_val);
 
 function getRandom(min, max) {
-    return Math.random() * (max - min) + min;
+  return Math.random() * (max - min) + min;
 }
     </code></pre>
 

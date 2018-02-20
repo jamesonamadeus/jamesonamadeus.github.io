@@ -591,11 +591,11 @@ a {
   .home #code {
     opacity: 1;
     transition: opacity 5s ease;
-    width: 100%; }
+    width: 98%; }
   .home #code.fade {
     opacity: 0; }
   .home code {
-    padding: 0; }
+    padding: 0 0 0 15px; }
   .home h2 {
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
